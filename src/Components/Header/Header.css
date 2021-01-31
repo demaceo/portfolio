@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
+
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -9,6 +12,34 @@
     justify-content: center;
     color: #282c34;
     overflow: hidden;
+
+    /* font-family: Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
+    font-style: oblique;
+    box-shadow: 0px 16px 10px 0px #0000003d;
+    margin: 0.3em 0em 0.8em 0em; */
+
+}
+
+.header-title {
+    background-color: rgb(161, 25, 25);
+    position: static;
+    border: 0.3em solid yellow;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: oblique;
+    box-shadow: 0px 16px 10px 0px #0000003d;
+    margin: 0.3em 0em 0.8em 0em;
+}
+
+#nb-title {
+    color: white;
+    text-align: center;
+    font-family: "Bowlby One SC";
+    width: 100vw;
+    font-size: 7.5vw;
+    text-decoration: none;
 }
 
 .hidden {
@@ -35,68 +66,6 @@
     margin-bottom: 10px;
     align-self: flex-end;
 }
-
-/*
-.header-arrows {
-    display: flex;
-    align-self: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-}
-
-.header-arrows i {
-    transition: all 0.5s ease-in-out;
-    font-size: 2.5em;
-}
-
-.header-arrows i:hover {
-    color: white;
-    transform: scale(1.075);
-    font-size: 2.8em;
-    box-shadow: 2px 3px 20px 1px grey;
-} */
-
-/* @keyframes grow {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(3);
-    }
-}
-
-.pulse {
-    animation: grow 1s infinite linear;
-} */
-
-/* .fa-hourglass-half {
-    width: 85%;
-    height: auto;
-    position: absolute;
-    margin-bottom: 10px;
-    align-self: flex-end;
-    font-size: 2em;
-    animation: clockwise 5s infinite;
-}
-
-.counter {
-    animation: counter 5s infinite;
-}
-
-@keyframes clockwise {
-    0% {
-        transform: rotate(-360deg);
-    }
-}
-
-@keyframes counter {
-    0% {
-        transform: rotate(360deg);
-    }
-} */
-
 
 
 /* CLOUD BACKGROUND: */
