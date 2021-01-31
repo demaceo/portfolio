@@ -1,14 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
+
+
 .header-container {
     display: flex;
     flex-direction: row;
     width: 95%;
-    height: 20vh;
+    height: 19.3vh;
     border-radius: 10px;
     background-color: lightblue;
     margin: 1em 0em;
     justify-content: center;
     color: #282c34;
     overflow: hidden;
+    box-shadow: 0px 16px 10px 0px #0000003d;
+    margin: 0.3em 0em 0.8em 0em;
+
 }
 
 .hidden {
@@ -16,13 +22,20 @@
 }
 
 .date {
-    width: 85%;
+    font-family: Impact,
+    Haettenschweiler,
+    "Arial Narrow Bold",
+    sans-serif;
+    font-style: oblique;
+    animation: none;
+    /* width: 90%; */
+    letter-spacing: 40px;
     height: auto;
-    font-size: 7vw;
+    font-size: 13.5vw;
     position: absolute;
     margin-bottom: 1vh;
-    margin-top: 2vh;
-    transition: all 1s ease-in-out;
+    margin-top: -5vh;
+    /* transition: all 1s ease-in-out; */
 }
 
 .time {
