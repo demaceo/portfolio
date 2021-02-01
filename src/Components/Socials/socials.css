@@ -1,0 +1,62 @@
+.me {
+    display: block;
+    margin: 2em auto;
+    margin-bottom: 3em;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.social {
+    text-align: center;
+    font-size: 2.5em;
+    color: #555;
+    overflow: hidden;
+}
+
+   .social a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .social i {
+        margin: .3em;
+        cursor: pointer;
+        transition: color 300ms ease, margin-top 300ms ease;
+        transform: translateZ(0);
+    }
+
+        .social i:hover {
+            margin-top: -1px;
+        }
+
+        .social #twitter:hover {
+            color: #77DDF6;
+        }
+
+        .social #github:hover {
+            color: black;
+        }
+
+        .social #linkedin:hover {
+            color: #0177B5;
+        }
+
+        .social #code:hover {
+            color: #29A329;
+        }
+
+        .social #stack:hover {
+            color: #ED780E;
+        }
+
+        .social #plus:hover {
+            color: #D43402;
+        }
+
+        .social #mail:hover {
+            color: #F7B401;
+        }
+    
