@@ -30,9 +30,9 @@ function Header() {
       <h2 className="date" ref={dateRef}>
         {date}
       </h2>
-      <h3 id="time" className="time" ref={timeRef}>
+      {/* <h3 id="time" className="time" ref={timeRef}>
         {time}
-      </h3>
+      </h3> */}
     </div>
   );
 }
