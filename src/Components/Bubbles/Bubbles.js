@@ -1,39 +1,23 @@
 import React from 'react'
 import './bubbles.css';
+import projectData from "../../utilities/projectData.js";
+
 // import { Link } from "react-router-dom";
 
 
 export default function Bubbles() {
+  const bubbles = projectData.map((bubble) => {
+    const { id, name, icon } = bubble;
     return (
-      <section className="bubble-container">
-        {/* <Link to="https://demaceo.github.io/whats-cookin/"> */}
-          <div className="bubble x1">
-            <div className="text-container">
-              <h1 className="project-1">
-                <i className="fas fa-cookie-bite icon" />
-                What's <br />
-                Cookin
-              </h1>
-            </div>
-          </div>
-        {/* </Link> */}
-        <div className="bubble x2">
-          <div className="text-container">
-            <h1 className="project-2">
-              <i className="fas fa-music icon" />
-              Moody Tunes
-            </h1>
-          </div>
+      <div className={`bubble x${id}`}>
+        <div className="text-container">
+          <h1 className={`project-${id}`}>
+            <i className={`${icon} icon`} />
+            {name}
+          </h1>
         </div>
-        <div className="bubble x3">
-          <div className="text-container">
-            <h1 className="project-3">
-              <i className="fas fa-film icon" />
-              Rancid <br />
-              Tomatillos
-            </h1>
-          </div>
-        </div>
-      </section>
+      </div>
     );
+})
+  return <section className="bubble-container">{bubbles}</section>;
 }
