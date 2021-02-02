@@ -1,38 +1,33 @@
-import img1 from "./images/sample.jpg";
-import img2 from "./images/sample.jpg";
-import img3 from "./images/sample.jpg";
-
-const bio1 =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus eros vitae sagittis interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas commodo, odio porta semper venenatis, justo mauris maximus dui, eget suscipit lectus turpis sed eros. Donec tincidunt laoreet porttitor. Donec hendrerit aliquam enim, nec viverra orci rutrum sed. Donec condimentum interdum velit quis fermentum. Ut placerat sapien eu malesuada pretium. Proin sollicitudin dictum mi.";
-
-const bio2 =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus eros vitae sagittis interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas commodo, odio porta semper venenatis, justo mauris maximus dui, eget suscipit lectus turpis sed eros. Donec tincidunt laoreet porttitor. Donec hendrerit aliquam enim, nec viverra orci rutrum sed. Donec condimentum interdum velit quis fermentum. Ut placerat sapien eu malesuada pretium. Proin sollicitudin dictum mi.";
-
-const bio3 =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus eros vitae sagittis interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas commodo, odio porta semper venenatis, justo mauris maximus dui, eget suscipit lectus turpis sed eros. Donec tincidunt laoreet porttitor. Donec hendrerit aliquam enim, nec viverra orci rutrum sed. Donec condimentum interdum velit quis fermentum. Ut placerat sapien eu malesuada pretium. Proin sollicitudin dictum mi.";
-
-
 const projectData = [
   {
     id: 1,
     name: "What's Cookin",
-    image: img1,
-    description: bio1,
-    partners: ["Scott Brabson"],
+    image: "https://media.giphy.com/media/yHlPATYrKHmIBcgHpM/giphy.gif",
+    description:
+      "A simple and elegant site to search, share and store your recipes. This site presents the user with the ability to 'log-in' and search the site for recipes.",
+    partners: [{ name: "Scott Brabson", link: "https://github.com/brabbuss" }],
   },
   {
     id: 2,
     name: "Moody Tunes",
-    image: img2,
-    description: bio2,
-    partners: ["Scott Brabson", "Bruce Gordon"],
+    image:
+      "https://user-images.githubusercontent.com/66697338/104397652-796aac00-550a-11eb-8f64-4b7f7e0c07cc.gif",
+    description:
+      "Moody Tunes is a music recommendation engine that provides music recommendations based on a user's mood. Users are able to save songs into their 'Favorites' and view the information at a later time, or play the song directly from Spotify.",
+    partners: [
+      { name: "Scott Brabson", link: "https://github.com/brabbuss" },
+      { name: "Bruce Gordon", link: "https://github.com/bruce-gordon" },
+    ],
   },
   {
     id: 3,
     name: "Rancid Tomatillos",
-    image: img3,
-    description: bio3,
-    partners: ["Caleb Cyphers"],
+    image: "https://media.giphy.com/media/0aJoS84OErWv5MlCmw/giphy.gif",
+    description:
+      "The site presents the user an assortment of movies with their corresponding information and gives the user the ability to sort movies based on their ratings.",
+    partners: [
+      { name: "Caleb Cyphers", link: "https://github.com/CalebCyphers" },
+    ],
   },
 ];
 
