@@ -1,6 +1,6 @@
 import React from 'react'
 import './bubbles.css';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 export default function Bubbles() {
@@ -10,7 +10,7 @@ export default function Bubbles() {
           <div className="bubble x1">
             <div className="text-container">
               <h1 className="project-1">
-                <i class="fas fa-cookie-bite icon" />
+                <i className="fas fa-cookie-bite icon" />
                 What's <br />
                 Cookin
               </h1>
@@ -20,7 +20,7 @@ export default function Bubbles() {
         <div className="bubble x2">
           <div className="text-container">
             <h1 className="project-2">
-              <i class="fas fa-music icon" />
+              <i className="fas fa-music icon" />
               Moody Tunes
             </h1>
           </div>
@@ -28,7 +28,7 @@ export default function Bubbles() {
         <div className="bubble x3">
           <div className="text-container">
             <h1 className="project-3">
-              <i class="fas fa-film icon" />
+              <i className="fas fa-film icon" />
               Rancid <br />
               Tomatillos
             </h1>
