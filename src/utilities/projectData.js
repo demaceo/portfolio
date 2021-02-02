@@ -7,6 +7,7 @@ const projectData = [
       "A simple and elegant site to search, share and store your recipes. This site presents the user with the ability to 'log-in' and search the site for recipes.",
     partners: [{ name: "Scott Brabson", link: "https://github.com/brabbuss" }],
     link: "https://demaceo.github.io/whats-cookin/",
+    icon: "fas fa-cookie-bite icon",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const projectData = [
       { name: "Bruce Gordon", link: "https://github.com/bruce-gordon" },
     ],
     link: "https://brabbuss.github.io/moodytunes/",
+    icon: "fas fa-music icon",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const projectData = [
       { name: "Caleb Cyphers", link: "https://github.com/CalebCyphers" },
     ],
     link: "https://rantom.herokuapp.com/",
+    icon: "fas fa-film icon",
   },
 ];
 
