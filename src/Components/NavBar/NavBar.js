@@ -13,9 +13,9 @@ function NavBar() {
           <i className="fas fa-fingerprint" aria-hidden="true"></i>
           <span className="option-text">Projects</span>
         </Link>
-        <Link to="/socials" className="option">
-          <i class="fas fa-praying-hands" aria-hidden="true"></i>
-          <span className="option-text">Connect</span>
+        <Link to="/aboutme" className="option">
+          <i className="fas fa-male" aria-hidden="true"></i>
+          <span className="option-text">About Me</span>
         </Link>
       </ul>
     </div>

@@ -19,7 +19,7 @@ function Header() {
   }, []);
 
   return (
-    <div id="date" className="header-container">
+    <div className="header-container">
       <div id="clouds">
         <div className="cloud c1"></div>
         <div className="cloud c2"></div>
