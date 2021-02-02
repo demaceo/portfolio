@@ -14,7 +14,7 @@ function NavBar() {
           <span className="option-text">Projects</span>
         </Link>
         <Link to="/socials" className="option">
-          <i className="fas fa-praying-hands" aria-hidden="true"></i>
+          <i className="fas fa-male" aria-hidden="true"></i>
           <span className="option-text">Connect</span>
         </Link>
       </ul>
