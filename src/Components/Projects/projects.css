@@ -1,6 +1,6 @@
 .projects-container {
   width: 90%;
-  /* margin: 5vh; */
+  margin: 5vh 0 14vh 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,7 @@
 .project-details {
   display: flex;
   position: relative;
+  justify-content: space-between;
   flex-direction: column;
   align-content: center;
   font-family: "quicksand";
@@ -40,4 +41,17 @@
 
 #project-title {
   font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+#project-description{
+  font-size: 1.1em;
+  padding-bottom: 3vh;
+}
+
+.contributors, .contributor{
+  font-size: .9em;
+  /* text-decoration: none; */
+  padding: 5px;
+  color: white;
 }
