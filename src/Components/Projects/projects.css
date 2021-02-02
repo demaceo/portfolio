@@ -21,7 +21,7 @@
   width: 30vw;
   height: 30vh;
   padding: 1vh;
-  transition: 1s;
+  transition: .3s;
 }
 
 .project-img:hover {

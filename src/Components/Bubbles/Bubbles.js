@@ -9,7 +9,7 @@ export default function Bubbles() {
   const bubbles = projectData.map((bubble) => {
     const { id, name, icon } = bubble;
     return (
-      <div className={`bubble x${id}`}>
+      <div className={`bubble x${id}`} key={id} id={id}>
         <div className="text-container">
           <h1 className={`project-${id}`}>
             <i className={`${icon} icon`} />
