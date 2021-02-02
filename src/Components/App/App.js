@@ -1,13 +1,13 @@
 import "./App.css";
 // import { useState, useEffect } from "react";
-// import projects from "../../utilities/projectData.js";
+import projects from "../../utilities/projectData.js";
 import NavBar from "../NavBar/NavBar";
 import Bubbles from "../Bubbles/Bubbles";
 import Header from "../Header/Header";
 
 // import Socials from "../Socials/Socials";
 // import LogIn from "../LogIn/LogIn";
-// import Project from "../Project/Project";
+import Projects from "../Projects/Projects";
 // import AboutMe from "../AboutMe/AboutMe";
 
 
@@ -25,18 +25,14 @@ function App() {
         {/* <Socials /> */}
         {/* <Route exact path="/project" render={() => <Project />} /> */}
         {/* <Route exact path="/developer" render={() => <AboutMe />} /> */}
-
+        <Route exact path="/projects" render={() => <Projects />} />
         {/* <Route
-          path="/project/:id"
+          exact path="/projects"
           render={({ match }) => {
             const project = projects.find(
               (project) => project.id === parseInt(match.params.id)
             );
-
-            if (!project) {
-              return <div>Sorry.. no project found with that id!</div>;
-            }
-            return <Project {...project} />;
+            return <Projects {...project} />;
           }}
         /> */}
         <NavBar />
