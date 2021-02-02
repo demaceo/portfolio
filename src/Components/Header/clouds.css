@@ -38,7 +38,7 @@
     /* transition: all 1s ease-in-out; */
 }
 
-.time {
+#time {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
@@ -47,6 +47,7 @@
     position: absolute;
     margin-bottom: 10px;
     align-self: flex-end;
+    display: none;
 }
 
 /* .header-arrows {
@@ -119,7 +120,7 @@
     padding: 100px 0;
     width: 98vw;
     background: #c9dbe9;
-    background: linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: linear-gradient(to top, #c9dbe9 0%, #fff 100%);
 }
 
 /*cloud shape*/
