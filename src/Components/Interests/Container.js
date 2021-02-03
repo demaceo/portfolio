@@ -8,7 +8,7 @@ class Container extends Component {
     super(props);
     this.state = {
       mode: "documentaries",
-      background: "#2F3939",
+    //   background: "#2F3939",
       how: 100,
     };
     this.handleClick = this.handleClick.bind(this);
@@ -17,11 +17,10 @@ class Container extends Component {
     this.setState({
       mode: e.target.value,
       how: e.target.attributes.how.value,
-      //   background: e.target.attributes.background.value,
     });
   }
   render() {
-    const { mode, background, how } = this.state;
+    const { mode, how } = this.state;
     const modes = interests;
     return (
       <div className="container">
@@ -30,7 +29,6 @@ class Container extends Component {
 
           <button
             how={50}
-            // background={"#2F3939"}
             value={"documentaries"}
             onClick={this.handleClick}
           >
@@ -38,7 +36,6 @@ class Container extends Component {
           </button>
           <button
             how={50}
-            // background={"#2F3939"}
             value={"books"}
             onClick={this.handleClick}
           >
@@ -46,7 +43,6 @@ class Container extends Component {
           </button>
           <button
             how={50}
-            // background={"#2F3939"}
             value={"film"}
             onClick={this.handleClick}
           >
@@ -54,7 +50,6 @@ class Container extends Component {
           </button>
           <button
             how={50}
-            // background={"#2F3939"}
             value={"podcasts"}
             onClick={this.handleClick}
           >
@@ -85,7 +80,6 @@ class Container extends Component {
           how={how}
           size={"100px"}
           time={30}
-          //   background={background}
         />
       </div>
     );
