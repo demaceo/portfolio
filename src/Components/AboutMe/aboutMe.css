@@ -1,0 +1,57 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 25vw;
+  height: 20vh;
+  margin-top: 150px;
+  padding: 65px 30px;
+  border: 5px solid white;
+  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffddcc;
+}
+
+.about h2,
+h4 {
+  font-family: "quicksand";
+  text-align: center;
+  margin-top: 0px;
+}
+
+#my-name{
+    font-size: 1.7em;
+}
+
+#title {
+  margin-bottom: 0px;
+  font-weight: lighter;
+}
+
+#socials {
+  padding-top: 4vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 400px;
+  align-self: center;
+}
+
+.social {
+  text-decoration: none;
+  padding-top: 20px;
+  font-size: 4vw;
+  transition: 0.5s;
+  color: rgba(92, 129, 202, 1)
+}
+
+.far {
+    font-size: 3.5vw;
+    padding-top: 25px;
+}
+
+.social:hover {
+  font-size: 4.3vw;
+  color: rgba(249, 140, 112, 1);
+}
