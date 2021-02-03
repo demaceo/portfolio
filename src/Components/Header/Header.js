@@ -13,7 +13,7 @@ function Header() {
 
   useEffect(() => {
     setInterval(() => {
-      setTime(new Date().toLocaleString().slice(11));
+      setTime(new Date().toLocaleString().slice(10));
     }, 1000);
     renderCounter.current = 0;
   }, []);
@@ -30,7 +30,7 @@ function Header() {
       <h2 className="date" ref={dateRef}>
         {date}
       </h2>
-      <h3 id="time" className="time" ref={timeRef}>
+      <h3 id="time" className="time" >
         {time}
       </h3>
     </div>
