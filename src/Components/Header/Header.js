@@ -1,15 +1,10 @@
 import { useState, useRef, useEffect } from "react";
-// import "./Header.css";
-import './clouds.css';
-// import "./clouds2.css";
-
+import "./Header.css";
 
 function Header() {
   const [time, setTime] = useState();
   let date = Date().toLocaleString().slice(0, 10);
   const renderCounter = useRef(0);
-  const timeRef = useRef();
-  const dateRef = useRef();
 
   useEffect(() => {
     setInterval(() => {
@@ -27,7 +22,7 @@ function Header() {
         <div className="cloud c4"></div>
         <div className="cloud c5"></div>
       </div>
-      <h2 className="date" ref={dateRef}>
+      <h2 className="date">
         {date}
       </h2>
       <h3 id="time" className="time" >
