@@ -84,8 +84,8 @@
   );
 }
 
-.bubble:active{
-  animation: pop 2s cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards;
+.bubble:hover{
+  animation: pop 1s cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards;
 }
 
 @keyframes pop {

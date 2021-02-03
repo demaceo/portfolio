@@ -1,17 +1,7 @@
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-} */
-
-.hidden {
-  display: none;
-}
-
 .nav-container {
   box-sizing: border-box;
   padding: 0;
   position: fixed;
-  
   bottom: 1%;
   left: 50%;
   transform: translate(-50%, -50%);
