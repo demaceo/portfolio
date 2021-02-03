@@ -35,6 +35,16 @@ const projectData = [
     link: "https://rantom.herokuapp.com/",
     icon: "fas fa-film icon",
   },
+  // {
+  //   id: 4,
+  //   name: "Hotel Overlook",
+  //   image: "https://media.giphy.com/media/0aJoS84OErWv5MlCmw/giphy.gif",
+  //   description:
+  //     "The site presents the user an assortment of movies with their corresponding information and gives the user the ability to sort movies based on their ratings.",
+  //   partners: [{ name: "Demaceo Howard", link: "https://github.com/demaceo" }],
+  //   link: "https://demaceo.github.io/overlook/",
+  //   icon: "fas fa-concierge-bell icon",
+  // },
 ];
 
 export default projectData;
