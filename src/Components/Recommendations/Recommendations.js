@@ -3,7 +3,7 @@ import Interests from "./Interests";
 import "./container.css";
 import { interests } from "../../utilities/interestsData";
 
-class Container extends Component {
+class Recommendations extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -86,4 +86,4 @@ class Container extends Component {
   }
 }
 
-export default Container;
+export default Recommendations;
