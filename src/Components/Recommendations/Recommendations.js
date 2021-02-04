@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Interests from "./Interests";
-import "./container.css";
+import "./recommendations.css";
 import { interests } from "../../utilities/interestsData";
 
 class Recommendations extends Component {
