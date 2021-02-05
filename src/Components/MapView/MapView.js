@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./mapView.css";
-// import GoogleApiWrapper from "../../utilities/apiCalls";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-
 const mapStyle = [
   {
     featureType: "landscape.man_made",
@@ -16,14 +14,13 @@ const mapStyle = [
 ];
 
 export class MapContainer extends Component {
-    constructor(){
-        super()
-          this.state = {
-            showingInfoWindow: false,
-            activeMarker: {},
-            selectedPlace: {},
-          };
-    }
+  state = {
+    showingInfoWindow: true,
+    activeMarker: {},
+    selectedPlace: {},
+    zoom: 17,
+    
+  };
 
   onMarkerClick = (props, marker, e) =>
     this.setState({
@@ -35,7 +32,7 @@ export class MapContainer extends Component {
   onMapClicked = (props) => {
     if (this.state.showingInfoWindow) {
       this.setState({
-        showingInfoWindow: false,
+        showingInfoWindow: true,
         activeMarker: null,
       });
     }
@@ -44,32 +41,41 @@ export class MapContainer extends Component {
   _mapLoaded(mapProps, map) {
     map.setOptions({
       styles: mapStyle,
+      mapTypeId: "satellite",
     });
   }
 
   render() {
+    const coords = { lat: -21.805149, lng: -49.0921657 };
+    // const coords = { lat: 39.75260685, lng: -104.990791559375 };
+
     return (
       <section id="map-container">
         <Map
-          style={{ width: "60vw", height: "50vh", position: "inherit" }} // id="map-container"
-          google={this.props.google}
+          style={{
+            width: "60vw",
+            height: "55vh",
+            position: "inherit",
+            borderRadius: "15px",
+          }}
           zoom={this.state.zoom}
-          initialCenter={this.state.center}
+          //   initialCenter={this.state.center}
+          initialCenter={coords}
           onReady={(mapProps, map) => this._mapLoaded(mapProps, map)}
           google={this.props.google}
           onClick={this.onMapClicked}
         >
           <Marker onClick={this.onMarkerClick} name={"Current location"} />
 
-          {/* <InfoWindow
-          onOpen={this.windowHasOpened}
-          onClose={this.windowHasClosed}
-          visible={this.state.showingInfoWindow}
-        >
-          <div>
-            <h1>{this.state.selectedPlace.name}</h1>
-          </div>
-        </InfoWindow> */}
+          <InfoWindow
+            onOpen={this.windowHasOpened}
+            onClose={this.windowHasClosed}
+            visible={this.state.showingInfoWindow}
+          >
+            <div>
+              <h1>{this.state.selectedPlace.name}</h1>
+            </div>
+          </InfoWindow>
         </Map>
       </section>
     );
