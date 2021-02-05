@@ -8,16 +8,25 @@ export default function AboutMe() {
       <h4 id="title">Front End Engineer // Software Developer</h4>
       <div id="socials">
         <a
-          className="social fab fa-linkedin"
           href="https://www.linkedin.com/in/demaceo-vincent-howard-12a9028b/"
-        />
-        <a
-          className="social fab fa-instagram"
-          href="https://www.instagram.com/demaceo.vh/"
-        />
-        <a className="social fab fa-github" href="https://github.com/demaceo" />
+          alt="linked-in"
+        >
+          <i className="social fab fa-linkedin"></i>
+        </a>
 
-        <a className="social far fa-file" />
+        <a href="https://www.instagram.com/demaceo.vh/" alt="instagram">
+          <i className="social fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/demaceo" alt="github">
+          <i className="social fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://alumni.turing.io/sites/default/files/resumes/FE%202021%20Resume.pdf"
+          alt="demaceos-resume"
+        >
+          <i className="social far fa-file"></i>
+        </a>
       </div>
     </div>
   );
