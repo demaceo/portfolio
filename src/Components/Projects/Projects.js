@@ -8,7 +8,7 @@ export default function Projects() {
     const { id, image, name, description, partners, link } = project;
     return (
       <section className="project-container" id={id}>
-        <a href={link}>
+        <a className="img-container" href={link}>
           <img className="project-img" src={image} key={id} id={id} alt={name} />
         </a>
         <div className="project-details">
