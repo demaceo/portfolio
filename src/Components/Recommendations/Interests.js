@@ -49,13 +49,12 @@ class Interests extends Component {
     const outerStyle = {
       position: "absolute",
       top: "25%",
-    //   left: "45%",
+      left: "-40%",
       borderRadius: "15px",
-      width: "50vw",
-      height: "100vh",
+      width: "100vw",
+      height: "100vw",
       padding: "0",
       zIndex: "-1",
-      //   background: this.props.background ? this.props.background : "",
     };
 
     return (

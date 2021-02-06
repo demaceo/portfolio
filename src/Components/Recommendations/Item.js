@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import './container.css';
 
 class Item extends Component {
   constructor(props) {
@@ -35,7 +34,6 @@ class Item extends Component {
       MsTransition: `transform ${time}s ease-out`,
       Webkitransform: movingStyle,
       WebkitTransition: `transform ${time}s ease-out`,
-    //   overflow: "hidden",
       willChange: "transform",
 
     };

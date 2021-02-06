@@ -9,7 +9,7 @@ export default function Projects() {
     return (
       <section className="project-container" id={id}>
         <a href={link}>
-          <img className="project-img" src={image} key={id} id={id} />
+          <img className="project-img" src={image} key={id} id={id} alt={name} />
         </a>
         <div className="project-details">
           <h1 id="project-title">{name}</h1>

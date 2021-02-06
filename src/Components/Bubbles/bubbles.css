@@ -17,6 +17,7 @@
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  opacity: .9;
   box-shadow: 0px 8px 8px 0px #0000003d;
 
 }

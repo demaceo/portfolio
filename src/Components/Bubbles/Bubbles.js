@@ -1,9 +1,7 @@
 import React from 'react'
 import './bubbles.css';
 import projectData from "../../utilities/projectData.js";
-
 // import { Link } from "react-router-dom";
-
 
 export default function Bubbles() {
   const bubbles = projectData.map((bubble) => {

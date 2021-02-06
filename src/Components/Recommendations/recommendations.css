@@ -22,7 +22,7 @@
   min-width: 250px;
   max-width: 25%;
   background: #6d7d8d;
-  opacity: .95;
+  opacity: 0.95;
   border-radius: 7px;
   padding: 10px;
   text-align: center;
@@ -32,9 +32,9 @@
   height: 40%;
 }
 
-#item{
-    left: 0;
-    right: 0;
+#item {
+  left: 0;
+  right: 0;
 }
 .interests h1 {
   padding: 0px 60px;
@@ -69,7 +69,6 @@
 }
 
 @media screen and (max-width: 800px) {
-
   .interests {
     margin-top: 30px;
     text-align: left;
