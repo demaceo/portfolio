@@ -19,8 +19,8 @@ h4 {
   margin-top: 0px;
 }
 
-#my-name{
-    font-size: 1.7em;
+#my-name {
+  font-size: 1.7em;
 }
 
 #title {
@@ -43,15 +43,22 @@ h4 {
   padding-top: 20px;
   font-size: 4vw;
   transition: 0.5s;
-  color: rgba(92, 129, 202, 1)
-}
-
-.far {
-    font-size: 3.5vw;
-    padding-top: 25px;
+  color: rgba(92, 129, 202, 1);
 }
 
 .social:hover {
   font-size: 4.3vw;
+  color: rgba(249, 140, 112, 1);
+}
+
+.far {
+  text-decoration: none;
+  padding-top: 25px;
+  font-size: 3.65vw;
+  transition: 0.5s;
+  color: rgba(92, 129, 202, 1);
+}
+.far:hover {
+  font-size: 3.95vw;
   color: rgba(249, 140, 112, 1);
 }
