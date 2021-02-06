@@ -18,8 +18,7 @@ export class MapContainer extends Component {
     showingInfoWindow: true,
     activeMarker: {},
     selectedPlace: {},
-    zoom: 17,
-    
+    zoom: 18,
   };
 
   onMarkerClick = (props, marker, e) =>
@@ -46,7 +45,7 @@ export class MapContainer extends Component {
   }
 
   render() {
-    const coords = { lat: -21.805149, lng: -49.0921657 };
+    const coords = { lat: -21.80507955432942, lng: -49.090712070465095 };
     // const coords = { lat: 39.75260685, lng: -104.990791559375 };
 
     return (
@@ -82,5 +81,5 @@ export class MapContainer extends Component {
   }
 }
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyCMkt4nZU-9Wmu0t5nQMu_xgCD_3d8QF_M",
+    apiKey: "AIzaSyCMkt4nZU-9Wmu0t5nQMu_xgCD_3d8QF_M",
 })(MapContainer);

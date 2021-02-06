@@ -1,10 +1,12 @@
 // npm i google-maps-react
-// zoom values
+
+// Zoom:
 // 1: World
 // 5: Landmass/continent
 // 10: City
 // 15: Streets
 // 20: Buildings
+
 const coordinates = {
   denver: { lat: 39.75260685, lng: -104.990791559375 },
   osa: { lat: 8.633170199999999, lng: -83.58292379837557 },
@@ -18,9 +20,13 @@ const coordinates = {
   chicago: { lat: 41.8755616, lng: -87.6244212 },
   peoria: { lat: 40.6938609, lng: -89.5891008 },
   cornell: { lat: 41.9222443, lng: -91.4171209 },
+  lagoaHumanoide: { lat: -21.80507955432942, lng: -49.090712070465095 },
 };
 
 export default coordinates;
+
+// navigator.geolocation.getCurrentPosition(pos.coords)
+
 // export default function getLocation() {
 //   if (navigator.geolocation) {
 //     navigator.geolocation.getCurrentPosition(showPosition);
