@@ -23,14 +23,11 @@ export default function AboutMe() {
 
         <a
           href="https://alumni.turing.io/sites/default/files/resumes/FE%202021%20Resume.pdf"
+          // href="https://alumni.turing.io/alumni/demaceo-vincent"
           alt="demaceos-resume"
         >
-          <img className="social" src="https://img.icons8.com/carbon-copy/100/000000/resume.png" />
-          {/* <img
-            className="social"
-            src="https://static.thenounproject.com/png/543772-200.png"
-          /> */}
-          {/* <i className="social far fa-file"></i> */}
+          {/* <img className="social" src="https://img.icons8.com/carbon-copy/100/000000/resume.png" /> */}
+          <i className="far fa-file-alt" />
         </a>
       </div>
     </div>
