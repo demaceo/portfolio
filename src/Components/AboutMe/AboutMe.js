@@ -25,7 +25,12 @@ export default function AboutMe() {
           href="https://alumni.turing.io/sites/default/files/resumes/FE%202021%20Resume.pdf"
           alt="demaceos-resume"
         >
-          <i className="social far fa-file"></i>
+          <img className="social" src="https://img.icons8.com/carbon-copy/100/000000/resume.png" />
+          {/* <img
+            className="social"
+            src="https://static.thenounproject.com/png/543772-200.png"
+          /> */}
+          {/* <i className="social far fa-file"></i> */}
         </a>
       </div>
     </div>
