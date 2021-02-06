@@ -65,7 +65,7 @@ h1 {
   width: 60vw;
   max-width: 70%;
   text-align: right;
-  /* opacity: 0.8; */
+  /* z-index: 0; */
   border: 3px solid white;
   background-color: rgba(0, 0, 0, 0.555);
 }
@@ -81,6 +81,7 @@ h1 {
   transform: rotate(45deg);
   width: 15px;
   height: 15px;
+  /* z-index: -1 */
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content {
@@ -128,7 +129,7 @@ time {
   font-size: 16px;
   line-height: 24px;
   margin: 15px 0;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .timeline-item-content a {
