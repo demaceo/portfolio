@@ -1,6 +1,6 @@
 import "./App.css";
-// import { useState, useEffect } from "react";
-// import projects from "../../utilities/projectData.js";
+import { useReducer } from "react";
+import AppContext from "./AppContext";
 import NavBar from "../NavBar/NavBar";
 import Bubbles from "../Bubbles/Bubbles";
 import Waves from "../Waves/Waves";
@@ -11,43 +11,65 @@ import Projects from "../Projects/Projects";
 import AboutMe from "../AboutMe/AboutMe";
 import Recommendations from "../Recommendations/Recommendations";
 import MapContainer from "../MapView/MapView";
-import Settings from '../Settings/Settings';
-import WebGazer from '../WebGazer/WebGazer';
-
+import Settings from "../Settings/Settings";
+import WebGazer from "../WebGazer/WebGazer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import { useLocalStorage } from "../../utilities/useLocalStorage";
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Settings />
-        <Route exact path="/login" render={() => <LogIn />} />
-        <Route exact path="/" render={() => <Bubbles />} />
-        <Route
-          exact
-          path="/aboutme"
-          render={() => (
-            <>
-              <AboutMe />
-              <Timeline />
-            </>
-          )}
-        />
-        <Route
-          exact
-          path="/recommendations"
-          render={() => <Recommendations />}
-        />
-        <Route exact path="/map" render={() => <MapContainer />} />
-        <Route exact path="/gazer" render={() => <WebGazer />} />
+const initalState = {
+  theme: "dark",
+};
 
-        <Route exact path="/waves" render={() => <Waves />} />
-        <Route exact path="/projects" render={() => <Projects />} />
-        <NavBar />
-      </div>
-    </Router>
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "TOGGLE_THEME":
+      const newTheme = state.theme === "light" ? "dark" : "light";
+      return { ...state, theme: newTheme };
+    default:
+      return state;
+  }
+};
+
+function App() {
+  const [state, dispatch] = useReducer(reducer, initalState);
+
+  const toggleTheme = () => {
+    const action = { type: "TOGGLE_THEME" };
+    dispatch(action);
+  };
+
+  return (
+    <AppContext.Provider value={[state, dispatch]}>
+      <Router>
+        <div className="App">
+          <Header />
+          <Settings onClick={toggleTheme} />
+          <Route exact path="/login" render={() => <LogIn />} />
+          <Route exact path="/" render={() => <Bubbles />} />
+          <Route
+            exact
+            path="/aboutme"
+            render={() => (
+              <>
+                <AboutMe />
+                <Timeline />
+              </>
+            )}
+          />
+          <Route
+            exact
+            path="/recommendations"
+            render={() => <Recommendations />}
+          />
+          <Route exact path="/map" render={() => <MapContainer />} />
+          <Route exact path="/gazer" render={() => <WebGazer />} />
+
+          <Route exact path="/waves" render={() => <Waves />} />
+          <Route exact path="/projects" render={() => <Projects />} />
+          <NavBar />
+        </div>
+      </Router>
+    </AppContext.Provider>
   );
 }
 
