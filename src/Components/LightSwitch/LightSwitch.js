@@ -1,51 +1,31 @@
 import React from "react";
-import "./LightSwitch";
+import { useRef } from "react";
+import "./lightSwitch.css";
 
 export default function LightSwitch() {
+  const clickRef = useRef(0);
+  const offRef = useRef();
+  const onRef = useRef();
+  const switchRef = useRef();
 
-    document.addEventListener("DOMContentLoaded", function () {
-      let slider = this.getElementById("brightness");
-      slider.addEventListener("input", adjustSlider);
-      adjustSlider(slider);
-    });
-    function adjustSlider(e) {
-      let body = document.body,
-        switchLightMin = 40,
-        switchLightMax = 100,
-        tar = e.target || e,
-        pct = +tar.value / +tar.max,
-        L1 = pct * (switchLightMax - switchLightMin) + switchLightMin,
-        L2 = L1 - 10,
-        L3 = L1 - 37,
-        L = [L1, L2, L3],
-        thumbHueMin = 0,
-        thumbHueMax = 120,
-        thumbHue = pct * (thumbHueMax - thumbHueMin) + thumbHueMin,
-        thumbSat = 90.4,
-        thumbLight = 44.9,
-        thumbHSL = `${thumbHue},${thumbSat}%,${thumbLight}%`;
-
-      // update the slider shade
-      L.forEach((light, i) => {
-        if (light < 0) light = 0;
-        body.style.setProperty(`--l${i + 1}`, `hsl(228,9.8%,${light}%)`);
-      });
-      // update the thumb icon hue
-      body.style.setProperty(`--p`, `hsl(${thumbHSL})`);
-      body.style.setProperty(`--pT`, `hsla(${thumbHSL},0)`);
+  const adjustLight = () => {
+    // let body = document.body;
+    if (clickRef.current) {
+      onRef.current.classList.add("hidden");
+      offRef.current.classList.remove("hidden");
+      clickRef.current = 0;
+    } else {
+      // document.body.style.backgroundColor = "white";
+      onRef.current.classList.remove("hidden");
+      offRef.current.classList.add("hidden");
+      clickRef.current = 1;
     }
+  };
 
   return (
-    <form>
-      <label for="brightness">Brightness</label>
-      <input
-        type="range"
-        id="brightness"
-        name="brightness"
-        min="1"
-        max="100"
-        value="100"
-      />
+    <form ref={switchRef} onClick={adjustLight}>
+      <i className="fas fa-toggle-on switch" ref={onRef}></i>
+      <i className="fas fa-toggle-off switch hidden" ref={offRef}></i>
     </form>
   );
 }
