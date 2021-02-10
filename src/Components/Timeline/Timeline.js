@@ -4,7 +4,7 @@ import timelineData from "../../utilities/timelineData.js";
 
 export default function Timeline() {
   const timelineItems = timelineData.map((item) => {
-    const { id, job, location, category, text, date, image } = item;
+    const { id, location, category, text, date } = item;
     return (
       <section className="timeline-item" key={id} id={id}>
         <div className="timeline-item-content">

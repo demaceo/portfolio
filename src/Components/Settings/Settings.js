@@ -1,6 +1,6 @@
 import "./settings.css";
-import React, { Component } from "react";
-import { useRef, useEffect } from "react";
+import React from "react";
+import { useRef } from "react";
 import LightSwitch from "../LightSwitch/LightSwitch";
 
 function Settings() {

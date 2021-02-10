@@ -1,7 +1,6 @@
 import React from "react";
 import projectData from "../../utilities/projectData.js";
 import "./projects.css";
-// import { Link } from "react-router-dom";
 
 export default function Projects() {
   const projects = projectData.map((project) => {

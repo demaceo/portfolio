@@ -8,7 +8,6 @@ class Recommendations extends Component {
     super(props);
     this.state = {
       mode: "documentaries",
-    //   background: "#2F3939",
       how: 100,
     };
     this.handleClick = this.handleClick.bind(this);
@@ -55,14 +54,6 @@ class Recommendations extends Component {
           >
             podcasts
           </button>
-          {/* <button
-            how={35}
-            background={"#2F3939"}
-            value={"gif"}
-            onClick={this.handleClick}
-          >
-            gifs
-          </button> */}
           <a
             className="github-button"
             href="https://github.com/demaceo"
