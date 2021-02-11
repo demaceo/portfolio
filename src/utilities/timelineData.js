@@ -20,7 +20,7 @@ const timelineData = [
     location: "Andros, Bahamas",
     text:
       "Creating an environmental education curriculum to be implemented into the primary schools of Andros island. Collaborated with partners, researchers, & the local community on projects geared towards sustainable island development.",
-    date: "December 2018",
+    date: "December 2017",
     image: "",
     category: {
       tag: "Educational Coordinator",
@@ -34,7 +34,7 @@ const timelineData = [
     location: "Andros, Bahamas",
     text:
       "Responsible for managing a group of educational interns while maintaining & improving upon the field station for guests, researchers, educators, & students.",
-    date: "June 2018",
+    date: "June 2017",
     image: "",
     category: {
       tag: "Assistant Director",
@@ -48,7 +48,7 @@ const timelineData = [
     location: "Tybee Island, GA",
     text:
       "Teaching hands-on classes in coastal, beach, & marsh ecology. This included, but is not limited to, seine netting, plankton tow labs, herpetology, ornithology, as well as squid & shark dissections. Additionally, I was partly responsible for handling & caring for the marine & terrestrial animals at our facility.",
-    date: "January 2018",
+    date: "January 2017",
     image: "",
     category: {
       tag: "Program Coordinator",
@@ -61,7 +61,7 @@ const timelineData = [
     at: "Utila Dive Center",
     location: "Utila, Honduras",
     text: "Spent a summer on an island learning how to become a Dive Master",
-    date: "June 2017",
+    date: "June 2016",
     image: "",
     category: {
       tag: "Scuba Dive",
