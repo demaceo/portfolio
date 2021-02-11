@@ -1,6 +1,6 @@
 import "./App.css";
-import { useReducer } from "react";
-import AppContext from "./AppContext";
+// import { useReducer } from "react";
+// import AppContext from "./AppContext";
 import NavBar from "../NavBar/NavBar";
 import Bubbles from "../Bubbles/Bubbles";
 import Waves from "../Waves/Waves";
@@ -16,34 +16,36 @@ import WebGazer from "../WebGazer/WebGazer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import { useLocalStorage } from "../../utilities/useLocalStorage";
 
-const initalState = {
-  theme: "dark",
-};
+// const initalState = {
+//   theme: "dark",
+// };
 
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "TOGGLE_THEME":
-      const newTheme = state.theme === "light" ? "dark" : "light";
-      return { ...state, theme: newTheme };
-    default:
-      return state;
-  }
-};
+// const reducer = (state, action) => {
+//   switch (action.type) {
+//     case "TOGGLE_THEME":
+//       const newTheme = state.theme === "light" ? "dark" : "light";
+//       return { ...state, theme: newTheme };
+//     default:
+//       return state;
+//   }
+// };
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, initalState);
+  // const [state, dispatch] = useReducer(reducer, initalState);
 
-  const toggleTheme = () => {
-    const action = { type: "TOGGLE_THEME" };
-    dispatch(action);
-  };
+  // const toggleTheme = () => {
+  //   const action = { type: "TOGGLE_THEME" };
+  //   dispatch(action);
+  // };
 
   return (
-    <AppContext.Provider value={[state, dispatch]}>
+    // <AppContext.Provider value={[state, dispatch]}>
       <Router>
         <div className="App">
           <Header />
-          <Settings onClick={toggleTheme} />
+          <Settings 
+          // onClick={toggleTheme} 
+          />
           <Route exact path="/login" render={() => <LogIn />} />
           <Route exact path="/" render={() => <Bubbles />} />
           <Route
@@ -69,7 +71,7 @@ function App() {
           <NavBar />
         </div>
       </Router>
-    </AppContext.Provider>
+    // </AppContext.Provider>
   );
 }
 

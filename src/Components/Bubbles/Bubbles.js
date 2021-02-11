@@ -11,6 +11,7 @@ export default function Bubbles() {
         <div className="text-container">
           <h1 className={`project-${id}`}>
             <i className={`${icon} icon`} />
+            {/* {icon} */}
             {name}
           </h1>
         </div>

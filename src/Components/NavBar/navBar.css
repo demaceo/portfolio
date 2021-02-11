@@ -36,6 +36,7 @@
 .fa {
   font-size: 1.1rem;
   transition: 0.5s;
+  color: black;
 }
 
 .fa-fingerprint {

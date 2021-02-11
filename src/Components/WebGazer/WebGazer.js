@@ -52,7 +52,7 @@ function WebGazer() {
 
   useEffect(() => {
     getNewImage(true);
-    getNewImage();
+    getNewImage(false);
   }, []);
 
   // webgazer
