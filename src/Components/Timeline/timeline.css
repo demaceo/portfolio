@@ -100,7 +100,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   color: #fff;
-  font-size: 12px;
+  font-size: .7vw;
   font-weight: bold;
   top: 5px;
   left: 5px;
@@ -109,6 +109,11 @@ h1 {
   position: absolute;
   text-transform: uppercase;
 }
+/* @media only screen and (max-width: 767px)
+.timeline-item-content .tag {
+     width: calc(100% - 10px);
+    text-align: center;
+} */
 
 .timeline-item:nth-child(odd) .timeline-item-content .tag {
   left: auto;
