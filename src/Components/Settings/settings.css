@@ -14,7 +14,7 @@
 @keyframes clockwise {
   0% {
     transform: rotate(-360deg);
-        color: rgba(92, 129, 202, 1);
+    color: rgba(92, 129, 202, 1);
   }
 }
 
