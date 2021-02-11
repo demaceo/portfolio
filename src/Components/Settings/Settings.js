@@ -4,17 +4,9 @@ import { useRef } from "react";
 import LightSwitch from "../LightSwitch/LightSwitch";
 
 function Settings() {
-  const switchRef = useRef(0);
-  const navRef = useRef();
-  
+  let navRef = useRef();
   const toggleSettings = () => {
-    if (!switchRef.current) {
-      navRef.current.classList.remove("hidden");
-      switchRef.current = 1;
-    } else {
-      navRef.current.classList.add("hidden");
-      switchRef.current = 0;
-    }
+    navRef.current.classList.toggle("hidden");
   };
   return (
     <>
