@@ -8,12 +8,9 @@ export default function Bubbles() {
     const { id, name, icon } = bubble;
     return (
       <div className={`bubble x${id}`} key={id} id={id}>
-        <div className="text-container">
-          <h1 className={`project-${id}`}>
-            <i className={`${icon} icon`} />
-            {/* {icon} */}
-            {name}
-          </h1>
+        <div className={`text-container project-${id}`}>
+          <h1>{name}</h1>
+          <i className={`${icon} icon`} />
         </div>
       </div>
     );
