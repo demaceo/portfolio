@@ -2,17 +2,14 @@ import "./webGazer.css";
 import React from "react";
 // import webgazer from "webgazer";
 import { useState, useRef, useEffect } from "react";
-import { nanoid } from "nanoid";
+// import { nanoid } from "nanoid";
 // this.photoRef = React.createRef("")
 
 // npm i webcam-easy
 
 function WebGazer() {
-  // let [main, setMain] = useState();
-  // let [next, setNext] = useState();
+  let [main, setMain] = useState();
   let mainRef = useRef();
-  let nextRef = useRef();
-  let [elements, setElements] = useState([]);
 
   // let [startLookTime, setStartLookTime] = useState("");
   // let [lookDirection, setLookDirection] = useState(null);
@@ -22,37 +19,31 @@ function WebGazer() {
   // const LEFT_CUTOFF = window.innerWidth / 4;
   // const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4;
 
-  const getNewImage = (next = false) => {
+  const getNewImage = () => {
     let img = React.createElement("img", {
-      className: next ? "main-photo" : "main-photo next",
+      className: "main-photo",
       src: "https://picsum.photos/1000?" + Math.random(),
-      ref: next ? mainRef : nextRef,
+      ref: mainRef,
       onClick: movePhoto,
-      id: nanoid(),
+      // id: nanoid(),
     });
-    setElements([...elements, img]);
+    setMain(img);
+
     return img;
   };
 
-  const movePhoto = (event) => {
-    console.log(event.target.id);
-    // setTimeout(() => {
-    // imageElement = nextImageElement;
-    // mainRef.current.classList.add("left");
-    // setMain(getNewImage(true));
-    // setNext(getNewImage(false));
-    getNewImage(true);
-    getNewImage();
-    elements.shift();
-    // nextRef.current.classList.remove('next')
-    // console.log(elements[0].props.className);
-    // }, 200);
-    return elements;
+  const movePhoto = () => {
+    mainRef.current.classList.add("drop");
+    mainRef.current.src =
+      "https://picsum.photos/1000?" + Math.ceil(Math.random()) + Math.random();
+    setTimeout(() => {
+      mainRef.current.classList.remove("drop");
+    }, 500);
+    return main;
   };
 
   useEffect(() => {
-    getNewImage(true);
-    getNewImage(false);
+    setMain(getNewImage());
   }, []);
 
   // webgazer
@@ -109,7 +100,12 @@ function WebGazer() {
 
   // webgazer.showVideo(true).showPredictionPoints(true);
 
-  return <section className="gazer-container">{elements[0]}</section>;
+  return (
+    <section className="gazer-container">
+      {/* <h1>Random Image Generator</h1> */}
+      {main}
+    </section>
+  );
 }
 
 export default WebGazer;
