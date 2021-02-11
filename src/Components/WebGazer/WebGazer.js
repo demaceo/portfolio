@@ -35,10 +35,10 @@ function WebGazer() {
   const movePhoto = () => {
     mainRef.current.classList.add("drop");
     mainRef.current.src =
-      "https://picsum.photos/1000?" + Math.ceil(Math.random()) + Math.random();
+      "https://picsum.photos/1000?" + Math.random();
     setTimeout(() => {
       mainRef.current.classList.remove("drop");
-    }, 500);
+    }, 750);
     return main;
   };
 

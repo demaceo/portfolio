@@ -1,8 +1,21 @@
 export const interests = {
-  gif: {
-    1: "https://media.giphy.com/media/otnqsqqzmsw7K/giphy.gif",
+  music: {
+    1: "https://www.tenementtv.com/wp-content/uploads/2017/12/Kendrick-Lamar-DAMN-album-cover-featured-827x620.jpg",
+    2: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Blonde_-_Frank_Ocean.jpeg/220px-Blonde_-_Frank_Ocean.jpeg",
+    3: "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
+    4: "https://upload.wikimedia.org/wikipedia/en/5/53/Beyonce_-_Lemonade_%28Official_Album_Cover%29.png",
+    5: "https://media.pitchfork.com/photos/5df3f10129131e0008fbae41/1:1/w_600/Harry-Styles.jpg",
+    6: "https://i.pinimg.com/originals/87/6e/db/876edb680534463bf2b0a5b8ff7bc5b9.jpg",
+    7: "https://upload.wikimedia.org/wikipedia/en/9/9b/Tame_Impala_-_Currents.png",
+    8: "https://okayplayer-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/AP_Malibu_Cover_Flat_AP_Web-e1516025589884.jpg",
+    9: "https://townsquare.media/site/625/files/2018/02/lauryn-hill-the-miseducation-of-lauryn-hill.jpg?w=980&q=75",
+    10: "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Childish_Gambino_-_Awaken%2C_My_Love%21.png/220px-Childish_Gambino_-_Awaken%2C_My_Love%21.png",
+    11: "https://consequenceofsound.net/wp-content/uploads/2019/01/billie-eilish-debut-album-title-when-we-fall-asleep.png",
+    12: "https://i.redd.it/kcfioitb0f541.png",
+    13: "https://upload.wikimedia.org/wikipedia/en/0/00/Silentalarmcover.jpg",
+    14: "https://upload.wikimedia.org/wikipedia/en/e/e9/Transatlanticism.jpg",
+    15: "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Unpeeled.jpg/220px-Unpeeled.jpg"
   },
-
   books: {
     0: "https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg",
     1: "https://images-na.ssl-images-amazon.com/images/I/81hMjlT14ML.jpg",
