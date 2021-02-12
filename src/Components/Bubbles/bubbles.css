@@ -18,7 +18,7 @@
   overflow: hidden;
   opacity: 0.9;
   /* box-shadow: 0px 8px 8px 0px #0000003d; */
-  box-shadow: 4px 12px 20px 2px #0000003d
+  box-shadow: 4px 12px 20px 2px #0000003d;
 }
 
 .x1 {
@@ -84,8 +84,8 @@
   );
 }
 
-.bubble:hover {
-  animation: pop 1s cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards;
+.pop {
+  animation: pop 0.3s cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards;
 }
 
 @keyframes pop {
@@ -131,7 +131,7 @@
 }
 
 .text-container > h1 {
-    font-family: "quicksand";
+  font-family: "quicksand";
   /* font-weight: lighter; */
   /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
   margin: 0;
