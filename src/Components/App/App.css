@@ -7,7 +7,7 @@
   width: auto;
 }
 
-.light {
+#light {
   color: black;
   background: rgba(92, 129, 202, 1);
   background: -moz-linear-gradient(
@@ -17,7 +17,7 @@
   );
 }
 
-.dark {
+#dark {
   color: white;
     background: rgba(92, 129, 202, 1);
   background: -moz-linear-gradient(

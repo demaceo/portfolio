@@ -1,6 +1,9 @@
 import "./App.css";
-// import { useReducer } from "react";
+// import { useState, useReducer } from "react";
 // import AppContext from "./AppContext";
+// import { useLocalStorage } from "../../utilities/useLocalStorage";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import NavBar from "../NavBar/NavBar";
 import Bubbles from "../Bubbles/Bubbles";
 import Waves from "../Waves/Waves";
@@ -13,11 +16,9 @@ import Recommendations from "../Recommendations/Recommendations";
 import MapContainer from "../MapView/MapView";
 import Settings from "../Settings/Settings";
 import WebGazer from "../WebGazer/WebGazer";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-// import { useLocalStorage } from "../../utilities/useLocalStorage";
 
 // const initalState = {
-//   theme: "dark",
+//   theme: "light",
 // };
 
 // const reducer = (state, action) => {
@@ -32,6 +33,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   // const [state, dispatch] = useReducer(reducer, initalState);
+  // let [theme, setTheme] = useState("light");
 
   // const toggleTheme = () => {
   //   const action = { type: "TOGGLE_THEME" };
@@ -40,37 +42,37 @@ function App() {
 
   return (
     // <AppContext.Provider value={[state, dispatch]}>
-      <Router>
-        <div className="App">
-          <Header />
-          <Settings 
-          // onClick={toggleTheme} 
-          />
-          <Route exact path="/login" render={() => <LogIn />} />
-          <Route exact path="/" render={() => <Bubbles />} />
-          <Route
-            exact
-            path="/aboutme"
-            render={() => (
-              <>
-                <AboutMe />
-                <Timeline />
-              </>
-            )}
-          />
-          <Route
-            exact
-            path="/recommendations"
-            render={() => <Recommendations />}
-          />
-          <Route exact path="/map" render={() => <MapContainer />} />
-          <Route exact path="/gazer" render={() => <WebGazer />} />
+    <Router>
+      <div className="App">
+        <Header />
+        <Settings
+        // onClick={toggleTheme}
+        />
+        <Route exact path="/login" render={() => <LogIn />} />
+        <Route exact path="/" render={() => <Bubbles />} />
+        <Route
+          exact
+          path="/aboutme"
+          render={() => (
+            <>
+              <AboutMe />
+              <Timeline />
+            </>
+          )}
+        />
+        <Route
+          exact
+          path="/recommendations"
+          render={() => <Recommendations />}
+        />
+        <Route exact path="/map" render={() => <MapContainer />} />
+        <Route exact path="/gazer" render={() => <WebGazer />} />
 
-          <Route exact path="/waves" render={() => <Waves />} />
-          <Route exact path="/projects" render={() => <Projects />} />
-          <NavBar />
-        </div>
-      </Router>
+        <Route exact path="/waves" render={() => <Waves />} />
+        <Route exact path="/projects" render={() => <Projects />} />
+        <NavBar />
+      </div>
+    </Router>
     // </AppContext.Provider>
   );
 }
