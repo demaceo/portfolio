@@ -14,21 +14,21 @@ function Header() {
   }, []);
 
   return (
-    <div className="header-container">
-      <div id="clouds">
-        <div className="cloud c1"></div>
-        <div className="cloud c2"></div>
-        <div className="cloud c3"></div>
-        <div className="cloud c4"></div>
-        <div className="cloud c5"></div>
+    <section className="header-container">
+      <div className="header">
+        <div id="clouds">
+          <div className="cloud c1"></div>
+          <div className="cloud c2"></div>
+          <div className="cloud c3"></div>
+          <div className="cloud c4"></div>
+          <div className="cloud c5"></div>
+        </div>
+        <h2 id="date">{date}</h2>
+        <h3 id="time" className="time">
+          {time}
+        </h3>
       </div>
-      <h2 className="date">
-        {date}
-      </h2>
-      <h3 id="time" className="time" >
-        {time}
-      </h3>
-    </div>
+    </section>
   );
 }
 

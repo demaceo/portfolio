@@ -5,7 +5,10 @@ const projectData = [
     image: "https://media.giphy.com/media/yHlPATYrKHmIBcgHpM/giphy.gif",
     description:
       "A simple and elegant site to search, share and store your recipes. This site presents the user with the ability to 'log-in' and search the site for recipes.",
-    partners: [{ name: "Scott Brabson", link: "https://github.com/brabbuss" }],
+    partners: [
+      { name: "Demaceo Vincent", link: "https://github.com/demaceo" },
+      { name: "Scott Brabson", link: "https://github.com/brabbuss" },
+    ],
     link: "https://demaceo.github.io/whats-cookin/",
     icon: "fas fa-cookie-bite icon",
   },
@@ -17,6 +20,7 @@ const projectData = [
     description:
       "Moody Tunes is a music recommendation engine that provides music recommendations based on a user's mood. Users are able to save songs into their 'Favorites' and view the information at a later time, or play the song directly from Spotify.",
     partners: [
+      { name: "Demaceo Vincent", link: "https://github.com/demaceo" },
       { name: "Scott Brabson", link: "https://github.com/brabbuss" },
       { name: "Bruce Gordon", link: "https://github.com/bruce-gordon" },
     ],
@@ -30,6 +34,7 @@ const projectData = [
     description:
       "The site presents the user an assortment of movies with their corresponding information and gives the user the ability to sort movies based on their ratings.",
     partners: [
+      { name: "Demaceo Vincent", link: "https://github.com/demaceo" },
       { name: "Caleb Cyphers", link: "https://github.com/CalebCyphers" },
     ],
     link: "https://rantom.herokuapp.com/",

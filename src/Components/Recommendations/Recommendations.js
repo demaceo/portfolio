@@ -7,8 +7,7 @@ class Recommendations extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mode: "documentaries",
-    //   background: "#2F3939",
+      mode: "music",
       how: 100,
     };
     this.handleClick = this.handleClick.bind(this);
@@ -26,43 +25,21 @@ class Recommendations extends Component {
       <div className="container">
         <div className="interests">
           <h1>Recommendations</h1>
-
-          <button
-            how={50}
-            value={"documentaries"}
-            onClick={this.handleClick}
-          >
+          <button how={50} value={"music"} onClick={this.handleClick}>
+            music
+          </button>
+          <button how={50} value={"documentaries"} onClick={this.handleClick}>
             documentaries
           </button>
-          <button
-            how={50}
-            value={"books"}
-            onClick={this.handleClick}
-          >
+          <button how={50} value={"books"} onClick={this.handleClick}>
             books
           </button>
-          <button
-            how={50}
-            value={"film"}
-            onClick={this.handleClick}
-          >
+          <button how={50} value={"film"} onClick={this.handleClick}>
             film
           </button>
-          <button
-            how={50}
-            value={"podcasts"}
-            onClick={this.handleClick}
-          >
+          <button how={50} value={"podcasts"} onClick={this.handleClick}>
             podcasts
           </button>
-          {/* <button
-            how={35}
-            background={"#2F3939"}
-            value={"gif"}
-            onClick={this.handleClick}
-          >
-            gifs
-          </button> */}
           <a
             className="github-button"
             href="https://github.com/demaceo"

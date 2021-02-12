@@ -65,7 +65,7 @@ h1 {
   width: 60vw;
   max-width: 70%;
   text-align: right;
-  /* opacity: 0.8; */
+  /* z-index: 0; */
   border: 3px solid white;
   background-color: rgba(0, 0, 0, 0.555);
 }
@@ -81,6 +81,7 @@ h1 {
   transform: rotate(45deg);
   width: 15px;
   height: 15px;
+  /* z-index: -1 */
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content {
@@ -99,7 +100,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   color: #fff;
-  font-size: 12px;
+  font-size: .7vw;
   font-weight: bold;
   top: 5px;
   left: 5px;
@@ -108,6 +109,11 @@ h1 {
   position: absolute;
   text-transform: uppercase;
 }
+/* @media only screen and (max-width: 767px)
+.timeline-item-content .tag {
+     width: calc(100% - 10px);
+    text-align: center;
+} */
 
 .timeline-item:nth-child(odd) .timeline-item-content .tag {
   left: auto;
@@ -128,7 +134,7 @@ time {
   font-size: 16px;
   line-height: 24px;
   margin: 15px 0;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .timeline-item-content a {

@@ -1,6 +1,7 @@
 .about {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 15px;
   width: 25vw;
   height: 20vh;
@@ -19,8 +20,8 @@ h4 {
   margin-top: 0px;
 }
 
-#my-name{
-    font-size: 1.7em;
+#my-name {
+  font-size: 1.7em;
 }
 
 #title {
@@ -29,29 +30,38 @@ h4 {
 }
 
 #socials {
-  padding-top: 4vh;
-  position: relative;
+  /* padding-top: 4vh; */
+  /* position: relative; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 400px;
+  width: 30vw;
   align-self: center;
 }
 
 .social {
+  position: absolute;
   text-decoration: none;
-  padding-top: 20px;
+  padding-top: 4vh;
   font-size: 4vw;
   transition: 0.5s;
-  color: rgba(92, 129, 202, 1)
-}
-
-.far {
-    font-size: 3.5vw;
-    padding-top: 25px;
+  color: rgba(92, 129, 202, 1);
 }
 
 .social:hover {
   font-size: 4.3vw;
+  color: rgba(249, 140, 112, 1);
+}
+
+.fa-file-alt {
+  /* position: absolute; */
+  text-decoration: none;
+  padding-top: 4.5vh;
+  font-size: 3.65vw;
+  transition: 0.5s;
+  color: rgba(92, 129, 202, 1);
+}
+.fa-file-alt:hover {
+  font-size: 3.75vw;
   color: rgba(249, 140, 112, 1);
 }
