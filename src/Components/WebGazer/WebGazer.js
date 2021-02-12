@@ -22,7 +22,7 @@ function WebGazer() {
   const getNewImage = () => {
     let img = React.createElement("img", {
       className: "main-photo",
-      src: "https://picsum.photos/1000?" + Math.random(),
+      src: "https://picsum.photos/seed/picsum/" + Math.random(),
       ref: mainRef,
       onClick: movePhoto,
       // id: nanoid(),
