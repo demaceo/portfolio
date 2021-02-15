@@ -26,6 +26,8 @@ export default function AboutMe() {
           href="https://alumni.turing.io/sites/default/files/resumes/FE%202021%20Resume.pdf"
           // href="https://alumni.turing.io/alumni/demaceo-vincent"
           alt="demaceos-resume"
+          // href="demaceos.pdf"
+          // download
         >
           {/* <img className="social" src="https://img.icons8.com/carbon-copy/100/000000/resume.png" /> */}
           <i className="far fa-file-alt" />

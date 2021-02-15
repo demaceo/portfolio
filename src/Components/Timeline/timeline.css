@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css?family=Lato"); */
-
 h1 {
   text-align: center;
 }
@@ -65,7 +63,6 @@ h1 {
   width: 60vw;
   max-width: 70%;
   text-align: right;
-  /* z-index: 0; */
   border: 3px solid white;
   background-color: rgba(0, 0, 0, 0.555);
 }
@@ -81,7 +78,6 @@ h1 {
   transform: rotate(45deg);
   width: 15px;
   height: 15px;
-  /* z-index: -1 */
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content {
@@ -126,12 +122,12 @@ time {
   font-weight: bold;
   background: none;
   position: absolute;
-
   top: 10px;
 }
 
 .timeline-item-content p {
-  font-size: 16px;
+  font-size: 1em;
+  /* font-size: 16px; */
   line-height: 24px;
   margin: 15px 0;
   max-width: 500px;
@@ -140,13 +136,15 @@ time {
 .timeline-item-content a {
   color: #333;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1rem;
+  /* font-size: 14px; */
   font-weight: bold;
 }
 
 .timeline-item-content a::after {
   content: " ►";
-  font-size: 12px;
+  font-size: 1em;
+  /* font-size: 12px; */
 }
 
 .timeline-item-content .circle {

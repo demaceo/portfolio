@@ -34,6 +34,15 @@ export function bingRequest(searchInput) {
     });
 }
 
+const generateRandomGif = () => {
+fetch("https://api.giphy.com/v1/gifs/random?api_key=XyR8yGvxwUSqyTwCklJivCX8VMxOaVBu&tag=&rating=r")
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+}
+
+export default generateRandomGif;
+
 // //  ****** lets you create custom pre-configured fetch api call! ******
 // const getUser = axios.create({
 //   baseURL: "https://randomuser.me/api/", // we define url
