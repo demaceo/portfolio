@@ -1,11 +1,30 @@
-import React from 'react';
-import './login.css';
+import React from "react";
+import "./login.css";
+import { useRef } from "react";
 
 export default function LogIn() {
-  // onClick(e) {
-  //     e.preventDefault()
-  //};
-  //<i class="far fa-sticky-note"></i>
+  let passwordRef = useRef();
+  let userNameRef = useRef();
+  let passRef = useRef();
+  let failRef = useRef();
+
+  const username = "demaceo";
+  const password = "vincent";
+
+  const onClick = (event) => {
+    event.preventDefault();
+    if (
+      passwordRef.current.value === password &&
+      userNameRef.current.value === username
+    ) {
+      passRef.current.classList.remove("hidden");
+    } else {
+      failRef.current.classList.remove("hidden");
+    }
+    setTimeout(() => {
+      return;
+    }, 5000);
+  };
 
   return (
     <div className="full-screen-container">
@@ -14,25 +33,33 @@ export default function LogIn() {
         <form>
           <div className="input-group">
             <label>Name</label>
-            <input type="text" />
+            <input type="text" autoComplete="username" spellcheck="true" ref={userNameRef} />
           </div>
           <div className="input-group">
             <label>Password</label>
-            <input type="password" />
+            <input
+              type="password"
+              autoComplete="current-password"
+              ref={passwordRef}
+            />
           </div>
-          {/* <button type="submit" className="login-button">
-            Sign In
-          </button> */}
-          <button type="submit">
+          <button className="login" onClick={onClick}>
             <span>Sign In</span>
-            {/* <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               viewBox="0 0 24 24"
             >
-              <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.288-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z" />
-            </svg> */}
+              <path
+                className="hidden"
+                ref={passRef}
+                d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.288-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"
+              />
+              <path className="hidden" ref={failRef}>
+                X
+              </path>
+            </svg>
           </button>
         </form>
       </div>
