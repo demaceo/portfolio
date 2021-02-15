@@ -33,7 +33,7 @@ export default function LogIn() {
         <form>
           <div className="input-group">
             <label>Name</label>
-            <input type="text" autoComplete="username" spellcheck="true" ref={userNameRef} />
+            <input type="text" autoComplete="username" spellCheck="true" ref={userNameRef} />
           </div>
           <div className="input-group">
             <label>Password</label>

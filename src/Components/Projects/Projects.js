@@ -3,7 +3,6 @@ import projectData from "../../utilities/projectData.js";
 import "./projects.css";
 import { nanoid } from "nanoid";
 
-
 export default function Projects() {
   const projects = projectData.map((project) => {
     const { id, image, name, description, partners, link } = project;
