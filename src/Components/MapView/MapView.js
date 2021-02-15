@@ -1,24 +1,37 @@
 import React, { Component } from "react";
 import "./mapView.css";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-const mapStyle = [
-  {
-    featureType: "landscape.man_made",
-    elementType: "geometry.fill",
-    stylers: [
-      {
-        color: "#dceafa",
-      },
-    ],
-  },
-];
 
 export class MapContainer extends Component {
-  state = {
-    showingInfoWindow: true,
-    activeMarker: {},
-    selectedPlace: {},
-    zoom: 18,
+  constructor() {
+    super();
+    this.state = {
+      showingInfoWindow: true,
+      activeMarker: {},
+      selectedPlace: {},
+      zoom: 18,
+      coords: { lat: -21.80507955432942, lng: -49.090712070465095 },
+    };
+  }
+
+  showPosition = (position) => {
+    let lat = position.coords.latitude;
+    let lng = position.coords.longitude;
+    let currCoords = { lat, lng };
+    this.setState({
+      coords: currCoords,
+    });
+  };
+
+  getLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(this.showPosition);
+    } else {
+      this.setState({
+        coords: { lat: -21.80507955432942, lng: -49.090712070465095 },
+      });
+      Window.alert("Enable location access to utilize this feature.");
+    }
   };
 
   onMarkerClick = (props, marker, e) =>
@@ -45,9 +58,6 @@ export class MapContainer extends Component {
   }
 
   render() {
-    const coords = { lat: -21.80507955432942, lng: -49.090712070465095 };
-    // const coords = { lat: 39.75260685, lng: -104.990791559375 };
-
     return (
       <section id="map-container">
         <Map
@@ -58,8 +68,7 @@ export class MapContainer extends Component {
             borderRadius: "15px",
           }}
           zoom={this.state.zoom}
-          //   initialCenter={this.state.center}
-          initialCenter={coords}
+          initialCenter={this.state.coords}
           onReady={(mapProps, map) => this._mapLoaded(mapProps, map)}
           google={this.props.google}
           onClick={this.onMapClicked}
@@ -80,6 +89,19 @@ export class MapContainer extends Component {
     );
   }
 }
+
+const mapStyle = [
+  {
+    featureType: "landscape.man_made",
+    elementType: "geometry.fill",
+    stylers: [
+      {
+        color: "#dceafa",
+      },
+    ],
+  },
+];
+
 export default GoogleApiWrapper({
-    apiKey: "AIzaSyCMkt4nZU-9Wmu0t5nQMu_xgCD_3d8QF_M",
+  apiKey: "AIzaSyCMkt4nZU-9Wmu0t5nQMu_xgCD_3d8QF_M",
 })(MapContainer);
