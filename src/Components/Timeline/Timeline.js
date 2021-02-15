@@ -15,7 +15,7 @@ export default function Timeline() {
           </span>
           <h1 className="job-location">{location}</h1>
           {/* <h2 className="job-title">{job}</h2> */}
-          <p className="job-info">{text}</p>
+          <p className="job-info" contenteditable="true">{text}</p>
         </div>
       </section>
     );
