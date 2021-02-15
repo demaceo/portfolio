@@ -11,94 +11,89 @@ function WebGazer() {
   let [main, setMain] = useState();
   let mainRef = useRef();
 
-  // let [startLookTime, setStartLookTime] = useState("");
-  // let [lookDirection, setLookDirection] = useState(null);
-  // let imageElement = getNewImage();
-  // let nextImageElement = getNewImage(true);
-  // const LOOK_DELAY = 1000;
-  // const LEFT_CUTOFF = window.innerWidth / 4;
-  // const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4;
-
   const getNewImage = () => {
     let img = React.createElement("img", {
       className: "main-photo",
-      src: "https://picsum.photos/seed/picsum/" + Math.random(),
+      src: "https://picsum.photos/1000?" + Math.random(),
       ref: mainRef,
       onClick: movePhoto,
       // id: nanoid(),
     });
     setMain(img);
-
     return img;
   };
 
   const movePhoto = () => {
     mainRef.current.classList.add("drop");
-    mainRef.current.src =
-      "https://picsum.photos/1000?" + Math.random();
+    mainRef.current.src = "https://picsum.photos/1000?" + Math.random();
     setTimeout(() => {
       mainRef.current.classList.remove("drop");
-    }, 750);
+    }, 850);
     return main;
   };
 
+  // let [startLookTime, setStartLookTime] = useState();
+  // let [lookDirection, setLookDirection] = useState();
+  // let imageElement = getNewImage();
+  // let nextImageElement = getNewImage();
+  // const LOOK_DELAY = 1000;
+  // const LEFT_CUTOFF = window.innerWidth / 4;
+  // const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4;
+
   useEffect(() => {
-    setMain(getNewImage());
+    setMain(getNewImage);
+    // webgazer
+    //   .setGazeListener((gazeData, elapsedTime) => {
+    //     console.log("webgazerrrrrrr");
+    //     console.log(gazeData);
+    //     console.log(elapsedTime);
+    //     if (gazeData == null && lookDirection === "STOP") return
+
+        // if (
+        //   gazeData.x < LEFT_CUTOFF &&
+        //   lookDirection !== "LEFT" &&
+        //   lookDirection !== "RESET"
+        // ) {
+        //   console.log("left");
+        //   setStartLookTime(elapsedTime);
+        //   setLookDirection("LEFT");
+        // } else if (
+        //   gazeData.x > RIGHT_CUTOFF &&
+        //   lookDirection !== "RIGHT" &&
+        //   lookDirection !== "RESET"
+        // ) {
+        //   console.log("right");
+        //   setStartLookTime(elapsedTime);
+        //   setLookDirection("RIGHT");
+        // } else if (gazeData.x >= LEFT_CUTOFF && gazeData.x <= RIGHT_CUTOFF) {
+        //   console.log("rest");
+        //   setStartLookTime(Number.POSITIVE_INFINITY);
+        //   setLookDirection(null);
+        // }
+
+        // if (startLookTime + LOOK_DELAY < elapsedTime) {
+        // movePhoto
+
+        //   lookDirection === "LEFT"
+        //     ? mainRef.current.classList.add("drop")
+        //     : mainRef.current.classList.add("drop");
+        //   setStartLookTime(Number.POSITIVE_INFINITY);
+        //   setLookDirection("STOP");
+
+        //   setTimeout(() => {
+
+        //     imageElement.remove();
+        //     nextImageElement.classList.remove("next");
+        //     imageElement = nextImageElement;
+        //     nextImageElement = getNewImage();
+        //     setLookDirection("RESET");
+        //   }, 200);
+        // }
+      // })
+      // .begin();
+    // webgazer.showVideo(false).showPredictionPoints(false);
+    // window.saveDataAcrossSessions = true;
   }, []);
-
-  // webgazer
-  //   .setGazeListener((data, timestamp) => {
-  //     console.log("webgazerrrrrrr");
-  //     if (data == null && this.state.lookDirection === "STOP") return;
-
-  //     if (
-  //       data.x < this.state.LEFT_CUTOFF &&
-  //       this.state.lookDirection !== "LEFT" &&
-  //       this.state.lookDirection !== "RESET"
-  //     ) {
-  //       this.setState({
-  //         startLookTime: timestamp,
-  //         lookDirection: "LEFT",
-  //       });
-  //     } else if (
-  //       data.x > this.state.RIGHT_CUTOFF &&
-  //       this.state.lookDirection !== "RIGHT" &&
-  //       this.state.lookDirection !== "RESET"
-  //     ) {
-  //       this.setState({
-  //         startLookTime: timestamp,
-  //         lookDirection: "RIGHT",
-  //       });
-  //     } else if (
-  //       data.x >= this.state.LEFT_CUTOFF &&
-  //       data.x <= this.state.RIGHT_CUTOFF
-  //     ) {
-  //       this.setState({
-  //         startLookTime: Number.POSITIVE_INFINITY,
-  //         lookDirection: null,
-  //       });
-  //     }
-  //     if (this.state.startLookTime + this.state.LOOK_DELAY < timestamp) {
-  //       this.state.lookDirection === "LEFT"
-  //         ? this.setState({ class: "main-photo left" })
-  //         : this.setState({
-  //             class: "main-photo right",
-  //             startLookTime: Number.POSITIVE_INFINITY,
-  //             lookDirection: "STOP",
-  //           });
-  //       setTimeout(() => {
-  //         imageElement.remove();
-  //         nextImageElement.classList.remove("next");
-  //         imageElement = nextImageElement;
-  //         nextImageElement = this.getNewImage(true);
-  //         this.setState({ lookDirection: "RESET" });
-  //       }, 200);
-  //     }
-  //   })
-  //   .begin();
-  // window.saveDataAcrossSessions = true;
-
-  // webgazer.showVideo(true).showPredictionPoints(true);
 
   return (
     <section className="gazer-container">

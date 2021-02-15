@@ -28,15 +28,13 @@
   opacity: 0.1;
 }
 
-/* .left {
+.left {
   transform: translateX(-100vw);
-  border-radius: 15px;
-  opacity: 0.5;
 }
 
 .right {
   transform: translateX(100vw);
-} */
+}
 
 .next {
   display: none;
