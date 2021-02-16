@@ -1,6 +1,6 @@
 import "./webGazer.css";
 import React from "react";
-import webgazer from "webgazer";
+// import webgazer from "webgazer";
 import { useState, useRef, useEffect } from "react";
 // import generateRandomGif from "../../utilities/apiData";
 // this.photoRef = React.createRef("")
@@ -92,7 +92,7 @@ function WebGazer() {
     // .begin();
     // webgazer.showVideo(false).showPredictionPoints(false);
     // window.saveDataAcrossSessions = true;
-  }, []);
+  });
 
   return (
     <section className="gazer-container">
