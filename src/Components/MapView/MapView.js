@@ -14,25 +14,25 @@ export class MapContainer extends Component {
     };
   }
 
-  showPosition = (position) => {
-    let lat = position.coords.latitude;
-    let lng = position.coords.longitude;
-    let currCoords = { lat, lng };
-    this.setState({
-      coords: currCoords,
-    });
-  };
+  // showPosition = (position) => {
+  //   let lat = position.coords.latitude;
+  //   let lng = position.coords.longitude;
+  //   let currCoords = { lat, lng };
+  //   this.setState({
+  //     coords: currCoords,
+  //   });
+  // };
 
-  getLocation = () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(this.showPosition);
-    } else {
-      this.setState({
-        coords: { lat: -21.80507955432942, lng: -49.090712070465095 },
-      });
-      Window.alert("Enable location access to utilize this feature.");
-    }
-  };
+  // getLocation = () => {
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition(this.showPosition);
+  //   } else {
+  //     this.setState({
+  //       coords: { lat: -21.80507955432942, lng: -49.090712070465095 },
+  //     });
+  //     Window.alert("Enable location access to utilize this feature.");
+  //   }
+  // };
 
   onMarkerClick = (props, marker, e) =>
     this.setState({

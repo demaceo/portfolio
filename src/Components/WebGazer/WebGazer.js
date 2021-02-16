@@ -2,10 +2,9 @@ import "./webGazer.css";
 import React from "react";
 import webgazer from "webgazer";
 import { useState, useRef, useEffect } from "react";
-import generateRandomGif from '../../utilities/apiData'
+// import generateRandomGif from "../../utilities/apiData";
 // this.photoRef = React.createRef("")
 // npm i webcam-easy
-// eslint-disable-next-line
 
 function WebGazer() {
   let [main, setMain] = useState();
@@ -41,11 +40,7 @@ function WebGazer() {
   // const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4;
 
   useEffect(() => {
-    // eslint-disable-next-line
-    let randomGif = generateRandomGif;
-    console.log(randomGif);
     getNewImage();
-
     // webgazer
     //   .setGazeListener((gazeData, elapsedTime) => {
     //     console.log("webgazerrrrrrr");

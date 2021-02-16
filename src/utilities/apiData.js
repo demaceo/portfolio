@@ -1,23 +1,5 @@
 // import axios from "axios";
 
-// const options = {
-//   method: "GET",
-//   url: "https://bing-image-search1.p.rapidapi.com/images/trending",
-//   headers: {
-//     "x-rapidapi-key": "9368e7631emshe32a29ba22159a5p1b038bjsnaa6c3f5cc417",
-//     "x-rapidapi-host": "bing-image-search1.p.rapidapi.com",
-//   },
-// };
-
-// axios
-//   .request(options)
-//   .then(function (response) {
-//     console.log(response.data);
-//   })
-//   .catch(function (error) {
-//     console.error(error);
-//   });
-
 export function bingRequest(searchInput) {
   fetch("https://bing-image-search1.p.rapidapi.com/images/trending", {
     method: "GET",
@@ -35,11 +17,13 @@ export function bingRequest(searchInput) {
 }
 
 const generateRandomGif = () => {
-fetch("https://api.giphy.com/v1/gifs/random?api_key=XyR8yGvxwUSqyTwCklJivCX8VMxOaVBu&tag=&rating=r")
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-}
+  fetch(
+    "https://api.giphy.com/v1/gifs/random?api_key=XyR8yGvxwUSqyTwCklJivCX8VMxOaVBu&tag=&rating=r"
+  )
+    .then((response) => response.text())
+    .then((result) => console.log(result))
+    .catch((error) => console.log("error", error));
+};
 
 export default generateRandomGif;
 
