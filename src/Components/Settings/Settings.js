@@ -14,8 +14,12 @@ function Settings() {
       <div className="sidenav hidden" ref={navRef}>
         <a href="/aboutme">About Me</a>
         <a href="/recommendations">Recommendations</a>
-        <a href="/gazer">Gazer</a>
-        <a href="/map">Map</a>
+        <a href="/gazer" disabled>
+          Gazer
+        </a>
+        <a className="isDisabled" href="/map">
+          Map
+        </a>
         <br />
         <a href="/login">Login</a>
         <LightSwitch />
