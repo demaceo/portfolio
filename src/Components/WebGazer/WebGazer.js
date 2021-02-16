@@ -92,7 +92,7 @@ function WebGazer() {
     // .begin();
     // webgazer.showVideo(false).showPredictionPoints(false);
     // window.saveDataAcrossSessions = true;
-  });
+  }, []);
 
   return (
     <section className="gazer-container">
