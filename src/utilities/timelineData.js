@@ -10,9 +10,9 @@ const timelineData = [
           "Leading and facilitating programs related to sustainability & conservation efforts.",
       },
       {
-        point: "that encompassed various educational expeditions",
+        point: "Encompassed various educational expeditions",
       },
-      { point: "throughout Brooklyn, the Amazon, Galápagos, & Costa Rica" },
+      { point: "Traveling throughout New York City, The Amazon, Galápagos, & Costa Rica" },
     ],
     date: "June 2018",
     image: "",
@@ -28,12 +28,12 @@ const timelineData = [
     location: "Andros, Bahamas",
     description: [
       { point: "Creating an environmental education curriculum" },
-      { point: "Implemented into the primary schools of Andros island." },
+      { point: "Implementing it into the primary schools of Andros island." },
       {
-        point: "Collaborated with partners, researchers, & the local community",
+        point: "Collaborating with partners, researchers, & the local community",
       },
-      { point: "on projects geared towards sustainable island development." },
-      { point: "such as coral reef propagation." },
+      { point: "Working on projects geared towards sustainable island development." },
+      { point: "Monitoring and maintaing coral reef propagation site." },
     ],
     date: "December 2017",
     image: "",
@@ -49,8 +49,8 @@ const timelineData = [
     location: "Andros, Bahamas",
     description: [
       { point: "Responsible for managing a group of educational interns" },
-      { point: "while maintaining & improving upon the field station" },
-      { point: "for guests, researchers, educators, & students." },
+      { point: "Maintaining & improving upon the field station" },
+      { point: "Accomodating guests, researchers, educators, & students." },
     ],
     date: "June 2017",
     image: "",
@@ -70,9 +70,9 @@ const timelineData = [
       },
       {
         point:
-          "This included, but is not limited to, seine netting, plankton tow labs, herpetology, ornithology,",
+          "Seine netting, plankton tow labs, herpetology, ornithology",
       },
-      { point: "as well as squid & shark dissections." },
+      { point: "Squid & shark dissections" },
       {
         point:
           "Responsible for handling & caring for the marine & terrestrial animals at our facility.",
@@ -121,19 +121,19 @@ const timelineData = [
     location: "Lake Arrowhead, California",
     description: [
       {
-        point: "Educated 4th-7th grade students about the local flora & fauna",
+        point: "Educated students about the local flora & fauna",
       },
       {
         point:
-          "while hiking miles throughout the mountains of the San Bernardino National Forest.",
+          "Hiked miles throughout the mountains of the San Bernardino National Forest daily.",
       },
       {
         point:
-          "This included creating, adjusting, & adapting lesson plans weekly",
+          "Creating, adjusting, & adapting lesson plans weekly",
       },
       {
         point:
-          "that focused primarily on the natural sciences of the surrounding area.",
+          "Focused primarily on the natural sciences of the surrounding area.",
       },
     ],
     date: "September 2015",
@@ -155,11 +155,11 @@ const timelineData = [
       },
       {
         point:
-          "tagging & conducting health assessments on nesting adult sea turtles, data entry & analysis,",
+          "Tagging & conducting health assessments on nesting adult sea turtles, data entry & analysis,",
       },
       {
         point:
-          "while also educating visitors, locals, & students about the significance of the Conservation.",
+          "Educating visitors, locals, & students about the significance of the Conservation.",
       },
     ],
     date: "October 2014",
@@ -180,9 +180,9 @@ const timelineData = [
       },
       {
         point:
-          "& set up laboratory experiments for Andrew Forbes of the University of Iowa.",
+          "Set up laboratory experiments for Andrew Forbes of the University of Iowa.",
       },
-      { point: "Our study primarily focused on Strauzia longipennis," },
+      { point: "Study primarily focused on Strauzia longipennis," },
       { point: "a species of fly undergoing evolutionary divergence." },
     ],
     date: "September 2013",
