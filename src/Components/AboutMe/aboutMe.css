@@ -14,7 +14,7 @@
 }
 
 .about h2,
-h4 {
+h3 {
   font-family: "quicksand";
   text-align: center;
   margin-top: 0px;
@@ -62,6 +62,6 @@ h4 {
   color: rgba(92, 129, 202, 1);
 }
 .fa-file-alt:hover {
-  font-size: 3.75vw;
+  font-size: 3.7vw;
   color: rgba(249, 140, 112, 1);
 }

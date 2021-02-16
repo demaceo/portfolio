@@ -53,6 +53,7 @@ h1 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   font-family: "quicksand";
+  font-weight: lighter;
   color: #ffddcc;
   display: flex;
   flex-direction: column;
@@ -96,10 +97,10 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   color: #fff;
-  font-size: .7vw;
+  font-size: 0.7vw;
   font-weight: bold;
-  top: 5px;
-  left: 5px;
+  top: 1vh;
+  left: 0.5vw;
   letter-spacing: 1px;
   padding: 5px;
   position: absolute;
@@ -113,37 +114,44 @@ h1 {
 
 .timeline-item:nth-child(odd) .timeline-item-content .tag {
   left: auto;
-  right: 5px;
+  right: 0.5vw;
 }
 
+.job-location {
+  padding-top: 1vh;
+  text-align: left;
+}
 time {
   color: white;
-  font-size: 12px;
+  font-size: 0.8em;
   font-weight: bold;
   background: none;
   position: absolute;
   top: 10px;
 }
 
-.timeline-item-content p {
-  font-size: 1em;
-  /* font-size: 16px; */
-  line-height: 24px;
-  margin: 15px 0;
+.timeline-item-content ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  line-height: 3vh;
+  margin: 5px 0;
   max-width: 500px;
 }
 
-.timeline-item-content a {
-  color: #333;
+.timeline-item-content li {
+  /* color: #333; */
+  text-align: left;
+
   text-decoration: none;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   /* font-size: 14px; */
   font-weight: bold;
 }
 
-.timeline-item-content a::after {
-  content: " ►";
-  font-size: 1em;
+.timeline-item-content li::after {
+  /* content: " ►"; */
+  /* font-size: 1em; */
   /* font-size: 12px; */
 }
 

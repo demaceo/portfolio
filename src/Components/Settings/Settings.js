@@ -23,6 +23,18 @@ function Settings() {
         <br />
         <a href="/login">Login</a>
         <LightSwitch />
+        <div className="github-container">
+          <a
+            className="github-button"
+            href="https://github.com/demaceo"
+            data-icon="fab fa-github"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Demaceo on GitHub"
+          >
+            Demaceo
+          </a>
+        </div>
       </div>
     </>
   );
