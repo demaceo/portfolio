@@ -4,13 +4,21 @@ const timelineData = [
     job: "Staff Facilitator",
     at: "Sustainable Summer",
     location: "The Americas",
-    text:
-      "Leading a program for high school & pre-college students on various expeditions related to sustainability & conservation efforts throughout Brooklyn, the Amazon, Galápagos, & Costa Rica.",
+    description: [
+      {
+        point:
+          "Leading and facilitating programs related to sustainability & conservation efforts.",
+      },
+      {
+        point: "that encompassed various educational expeditions",
+      },
+      { point: "throughout Brooklyn, the Amazon, Galápagos, & Costa Rica" },
+    ],
     date: "June 2018",
     image: "",
     category: {
       tag: "Environmentalism",
-      color: "#FFDB14",
+      color: "#F69F1B",
     },
   },
   {
@@ -18,13 +26,20 @@ const timelineData = [
     job: "Educational Coordinator",
     at: "ANCAT",
     location: "Andros, Bahamas",
-    text:
-      "Creating an environmental education curriculum to be implemented into the primary schools of Andros island. Collaborated with partners, researchers, & the local community on projects geared towards sustainable island development.",
+    description: [
+      { point: "Creating an environmental education curriculum" },
+      { point: "Implemented into the primary schools of Andros island." },
+      {
+        point: "Collaborated with partners, researchers, & the local community",
+      },
+      { point: "on projects geared towards sustainable island development." },
+      { point: "such as coral reef propagation." },
+    ],
     date: "December 2017",
     image: "",
     category: {
       tag: "Educational Coordinator",
-      color: "#e17b77",
+      color: "#903a94",
     },
   },
   {
@@ -32,8 +47,11 @@ const timelineData = [
     job: "Assistant Director",
     at: "International Field Studies",
     location: "Andros, Bahamas",
-    text:
-      "Responsible for managing a group of educational interns while maintaining & improving upon the field station for guests, researchers, educators, & students.",
+    description: [
+      { point: "Responsible for managing a group of educational interns" },
+      { point: "while maintaining & improving upon the field station" },
+      { point: "for guests, researchers, educators, & students." },
+    ],
     date: "June 2017",
     image: "",
     category: {
@@ -46,8 +64,20 @@ const timelineData = [
     job: "Program Assistant",
     at: "Burton 4-H Center",
     location: "Tybee Island, GA",
-    text:
-      "Teaching hands-on classes in coastal, beach, & marsh ecology. This included, but is not limited to, seine netting, plankton tow labs, herpetology, ornithology, as well as squid & shark dissections. Additionally, I was partly responsible for handling & caring for the marine & terrestrial animals at our facility.",
+    description: [
+      {
+        point: "Teaching hands-on classes in coastal, beach, & marsh ecology.",
+      },
+      {
+        point:
+          "This included, but is not limited to, seine netting, plankton tow labs, herpetology, ornithology,",
+      },
+      { point: "as well as squid & shark dissections." },
+      {
+        point:
+          "Responsible for handling & caring for the marine & terrestrial animals at our facility.",
+      },
+    ],
     date: "January 2017",
     image: "",
     category: {
@@ -60,11 +90,20 @@ const timelineData = [
     job: "Dive Master",
     at: "Utila Dive Center",
     location: "Utila, Honduras",
-    text: "Spent a summer on an island learning how to become a Dive Master",
+    description: [
+      {
+        point:
+          "Spent a summer on an island learning how to become a Dive Master",
+      },
+      {
+        point:
+          "Contributed data to PADI's Project AWARE for coral reef assessments.",
+      },
+    ],
     date: "June 2016",
     image: "",
     category: {
-      tag: "Scuba Dive",
+      tag: "Scuba Diver",
       color: "#018f69",
       certifications: [
         "open water",
@@ -80,13 +119,28 @@ const timelineData = [
     job: "Naturalist",
     at: "Arrowhead Outdoor Science School",
     location: "Lake Arrowhead, California",
-    text:
-      "Educated 4th-7th grade students about the local flora & fauna while hiking miles throughout the mountains of the San Bernardino National Forest. This included creating, adjusting, & adapting lesson plans weekly that focused primarily on the natural sciences of the surrounding area.",
+    description: [
+      {
+        point: "Educated 4th-7th grade students about the local flora & fauna",
+      },
+      {
+        point:
+          "while hiking miles throughout the mountains of the San Bernardino National Forest.",
+      },
+      {
+        point:
+          "This included creating, adjusting, & adapting lesson plans weekly",
+      },
+      {
+        point:
+          "that focused primarily on the natural sciences of the surrounding area.",
+      },
+    ],
     date: "September 2015",
     image: "",
     category: {
       tag: "Naturalist",
-      color: "#FFDB14",
+      color: "#F69F1B",
     },
   },
   {
@@ -94,8 +148,20 @@ const timelineData = [
     job: "Research Field Assistant",
     at: "Osa Conservation",
     location: "Osa Peninsula, Costa Rica",
-    text:
-      "Relocating wild sea turtle nests to our hatchery (to avoid pollution, predation, & poaching), tagging & conducting health assessments on nesting adult sea turtles, data entry & analysis, while also educating visitors, locals, & students about the significance of this work.",
+    description: [
+      {
+        point:
+          "Relocating wild sea turtle nests to our hatchery (to avoid pollution, predation, & poaching),",
+      },
+      {
+        point:
+          "tagging & conducting health assessments on nesting adult sea turtles, data entry & analysis,",
+      },
+      {
+        point:
+          "while also educating visitors, locals, & students about the significance of the Conservation.",
+      },
+    ],
     date: "October 2014",
     image: "",
     category: {
@@ -107,8 +173,18 @@ const timelineData = [
     id: 7,
     job: "Research Assistant",
     location: "Cornell College",
-    text:
-      "Conducted field research with Professor Marty Condon of Cornell College & set up laboratory experiments for Andrew Forbes of the University of Iowa. Our study primarily focused on Strauzia longipennis, a species of fly that we believe to be in the process of evolutionary divergence.",
+    description: [
+      {
+        point:
+          "Conducted field research with Professor Marty Condon of Cornell College",
+      },
+      {
+        point:
+          "& set up laboratory experiments for Andrew Forbes of the University of Iowa.",
+      },
+      { point: "Our study primarily focused on Strauzia longipennis," },
+      { point: "a species of fly undergoing evolutionary divergence." },
+    ],
     date: "September 2013",
     image: "",
     category: {
@@ -120,7 +196,7 @@ const timelineData = [
     id: 8,
     job: "",
     location: "Chicago, IL",
-    text: "",
+    description: [{ point: "Birthday 😁" }],
     date: "June 6, 1992",
     image: "",
     category: {
