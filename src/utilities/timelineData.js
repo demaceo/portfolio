@@ -9,9 +9,6 @@ const timelineData = [
         point:
           "Leading and facilitating programs related to sustainability & conservation efforts.",
       },
-      {
-        point: "Encompassed various educational expeditions",
-      },
       { point: "Traveling throughout New York City, The Amazon, Galápagos, & Costa Rica" },
     ],
     date: "June 2018",
@@ -182,8 +179,7 @@ const timelineData = [
         point:
           "Set up laboratory experiments for Andrew Forbes of the University of Iowa.",
       },
-      { point: "Study primarily focused on Strauzia longipennis," },
-      { point: "a species of fly undergoing evolutionary divergence." },
+      { point: "Study primarily focused on Strauzia longipennis, a species of fly undergoing evolutionary divergence." },
     ],
     date: "September 2013",
     image: "",
@@ -197,7 +193,7 @@ const timelineData = [
     job: "",
     location: "Chicago, IL",
     description: [{ point: "Birthday 😁" }],
-    date: "June 6, 1992",
+    date: "June 6",
     image: "",
     category: {
       tag: "Origin",
