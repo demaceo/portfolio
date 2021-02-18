@@ -112,8 +112,8 @@
     position: absolute;
     color: rgba(255, 255, 255, 0.5);
     z-index: -1;
-    bottom: -11vh;
-    top: -22vh;
+    bottom: 25vh;
+    /* top: -22vh; */
     left: -1vw;
     right: 0;
     font-size: 20vw;

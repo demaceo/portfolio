@@ -106,11 +106,6 @@ h1 {
   position: absolute;
   text-transform: uppercase;
 }
-/* @media only screen and (max-width: 767px)
-.timeline-item-content .tag {
-     width: calc(100% - 10px);
-    text-align: center;
-} */
 
 .timeline-item:nth-child(odd) .timeline-item-content .tag {
   left: auto;
@@ -140,19 +135,8 @@ time {
 }
 
 .timeline-item-content li {
-  /* color: #333; */
   text-align: left;
-
-  text-decoration: none;
-  /* font-size: 1rem; */
-  /* font-size: 14px; */
-  font-weight: bold;
-}
-
-.timeline-item-content li::after {
-  /* content: " ►"; */
-  /* font-size: 1em; */
-  /* font-size: 12px; */
+      padding: 5px;
 }
 
 .timeline-item-content .circle {
@@ -182,26 +166,42 @@ time {
   .timeline-item-content,
   .timeline-item:nth-child(odd) .timeline-item-content {
     padding: 15px 10px;
-    text-align: center;
-    align-items: center;
+    min-height: 20vh;
+  }
+
+  .job-info {
+    overflow: scroll;
   }
 
   .timeline-item-content .tag {
-    width: calc(100% - 10px);
     text-align: center;
+    width: fit-content;
+    font-size: 7px;
   }
 
   .timeline-item-content time {
-    margin-top: 20px;
+    margin-top: 1px;
   }
 
-  .timeline-item-content a {
+  .job-location {
+    padding: 1vh 0;
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  .timeline-item-content li {
+    text-align: left;
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  /* .timeline-item-content a {
     text-decoration: underline;
   }
 
   .timeline-item-content a::after {
     display: none;
-  }
+  } */
 }
 
 /* @keyframes zoom {
