@@ -40,7 +40,7 @@
   top: 0;
   right: -1vw;
   transition: width 0.35s;
-  background-color: #a2c5c6;
+  background-color: #cfe0e0;
   overflow-x: hidden;
   border-left: solid 4px black;
   display: inline-block;
@@ -68,7 +68,7 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 1.3vw;
+  font-size: 1.8vw;
   color: black;
   display: block;
   transition: 0.3s;
@@ -84,19 +84,6 @@
   background-color: white;
 }
 
-/* .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-} */
-
-/* .github-container {
-  position: absolute;
-  bottom: 0vh;
-
-} */
 .github-button {
   margin: 5px 0px;
 }
