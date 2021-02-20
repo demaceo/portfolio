@@ -65,3 +65,55 @@ h3 {
   font-size: 3.7vw;
   color: rgba(249, 140, 112, 1);
 }
+
+@media only screen and (max-width: 1567px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    width: 25vw;
+    max-height: 10vh;
+    margin-top: 150px;
+    padding: 10çvh 2vw 5vh 2vw;
+    border: 5px solid white;
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffddcc;
+  }
+
+  .basic-info {
+    font-size: 1vw;
+  }
+  #socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30vw;
+    padding-top: 2.5vh;
+    align-self: center;
+  }
+  .social {
+    position: absolute;
+    text-decoration: none;
+    font-size: 3vw;
+    transition: 0.5s;
+    color: rgba(92, 129, 202, 1);
+  }
+  .social:hover {
+    font-size: 3.3vw;
+    color: rgba(249, 140, 112, 1);
+  }
+  .fa-file-alt {
+    text-decoration: none;
+    font-size: 2.8vw;
+    padding-top: 4.3vh;
+
+    transition: 0.5s;
+    color: rgba(92, 129, 202, 1);
+  }
+  .fa-file-alt:hover {
+    font-size: 3.1vw;
+    color: rgba(249, 140, 112, 1);
+  }
+}
