@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0px;
+  padding-top: 1.45vh;
 }
 
 .option {
@@ -34,13 +34,13 @@
 }
 
 .fa {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   transition: 0.5s;
   color: black;
 }
 
 .fa-fingerprint {
-  font-size: 1.3rem
+  font-size: 1.2rem
 }
 
 .option-text {

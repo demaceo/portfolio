@@ -32,13 +32,14 @@ export default function LogIn() {
         <h3 className="login-title">Welcome</h3>
         <form>
           <div className="input-group">
-            <label>Name</label>
-            <input type="text" autoComplete="username" spellCheck="true" ref={userNameRef} />
+            <label for="name">Name</label>
+            <input id="name" type="text" autoComplete="username" spellCheck="true" ref={userNameRef} />
           </div>
           <div className="input-group">
-            <label>Password</label>
+            <label for="password">Password</label>
             <input
               type="password"
+              id="password"
               autoComplete="current-password"
               ref={passwordRef}
             />
@@ -56,9 +57,7 @@ export default function LogIn() {
                 ref={passRef}
                 d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.288-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"
               />
-              <path className="hidden" ref={failRef}>
-                X
-              </path>
+              <path className="hidden" ref={failRef} d="x"/>
             </svg>
           </button>
         </form>

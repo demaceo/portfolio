@@ -46,54 +46,6 @@
   color: white;
 }
 
-/* .header-arrows {
-    display: flex;
-    align-self: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-}
-
-.header-arrows i {
-    transition: all 0.5s ease-in-out;
-    font-size: 2.5em;
-}
-
-.header-arrows i:hover {
-    color: white;
-    transform: scale(1.075);
-    font-size: 2.8em;
-    box-shadow: 2px 3px 20px 1px grey;
-} */
-
-/* .fa-hourglass-half {
-    width: 85%;
-    height: auto;
-    position: absolute;
-    margin-bottom: 10px;
-    align-self: flex-end;
-    font-size: 2em;
-    animation: clockwise 5s infinite;
-}
-
-.counter {
-    animation: counter 5s infinite;
-}
-
-@keyframes clockwise {
-    0% {
-        transform: rotate(-360deg);
-    }
-}
-
-@keyframes counter {
-    0% {
-        transform: rotate(360deg);
-    }
-}
-
-
-
 
 /* CLOUD BACKGROUND: */
 
@@ -101,8 +53,6 @@
   padding: 100px 0;
   width: 100%;
   height: 5vw;
-  /* background: #c9dbe9; */
-  /* background-color: rgb(121, 202, 230); */
   background: linear-gradient(to top, #48a2e7 0%, rgb(189, 211, 221) 100%);
 }
 
@@ -137,18 +87,6 @@
   top: -55px;
   left: auto;
   right: 15px;
-}
-
-/*animate*/
-
-@keyframes moveclouds {
-  0% {
-    margin-left: 1000px;
-  }
-
-  100% {
-    margin-left: -1000px;
-  }
 }
 
 .c1 {
@@ -202,4 +140,16 @@
   animation: moveclouds 41s linear infinite;
   -moz-animation: moveclouds 41s linear infinite;
   -o-animation: moveclouds 41s linear infinite;
+}
+
+
+/*animate*/
+@keyframes moveclouds {
+  0% {
+    margin-left: 1000px;
+  }
+
+  100% {
+    margin-left: -1000px;
+  }
 }

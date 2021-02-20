@@ -4,9 +4,9 @@ import "./aboutMe.css";
 export default function AboutMe() {
   return (
     <div className="about">
-      <div>
+      <div className="basic-info">
         <h2 id="my-name">Demaceo Vincent Howard</h2>
-        <h4 id="title">Front End Engineer // Software Developer</h4>
+        <h3 id="title">Front End Engineer // Software Developer</h3>
       </div>
       <div id="socials">
         <a

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <div className="nav-container">
-      <ul className="nav-bar">
+      <div className="nav-bar">
         <Link to="/" className="option">
           <i className="fa fa-campground" aria-hidden="true"></i>
           <span className="option-text">Home</span>
@@ -17,7 +17,7 @@ function NavBar() {
           <i className="fas fa-fingerprint fa" aria-hidden="true"></i>
           <span className="option-text">About Me</span>
         </Link>
-      </ul>
+      </div>
     </div>
   );
 }

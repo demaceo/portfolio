@@ -28,44 +28,62 @@
 
 .sidenav {
   font-family: "quicksand";
-  height: 100%;
-  width: 20%;
-  position: absolute;
+  height: 100vh;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
   opacity: 0.9;
   z-index: 2;
-  padding: 4vh 0;
+  padding: 7vh 0;
   top: 0;
-  right: 0;
-  background-color: white;
+  right: -1vw;
+  transition: width 0.35s;
+  background-color: #cfe0e0;
   overflow-x: hidden;
-  transition: 0.9s;
   border-left: solid 4px black;
   display: inline-block;
 }
 
-.hidden {
-  transform: translateX(100vw);
-  transition: 0.9s;
+#content-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+#nav-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+}
+
+#switch-container{
+  position:absolute;
+  top: .5vh;
+  left: 0;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.8vw;
   color: black;
   display: block;
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: rgba(249, 140, 112, 1);
-  font-size: 30px;
+#login{
+  text-decoration:underline;
 }
 
-/* .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-} */
+.sidenav a:hover {
+  color: rgba(249, 140, 112, 1);
+  font-size: 1.4vw;
+  background-color: white;
+}
+
+.github-button {
+  margin: 5px 0px;
+}
