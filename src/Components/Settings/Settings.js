@@ -2,6 +2,8 @@ import "./settings.css";
 import React from "react";
 import { useRef, useState } from "react";
 import LightSwitch from "../LightSwitch/LightSwitch";
+import { Link } from "react-router-dom";
+
 
 function Settings() {
   let navRef = useRef();
@@ -17,27 +19,33 @@ function Settings() {
   };
   return (
     <>
-      <i className="fas fa-cog" id="settings-icon" onClick={toggleSettings}></i>
+      <i
+        className="fas fa-cog"
+        id="settings-icon"
+        onClick={toggleSettings}
+      ></i>
       <div className="sidenav" ref={navRef}>
         <div id="content-container">
           <div id="switch-container">
             <LightSwitch />
           </div>
           <div id="nav-container">
-            <a aria-label="about-me" href="/aboutme">
+            <Link to="/aboutme" aria-label="about-me">
               About Me
-            </a>
-            <a aria-label="playlist" href="/recommendations">
+            </Link>
+            <Link to="/playlist" aria-label="playlist">
               Playlist
-            </a>
-            <a aria-label="gazer" href="/gazer" disabled>
+            </Link>
+            <Link to="/gazer" aria-label="gazer">
               Gazer
-            </a>
-            <a aria-label="map" className="isDisabled" href="/map">
+            </Link>
+            <Link to="/map" aria-label="map" className="isDisabled">
               Map
-            </a>
+            </Link>
             <br />
-            <a id="login" href="/login">Login</a>
+            <Link id="login" to="/login">
+              Login
+            </Link>
           </div>
           <div className="github-container">
             <a
