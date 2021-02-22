@@ -62,7 +62,7 @@ function App() {
         />
         <Route
           exact
-          path="/recommendations"
+          path="/playlist"
           render={() => <Recommendations />}
         />
         <Route exact path="/map" render={() => <MapContainer />} />
