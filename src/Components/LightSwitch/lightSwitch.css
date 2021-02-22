@@ -6,8 +6,11 @@
   /* padding: 10px 8px 8px 32px; */
 }
 
+.switch:hover {
+  color: goldenrod
+}
 #full{
-  color: yellow;
+  color: goldenrod;
 }
 
 .hidden {
