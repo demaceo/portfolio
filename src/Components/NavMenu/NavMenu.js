@@ -1,43 +1,58 @@
-import "./settings.css";
+import "./navmenu.css";
 import React from "react";
 import { useRef, useState } from "react";
 import LightSwitch from "../LightSwitch/LightSwitch";
+import { Link } from "react-router-dom";
 
-function Settings() {
-  let navRef = useRef();
+function NavMenu() {
+  const navRef = useRef();
+  const navIconRef = useRef();
   const [open, setOpen] = useState(false);
   const toggleSettings = () => {
     if (open) {
       navRef.current.style.width = "0";
+      navIconRef.current.classList.remove("fa-angle-double-right");
+      navIconRef.current.classList.add("fa-angle-double-left");
+
       setOpen(false);
     } else {
       navRef.current.style.width = "20vw";
+      navIconRef.current.classList.remove("fa-angle-double-left");
+      navIconRef.current.classList.add("fa-angle-double-right");
+
       setOpen(true);
     }
   };
   return (
     <>
-      <i className="fas fa-cog" id="settings-icon" onClick={toggleSettings}></i>
+      <i
+        className="fa fa-angle-double-left"
+        ref={navIconRef}
+        id="settings-icon"
+        onClick={toggleSettings}
+      ></i>
       <div className="sidenav" ref={navRef}>
         <div id="content-container">
           <div id="switch-container">
             <LightSwitch />
           </div>
           <div id="nav-container">
-            <a aria-label="about-me" href="/aboutme">
+            <Link to="/aboutme" aria-label="about-me">
               About Me
-            </a>
-            <a aria-label="playlist" href="/recommendations">
+            </Link>
+            <Link to="/playlist" aria-label="playlist">
               Playlist
-            </a>
-            <a aria-label="gazer" href="/gazer" disabled>
+            </Link>
+            <Link to="/gazer" aria-label="gazer">
               Gazer
-            </a>
-            <a aria-label="map" className="isDisabled" href="/map">
+            </Link>
+            <Link to="/map" aria-label="map" className="isDisabled">
               Map
-            </a>
+            </Link>
             <br />
-            <a id="login" href="/login">Login</a>
+            <Link id="login" to="/login">
+              Login
+            </Link>
           </div>
           <div className="github-container">
             <a
@@ -57,4 +72,4 @@ function Settings() {
   );
 }
 
-export default Settings;
+export default NavMenu;

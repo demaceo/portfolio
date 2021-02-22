@@ -1,7 +1,7 @@
 .bubble-container {
   display: flex;
   flex-direction: row;
-  width: 90vw;
+  width: 95vw;
   padding: 0px;
   margin-top: 8vh;
   justify-content: space-between;
@@ -16,6 +16,7 @@
   overflow: hidden;
   opacity: 0.9;
   box-shadow: 4px 12px 20px 2px #0000003d;
+  transition: 1s;
 }
 
 .bubble:before {
@@ -48,8 +49,12 @@
   );
 }
 
+.bubble:hover{
+  transform: scale(1.1)
+}
+
 .x1 {
-  width: 24vw;
+  width: 26vw;
   background: radial-gradient(
     circle at 50% 55%,
     rgba(240, 245, 255, 0.9),
@@ -90,7 +95,7 @@
     margin-top: 1vh;
     justify-content: space-evenly;
   }
-  .bubble{
+  .bubble {
     padding: 10px;
     margin: 1em;
   }
@@ -113,7 +118,6 @@
     color: rgba(255, 255, 255, 0.5);
     z-index: -1;
     bottom: 25vh;
-    /* top: -22vh; */
     left: -1vw;
     right: 0;
     font-size: 20vw;
@@ -147,7 +151,7 @@
     font-family: "quicksand";
     margin: 0;
     padding: 0;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     text-transform: uppercase;
     letter-spacing: 10px;
     background-color: #f3ec78;

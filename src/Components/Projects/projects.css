@@ -11,8 +11,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* box-shadow: 0px 13px 23px -13px rgba(0, 0, 0, 0.5);
-  background-color: transparent; */
   background-color: rgba(0, 0, 0, 0.4);
   color: #ffddcc;
   margin-bottom: 1vw;
@@ -22,6 +20,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+  
 }
 
 .project-img {
@@ -29,11 +29,11 @@
   width: 30vw;
   min-height: 30vh;
   padding: 1vh;
-  transition: 0.3s;
+  transition: 1s all ease-in-out;
 }
 
 .project-img:hover {
-  width: 31vw;
+  transform: scale(1.2);
 }
 
 .project-details {
@@ -57,19 +57,19 @@
   padding-bottom: 3vh;
 }
 
-.contributors{
+.contributors {
   font-size: 1rem;
-  padding-bottom: .7vh;
+  padding-bottom: 0.7vh;
 }
 .contributor {
   font-size: 0.9rem;
   /* text-decoration: none; */
   padding: 5px;
   color: white;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .contributor:hover {
-  font-size: .95rem;
+  font-size: 0.95rem;
   color: rgba(249, 140, 112, 1);
 }

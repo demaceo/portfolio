@@ -14,7 +14,7 @@ import Projects from "../Projects/Projects";
 import AboutMe from "../AboutMe/AboutMe";
 import Recommendations from "../Recommendations/Recommendations";
 import MapContainer from "../MapView/MapView";
-import Settings from "../Settings/Settings";
+import NavMenu from "../NavMenu/NavMenu";
 import WebGazer from "../WebGazer/WebGazer";
 
 // const initalState = {
@@ -45,7 +45,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Settings
+        <NavMenu
         // onClick={toggleTheme}
         />
         <Route exact path="/login" render={() => <LogIn />} />
@@ -62,7 +62,7 @@ function App() {
         />
         <Route
           exact
-          path="/recommendations"
+          path="/playlist"
           render={() => <Recommendations />}
         />
         <Route exact path="/map" render={() => <MapContainer />} />
