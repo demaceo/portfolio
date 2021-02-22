@@ -10,8 +10,9 @@
   position: absolute;
   right: 0.8vw;
   color: rgba(53, 52, 52, 0.548);
-  margin: 1em 0.1em 0em 1em;
-  font-size: 1.5rem;
+  margin: .7em 0em 0em 1em;
+  padding-left: 5px;
+  font-size: 2.0rem;
   z-index: 3;
 }
 
@@ -21,7 +22,7 @@
 
 @keyframes clockwise {
   0% {
-    transform: rotate(-360deg);
+    /* transform: rotate(-360deg); */
     color: rgba(92, 129, 202, 1);
   }
 }
