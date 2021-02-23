@@ -14,7 +14,7 @@ export const interests = {
     12: "https://i.redd.it/kcfioitb0f541.png",
     13: "https://upload.wikimedia.org/wikipedia/en/0/00/Silentalarmcover.jpg",
     14: "https://upload.wikimedia.org/wikipedia/en/e/e9/Transatlanticism.jpg",
-    15: "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Unpeeled.jpg/220px-Unpeeled.jpg"
+    15: "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Unpeeled.jpg/220px-Unpeeled.jpg",
   },
   books: {
     0: "https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL.jpg",
@@ -23,6 +23,13 @@ export const interests = {
     3: "https://images-na.ssl-images-amazon.com/images/I/81plbIFE05L.jpg",
     4: "https://upload.wikimedia.org/wikipedia/en/6/6b/Shock_doctrine_cover.jpg",
     5: "https://images-na.ssl-images-amazon.com/images/I/91Uqed0uPbL.jpg",
+    6: "https://images-na.ssl-images-amazon.com/images/I/41ybG235TcL.jpg",
+    7: "https://static01.nyt.com/images/2020/09/16/books/OBAMA2/OBAMA2-mobileMasterAt3x.jpg",
+    8: "https://images-na.ssl-images-amazon.com/images/I/61j5kXzxxPL.jpg",
+    9: "https://pictures.abebooks.com/isbn/9780552773317-us.jpg",
+    10: "https://images.gr-assets.com/books/1366758096l/61535.jpg",
+    11: "https://images-na.ssl-images-amazon.com/images/I/81xBWiuTmGL.jpg",
+    12: "https://m.media-amazon.com/images/I/516XdCJXx7L.jpg",
   },
 
   film: {
@@ -48,6 +55,7 @@ export const interests = {
     5: "https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png",
     6: "https://samharris.org/wp-content/uploads/2019/01/making-sense-podcast-social.png",
     7: "https://stitcher-classic.imgix.net/feedimagesplain600/13986.jpg?w=600&h=600",
+    8: "https://syntax.fm/static/logo.png",
   },
 
   documentaries: {
@@ -59,5 +67,9 @@ export const interests = {
     5: "https://m.media-amazon.com/images/M/MV5BMjI0NzE5Mzc5OF5BMl5BanBnXkFtZTgwODk3Njg0MzE@._V1_.jpg",
     6: "https://m.media-amazon.com/images/M/MV5BZTgwZTMzNzAtYTRmZS00ZGQxLTk5NDctYjdlZmMxMDU1MTQ3XkEyXkFqcGdeQXVyNDg3NzYxMDY@._V1_.jpg",
     7: "http://assets.nflxext.com/us/boxshots/hd1080/80045923.jpg",
+    8: "https://m.media-amazon.com/images/M/MV5BZjEwN2Y4YTAtMzhlZi00MjRkLWI3YTctODVhNWZkNzQwZGIwXkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_.jpg",
+    9: "https://upload.wikimedia.org/wikipedia/en/6/6b/13th_%28film%29.png",
+    10: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/4/23/thoo1z6ubrtzdpism8vb/fo-1maaxmwcs2111-featuremedia",
+    11: "https://m.media-amazon.com/images/M/MV5BMmYzNzNiNTQtNjhmNC00ZmIyLWI2YTYtNTg5NTUyN2Y1YjNlXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UY1200_CR90,0,630,1200_AL_.jpg",
   },
 };
