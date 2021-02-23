@@ -7,7 +7,7 @@ class Recommendations extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mode: "music",
+      mode: "books",
       how: 100,
     };
     this.handleClick = this.handleClick.bind(this);
