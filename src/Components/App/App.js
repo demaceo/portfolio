@@ -13,7 +13,7 @@ import LogIn from "../LogIn/LogIn";
 import Projects from "../Projects/Projects";
 import AboutMe from "../AboutMe/AboutMe";
 import Recommendations from "../Recommendations/Recommendations";
-import MapContainer from "../MapView/MapView";
+// import MapContainer from "../MapView/MapView";
 import NavMenu from "../NavMenu/NavMenu";
 import WebGazer from "../WebGazer/WebGazer";
 
@@ -49,7 +49,16 @@ function App() {
         // onClick={toggleTheme}
         />
         <Route exact path="/login" render={() => <LogIn />} />
-        <Route exact path="/" render={() => <Bubbles />} />
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <>
+              <Bubbles /> 
+              <Waves />
+            </>
+          )}
+        />
         <Route
           exact
           path="/aboutme"
@@ -60,15 +69,10 @@ function App() {
             </>
           )}
         />
-        <Route
-          exact
-          path="/playlist"
-          render={() => <Recommendations />}
-        />
-        <Route exact path="/map" render={() => <MapContainer />} />
+        <Route exact path="/playlist" render={() => <Recommendations />} />
+        {/* <Route exact path="/map" render={() => <MapContainer />} /> */}
         <Route exact path="/gazer" render={() => <WebGazer />} />
 
-        <Route exact path="/waves" render={() => <Waves />} />
         <Route exact path="/projects" render={() => <Projects />} />
         <NavBar />
       </div>

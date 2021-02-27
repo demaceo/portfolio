@@ -23,7 +23,7 @@ export default function LightSwitch() {
   };
 
   return (
-    <form ref={switchRef} onClick={adjustLight}>
+    <form className="light-switch" ref={switchRef} onClick={adjustLight}>
       <i className="far fa-moon switch" ref={onRef}></i>
       <i className="fas fa-moon switch hidden" id="full" ref={offRef}></i>
     </form>
