@@ -96,8 +96,7 @@ function WebGazer() {
 
   return (
     <section className="gazer-container">
-      {/* <h1>Random Image Generator</h1> */}
-      {main}
+    {main}
     </section>
   );
 }

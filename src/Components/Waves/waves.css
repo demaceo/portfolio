@@ -1,11 +1,12 @@
 #container {
-  width: 100vw;
-  overflow-y: hidden;
+  width: 100%;
+  /* height: 100vh; */
+  overflow: hidden;
 }
 
 .ocean {
-  height: 50%;
-  width: 100%;
+  /* height: 20%; */
+  width: 100vw;
   position: absolute;
   background: radial-gradient(
     ellipse at center,
@@ -17,24 +18,25 @@
   left: 0;
   background: #015871;
   opacity: 1;
+  z-index: 0;
 }
 
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
     repeat-x;
   position: absolute;
-  top: -198px;
+  /* top: -198px; */
   width: 3400px;
   height: 198px;
-  animation: wave 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
 
 .wave:nth-of-type(2) {
-  top: -175px;
-  animation: wave 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.65s infinite,
-    swell 7s ease -0.55s infinite;
+  /* top: -175px; */
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.65s infinite,
+    swell 14s ease -0.55s infinite;
   opacity: 0.8;
 }
 
@@ -50,7 +52,7 @@
 @keyframes swell {
   0%,
   100% {
-    transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -5px, 0);
   }
   50% {
     transform: translate3d(0, 5px, 0);
