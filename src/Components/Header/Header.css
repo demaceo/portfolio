@@ -46,7 +46,6 @@
   color: white;
 }
 
-
 /* CLOUD BACKGROUND: */
 
 #clouds {
@@ -90,66 +89,70 @@
 }
 
 .c1 {
-  animation: moveclouds 30s linear infinite;
-  -moz-animation: moveclouds 30s linear infinite;
-  -o-animation: moveclouds 30s linear infinite;
+  left: 200px;
+  animation: moveclouds 57s linear infinite;
+  -moz-animation: moveclouds 57s linear infinite;
+  -o-animation: moveclouds 57s linear infinite;
 }
 
 /*variable speed, opacity, and position of clouds for realistic effect*/
 .c2 {
-  left: 200px;
+  left: 550px;
   transform: scale(0.6);
-  top: -100px;
+  top: -140px;
   opacity: 0.6;
+    z-index: 2;
+
   /*opacity proportional to the size*/
   /*Speed also proportional to the size and opacity*/
   /*More the speed. Less the time in seconds*/
-  animation: moveclouds 35s linear infinite;
-  -moz-animation: moveclouds 35s linear infinite;
-  -o-animation: moveclouds 35s linear infinite;
+  animation: moveclouds 55s linear infinite;
+  -moz-animation: moveclouds 55s linear infinite;
+  -o-animation: moveclouds 55s linear infinite;
 }
 
 .c3 {
-  left: -350px;
-  top: -200px;
-  z-index: 2;
+  left: 750px;
+  top: -175px;
+  /* z-index: 2; */
   color: black;
   transform: scale(0.8);
   opacity: 0.8;
-  animation: moveclouds 38s linear infinite;
-  -moz-animation: moveclouds 38s linear infinite;
-  -o-animation: moveclouds 38s linear infinite;
+  animation: moveclouds 60s linear infinite;
+  -moz-animation: moveclouds 60s linear infinite;
+  -o-animation: moveclouds 60s linear infinite;
 }
 
 .c4 {
-  left: 470px;
-  top: -250px;
+  left: 970px;
+  top: -160px;
   z-index: 2;
   transform: scale(0.75);
   opacity: 0.75;
-  animation: moveclouds 32s linear infinite;
-  -moz-animation: moveclouds 32s linear infinite;
-  -o-animation: moveclouds 32s linear infinite;
+  animation: moveclouds 50s linear infinite;
+  -moz-animation: moveclouds 50s linear infinite;
+  -o-animation: moveclouds 50s linear infinite;
 }
 
 .c5 {
-  left: -450px;
+  left: 1150px;
   top: -250px;
+  z-index: 2;
+
   transform: scale(0.65);
   opacity: 0.65;
-  animation: moveclouds 41s linear infinite;
-  -moz-animation: moveclouds 41s linear infinite;
-  -o-animation: moveclouds 41s linear infinite;
+  animation: moveclouds 55s linear infinite;
+  -moz-animation: moveclouds 55s linear infinite;
+  -o-animation: moveclouds 55s linear infinite;
 }
-
 
 /*animate*/
 @keyframes moveclouds {
   0% {
-    margin-left: 1000px;
+    margin-left: 105%;
   }
 
   100% {
-    margin-left: -1000px;
+    margin-left: -101%;
   }
 }
