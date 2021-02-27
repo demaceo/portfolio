@@ -7,8 +7,26 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
+    border-radius: 15px;
+  box-shadow: 8px 11px 11px 2px #0000003d;
+  transition: 4s;
+  /* width: 100%;
+  height: 100%; */
+  /* animation: grow 20 infinite linear; */
+  /* transform-origin: center center; */
+}
+
+/* .gazer-container:hover {
+  transform: scale(1.1);
+} */
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
 
 .main-photo {
@@ -16,10 +34,10 @@
   height: 60vh;
   transition: transform 200ms;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 8px 11px 11px 2px #0000003d;
-  position: absolute;
-  /* animation: zoom 5s infinite linear; */
+  /* border-radius: 15px;
+  box-shadow: 8px 11px 11px 2px #0000003d; */
+  /* position: absolute; */
+  animation: zoom 20s infinite linear;
 }
 
 .drop {
@@ -37,17 +55,4 @@
 
 .next {
   display: none;
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  50%{
-        transform: scale(1.1);
-
-  }
-  100% {
-    transform: scale(1);
-  }
 }
