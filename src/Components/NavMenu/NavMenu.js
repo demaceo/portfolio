@@ -11,22 +11,20 @@ function NavMenu() {
   const toggleSettings = () => {
     if (open) {
       navRef.current.style.width = "0";
-      navIconRef.current.classList.remove("fa-angle-double-right");
-      navIconRef.current.classList.add("fa-angle-double-left");
-
+      navIconRef.current.style.position = "initial";
+      navIconRef.current.style.right = ".8vw";
       setOpen(false);
     } else {
       navRef.current.style.width = "20vw";
-      navIconRef.current.classList.remove("fa-angle-double-left");
-      navIconRef.current.classList.add("fa-angle-double-right");
-
+      navIconRef.current.style.position = "fixed";
+      navIconRef.current.style.right = "3vw";
       setOpen(true);
     }
   };
   return (
-    <>
+    <section className="side-nav-container">
       <i
-        className="fa fa-angle-double-left"
+        className="fas fa-bars"
         ref={navIconRef}
         id="settings-icon"
         onClick={toggleSettings}
@@ -68,7 +66,7 @@ function NavMenu() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 
