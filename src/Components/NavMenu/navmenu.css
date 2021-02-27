@@ -6,12 +6,18 @@
   pointer-events: none;
 }
 
+.side-nav-container{
+  display:flex;
+  flex-direction: row;
+  width: 99%;
+  justify-content: flex-end;
+}
+
 #settings-icon {
-  position: absolute;
-  right: 0.8vw;
+  position:initial;
+  right: .8vw;
   color: rgba(48, 46, 46, 0.719);
-  margin: .7em 0em 0em 1em;
-  padding-left: 5px;
+  margin: 0em 0em 0em 1em;
   font-size: 2.0rem;
   z-index: 3;
 }
@@ -30,12 +36,13 @@
   opacity: 0.9;
   z-index: 2;
   padding: 7vh 0;
-  top: 0;
+  bottom: 0;
+  top: 19.5%;
   right: -1vw;
   transition: width 0.35s;
   background-color: #cfe0e0;
   overflow-x: hidden;
-  border-left: solid 4px black;
+  border: solid 2px rgb(255, 252, 252);
   display: inline-block;
 }
 
