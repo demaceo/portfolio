@@ -23,6 +23,7 @@ function NavMenu() {
   };
   return (
     <section className="side-nav-container">
+      {/* <div></div> */}
       <i
         className="fas fa-bars"
         ref={navIconRef}
