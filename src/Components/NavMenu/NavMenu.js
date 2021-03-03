@@ -3,6 +3,7 @@ import React from "react";
 import { useRef, useState } from "react";
 import LightSwitch from "../LightSwitch/LightSwitch";
 import { Link } from "react-router-dom";
+import Matrix from '../Matrix/Matrix.js';
 
 function NavMenu() {
   const navRef = useRef();
@@ -52,6 +53,7 @@ function NavMenu() {
             <Link id="login" to="/login">
               Login
             </Link>
+            <Matrix />
           </div>
           <div className="github-container">
             <a
@@ -65,6 +67,7 @@ function NavMenu() {
               Demaceo
             </a>
           </div>
+          {/* <Matrix /> */}
         </div>
       </div>
     </section>
