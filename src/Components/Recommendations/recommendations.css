@@ -1,4 +1,4 @@
-.container {
+.interests-container {
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -34,6 +34,8 @@
 #item {
   left: 0;
   right: 0;
+  /* left: 10vw;
+  right: 15vw; */
 }
 .interests h1 {
   padding: 0px 60px;
