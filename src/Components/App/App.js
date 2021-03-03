@@ -1,6 +1,6 @@
 import "./App.css";
-// import { useState, useReducer } from "react";
-// import AppContext from "./AppContext";
+import React, { useState, useReducer, useContext } from "react";
+import ThemeProvider from '../../utilities/ThemeContext';
 // import { useLocalStorage } from "../../utilities/useLocalStorage";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -31,6 +31,7 @@ import WebGazer from "../WebGazer/WebGazer";
 //   }
 // };
 
+export const ThemeContext = React.createContext();
 function App() {
   // const [state, dispatch] = useReducer(reducer, initalState);
   // let [theme, setTheme] = useState("light");
@@ -41,7 +42,7 @@ function App() {
   // };
 
   return (
-    // <AppContext.Provider value={[state, dispatch]}>
+    <ThemeProvider>
     <Router>
       <div className="App">
         <Header />
@@ -77,7 +78,7 @@ function App() {
         <NavBar />
       </div>
     </Router>
-    // </AppContext.Provider>
+    </ThemeProvider>
   );
 }
 
