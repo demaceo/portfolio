@@ -19,7 +19,7 @@ function Header() {
   return (
     <section className="header-container">
       <div className={headerTheme}>
-        <div id={idTheme}>
+        <div className="animated-content" id={idTheme}>
           <div className="cloud c1"></div>
           <div className="cloud c2"></div>
           <div className="cloud c3"></div>

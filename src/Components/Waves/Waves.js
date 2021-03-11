@@ -21,15 +21,15 @@ export default function Waves() {
             />
           </defs>
           <g className="parallax">
-            <use href="#gentle-wave" x="48" y="0" fill="rgba(55,155,255,0.5)" />
-            <use href="#gentle-wave" x="48" y="3" fill="rgba(55,155,255,0.3)" />
-            <use href="#gentle-wave" x="48" y="5" fill="rgba(75,55,255,0.3)" />
+            <use href="#gentle-wave" x="48" y="0" fill="rgba(55,155,255,0.2)" />
+            <use href="#gentle-wave" x="48" y="3" fill="rgba(55,155,255,0.1)" />
+            <use href="#gentle-wave" x="48" y="5" fill="rgba(75,55,255,0.1)" />
             <use
               href="#gentle-wave"
               x="48"
               y="7"
               
-              fill="rgba(55,155,255,0.5)"
+              fill="rgba(55,155,255,0.3)"
             />
           </g>
         </svg>

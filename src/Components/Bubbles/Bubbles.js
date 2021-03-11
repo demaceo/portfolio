@@ -15,6 +15,7 @@ export default function Bubbles() {
     return (
       <div className={`bubble x${id}`} key={id} id={link} onClick={getStyle}>
         <div className={`text-container project-${id}`}>
+          {/* put 'text-container' in h1 element */}
           <h1>{name}</h1>
           <i className={`${icon} icon`} />
         </div>

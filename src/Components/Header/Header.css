@@ -86,9 +86,9 @@
 
 .c1 {
   left: 200px;
-  animation: moveclouds 57s linear infinite;
-  -moz-animation: moveclouds 57s linear infinite;
-  -o-animation: moveclouds 57s linear infinite;
+  animation: moveclouds 67s linear infinite;
+  -moz-animation: moveclouds 67s linear infinite;
+  -o-animation: moveclouds 67s linear infinite;
 }
 
 /*variable speed, opacity, and position of clouds for realistic effect*/
@@ -102,9 +102,9 @@
   /*opacity proportional to the size*/
   /*Speed also proportional to the size and opacity*/
   /*More the speed. Less the time in seconds*/
-  animation: moveclouds 55s linear infinite;
-  -moz-animation: moveclouds 55s linear infinite;
-  -o-animation: moveclouds 55s linear infinite;
+  animation: moveclouds 65s linear infinite;
+  -moz-animation: moveclouds 65s linear infinite;
+  -o-animation: moveclouds 65s linear infinite;
 }
 
 .c3 {
@@ -114,9 +114,9 @@
   color: black;
   transform: scale(0.8);
   opacity: 0.8;
-  animation: moveclouds 60s linear infinite;
-  -moz-animation: moveclouds 60s linear infinite;
-  -o-animation: moveclouds 60s linear infinite;
+  animation: moveclouds 70s linear infinite;
+  -moz-animation: moveclouds 70s linear infinite;
+  -o-animation: moveclouds 70s linear infinite;
 }
 
 .c4 {
@@ -125,21 +125,20 @@
   z-index: 2;
   transform: scale(0.75);
   opacity: 0.75;
-  animation: moveclouds 50s linear infinite;
-  -moz-animation: moveclouds 50s linear infinite;
-  -o-animation: moveclouds 50s linear infinite;
+  animation: moveclouds 60s linear infinite;
+  -moz-animation: moveclouds 60s linear infinite;
+  -o-animation: moveclouds 60s linear infinite;
 }
 
 .c5 {
   left: 1150px;
   top: -250px;
   z-index: 2;
-
   transform: scale(0.65);
   opacity: 0.65;
-  animation: moveclouds 55s linear infinite;
-  -moz-animation: moveclouds 55s linear infinite;
-  -o-animation: moveclouds 55s linear infinite;
+  animation: moveclouds 65s linear infinite;
+  -moz-animation: moveclouds 65s linear infinite;
+  -o-animation: moveclouds 65s linear infinite;
 }
 
 /*animate*/
@@ -169,3 +168,17 @@
 #matrix-clouds {
   background: linear-gradient(to top, #3b1157 0%, rgb(109, 78, 119) 100%);
 }
+
+
+@media screen and (max-width: 600px) {
+  .header-container{
+    margin-top: 4vh;
+  }
+  .animated-content{
+    display: none;
+  }
+  #time{
+    display:none;
+  }
+}
+
