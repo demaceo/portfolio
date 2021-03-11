@@ -1,7 +1,7 @@
 .gazer-container {
   font-family: "quicksand";
   color: #ffddcc;
-  margin: 3vh 0vw;
+  margin: 3vh 0vw 15vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -16,9 +16,9 @@
   /* transform-origin: center center; */
 }
 
-.gazer-container:hover {
+/* .gazer-container:hover {
   transform: scale(1.1);
-}
+} */
 
 @keyframes zoom {
   0% {
@@ -46,7 +46,7 @@
 
 .drop {
   transform: translateY(100vw);
-  opacity: 0.1;
+  opacity: 0.7;
 }
 
 .left {
