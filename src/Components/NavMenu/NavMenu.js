@@ -16,7 +16,7 @@ function NavMenu() {
       navIconRef.current.style.right = ".8vw";
       setOpen(false);
     } else {
-      navRef.current.style.width = "20vw";
+      navRef.current.style.width = "25vw";
       navIconRef.current.style.position = "fixed";
       navIconRef.current.style.right = "3vw";
       setOpen(true);
