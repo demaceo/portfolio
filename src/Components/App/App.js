@@ -1,9 +1,8 @@
 import "./App.css";
-// import { useState, useReducer } from "react";
-// import AppContext from "./AppContext";
+import React, { useState, useReducer, useContext } from "react";
+import ThemeProvider, { useTheme, useThemeUpdate } from '../../utilities/ThemeContext';
 // import { useLocalStorage } from "../../utilities/useLocalStorage";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
 import NavBar from "../NavBar/NavBar";
 import Bubbles from "../Bubbles/Bubbles";
 import Waves from "../Waves/Waves";
@@ -17,36 +16,21 @@ import Recommendations from "../Recommendations/Recommendations";
 import NavMenu from "../NavMenu/NavMenu";
 import WebGazer from "../WebGazer/WebGazer";
 
-// const initalState = {
-//   theme: "light",
-// };
 
-// const reducer = (state, action) => {
-//   switch (action.type) {
-//     case "TOGGLE_THEME":
-//       const newTheme = state.theme === "light" ? "dark" : "light";
-//       return { ...state, theme: newTheme };
-//     default:
-//       return state;
-//   }
-// };
-
+export const ThemeContext = React.createContext();
 function App() {
-  // const [state, dispatch] = useReducer(reducer, initalState);
-  // let [theme, setTheme] = useState("light");
 
-  // const toggleTheme = () => {
-  //   const action = { type: "TOGGLE_THEME" };
-  //   dispatch(action);
-  // };
+  const darkTheme = useTheme();
+  const idTheme = darkTheme ? "hidden" : "clouds";
 
   return (
-    // <AppContext.Provider value={[state, dispatch]}>
+    <ThemeProvider>
     <Router>
-      <div className="App">
+      <div className="App" 
+      // id={idTheme}
+      >
         <Header />
         <NavMenu
-        // onClick={toggleTheme}
         />
         <Route exact path="/login" render={() => <LogIn />} />
         <Route
@@ -77,7 +61,7 @@ function App() {
         <NavBar />
       </div>
     </Router>
-    // </AppContext.Provider>
+    </ThemeProvider>
   );
 }
 

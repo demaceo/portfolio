@@ -26,10 +26,9 @@ export const interests = {
     6: "https://images-na.ssl-images-amazon.com/images/I/41ybG235TcL.jpg",
     7: "https://static01.nyt.com/images/2020/09/16/books/OBAMA2/OBAMA2-mobileMasterAt3x.jpg",
     8: "https://images-na.ssl-images-amazon.com/images/I/61j5kXzxxPL.jpg",
-    9: "https://pictures.abebooks.com/isbn/9780552773317-us.jpg",
-    10: "https://images.gr-assets.com/books/1366758096l/61535.jpg",
-    11: "https://images-na.ssl-images-amazon.com/images/I/81xBWiuTmGL.jpg",
-    12: "https://m.media-amazon.com/images/I/516XdCJXx7L.jpg",
+    9: "https://images.gr-assets.com/books/1366758096l/61535.jpg",
+    10: "https://images-na.ssl-images-amazon.com/images/I/81xBWiuTmGL.jpg",
+    11: "https://m.media-amazon.com/images/I/516XdCJXx7L.jpg",
   },
 
   film: {

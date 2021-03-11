@@ -22,7 +22,7 @@ class Recommendations extends Component {
     const { mode, how } = this.state;
     const modes = interests;
     return (
-      <div className="container">
+      <div className="interests-container">
         <div className="interests">
           <h1>Recommendations</h1>
           <button how={50} value={"music"} onClick={this.handleClick}>
@@ -40,16 +40,6 @@ class Recommendations extends Component {
           <button how={50} value={"podcasts"} onClick={this.handleClick}>
             podcasts
           </button>
-          <a
-            className="github-button"
-            href="https://github.com/demaceo"
-            data-icon="fab fa-github"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Demaceo on GitHub"
-          >
-            Demaceo
-          </a>
         </div>
         <Interests
           id="interests"

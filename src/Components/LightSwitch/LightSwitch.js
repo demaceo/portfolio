@@ -1,31 +1,16 @@
 import React from "react";
 import { useRef } from "react";
 import "./lightSwitch.css";
+import { useTheme, useThemeUpdate } from "../../utilities/ThemeContext";
 
 export default function LightSwitch() {
-  const clickRef = useRef(0);
-  const offRef = useRef();
-  const onRef = useRef();
-  const switchRef = useRef();
-
-  const adjustLight = () => {
-    // let body = document.body;
-    if (clickRef.current) {
-      onRef.current.classList.add("hidden");
-      offRef.current.classList.remove("hidden");
-      clickRef.current = 0;
-    } else {
-      // document.body.style.backgroundColor = "white";
-      onRef.current.classList.remove("hidden");
-      offRef.current.classList.add("hidden");
-      clickRef.current = 1;
-    }
-  };
+  const darkTheme = useTheme();
+  const toggleTheme = useThemeUpdate();
+  const moonStyle = darkTheme ? "fas fa-moon switch" : "far fa-moon switch";
 
   return (
-    <form className="light-switch" ref={switchRef} onClick={adjustLight}>
-      <i className="far fa-moon switch" ref={onRef}></i>
-      <i className="fas fa-moon switch hidden" id="full" ref={offRef}></i>
+    <form className="light-switch" onClick={toggleTheme}>
+      <i className={moonStyle}></i>
     </form>
   );
 }

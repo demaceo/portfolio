@@ -9,12 +9,11 @@ body {
   display: flex;
   text-align: center;
   background-color: #282c34;
-  min-height: 103vh;
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
   color: black;
   width: auto;
-
   background: rgba(92, 129, 202, 1);
   background: -moz-linear-gradient(
     left,
