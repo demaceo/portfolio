@@ -34,13 +34,13 @@ function NavMenu() {
       <div className="sidenav" ref={navRef}>
         <div id="content-container">
           <div id="switch-container">
-            <LightSwitch />
+            {/* <LightSwitch /> */}
           </div>
           <div id="nav-container">
             <Link to="/aboutme" aria-label="about-me">
               About Me
             </Link>
-            <Link to="/playlist" aria-label="playlist">
+            <Link to="/playlist" aria-label="playlist" className="isDisabled">
               Playlist
             </Link>
             <Link to="/gazer" aria-label="gazer">
@@ -50,7 +50,7 @@ function NavMenu() {
               Map
             </Link>
             <br />
-            <Link id="login" to="/login">
+            <Link id="login" to="/login" className="isDisabled">
               Login
             </Link>
             <Matrix />
@@ -67,7 +67,6 @@ function NavMenu() {
               Demaceo
             </a>
           </div>
-          {/* <Matrix /> */}
         </div>
       </div>
     </section>
