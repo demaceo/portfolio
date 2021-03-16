@@ -3,7 +3,7 @@ import React from "react";
 import { useRef, useState } from "react";
 import LightSwitch from "../LightSwitch/LightSwitch";
 import { Link } from "react-router-dom";
-import Matrix from '../Matrix/Matrix.js';
+import Matrix from "../Matrix/Matrix.js";
 
 function NavMenu() {
   const navRef = useRef();
@@ -33,27 +33,31 @@ function NavMenu() {
       ></i>
       <div className="sidenav" ref={navRef}>
         <div id="content-container">
-          <div id="switch-container">
-            {/* <LightSwitch /> */}
-          </div>
+          <div id="switch-container">{/* <LightSwitch /> */}</div>
           <div id="nav-container">
+            <Link to="/" aria-label="about-me">
+              Home
+            </Link>
+            <Link to="/projects" aria-label="about-me">
+              Projects
+            </Link>
             <Link to="/aboutme" aria-label="about-me">
               About Me
             </Link>
-            <Link to="/playlist" aria-label="playlist" className="isDisabled">
+            {/* <Link to="/playlist" aria-label="playlist" className="isDisabled">
               Playlist
-            </Link>
-            <Link to="/gazer" aria-label="gazer">
+            </Link> */}
+            {/* <Link to="/gazer" aria-label="gazer">
               Gazer
-            </Link>
-            <Link to="/map" aria-label="map" className="isDisabled">
+            </Link> */}
+            {/* <Link to="/map" aria-label="map" className="isDisabled">
               Map
-            </Link>
+            </Link> */}
             <br />
-            <Link id="login" to="/login" className="isDisabled">
+            {/* <Link id="login" to="/login" className="isDisabled">
               Login
-            </Link>
-            <Matrix />
+            </Link> */}
+            {/* <Matrix /> */}
           </div>
           <div className="github-container">
             <a
