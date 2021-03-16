@@ -152,8 +152,6 @@
   }
 }
 
-
-
 /* ********* MATRIX HEADER THEMES ********* */
 
 #hidden {
@@ -162,23 +160,21 @@
 
 .matrix-header {
   /* background-color: #333; */
-  color: #CCC;
+  color: #ccc;
 }
 
 #matrix-clouds {
   background: linear-gradient(to top, #3b1157 0%, rgb(109, 78, 119) 100%);
 }
 
-
 @media screen and (max-width: 600px) {
-  .header-container{
+  .header-container {
     margin-top: 4vh;
   }
-  .animated-content{
+  .animated-content {
     display: none;
   }
-  #time{
-    display:none;
+  #time {
+    display: none;
   }
 }
-

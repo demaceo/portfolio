@@ -2,7 +2,6 @@ import React from "react";
 import "./waves.css";
 
 export default function Waves() {
-
   return (
     <div className="wave-container">
       <div>
@@ -28,7 +27,6 @@ export default function Waves() {
               href="#gentle-wave"
               x="48"
               y="7"
-              
               fill="rgba(55,155,255,0.3)"
             />
           </g>

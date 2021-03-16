@@ -15,8 +15,8 @@
   height: 13vh;
   /*Fix for safari gap*/
   margin-bottom: -7px; 
-  min-height: 100px;
-  max-height: 250px;
+  min-height: 200px;
+  max-height: 450px;
 }
 
 /* Animation */

@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-#light {
+/* #light {
   color: black;
   background: rgba(92, 129, 202, 1);
   background: -moz-linear-gradient(
@@ -25,4 +25,4 @@
     rgba(249, 140, 112, 1) 0%,
       rgba(92, 129, 202, 1) 100%
   );
-}
+} */

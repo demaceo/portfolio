@@ -1,6 +1,9 @@
 import "./App.css";
 import React, { useState, useReducer, useContext } from "react";
-import ThemeProvider, { useTheme, useThemeUpdate } from '../../utilities/ThemeContext';
+import ThemeProvider, {
+  useTheme,
+  useThemeUpdate,
+} from "../../utilities/ThemeContext";
 // import { useLocalStorage } from "../../utilities/useLocalStorage";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
@@ -16,51 +19,47 @@ import Recommendations from "../Recommendations/Recommendations";
 import NavMenu from "../NavMenu/NavMenu";
 import WebGazer from "../WebGazer/WebGazer";
 
-
 export const ThemeContext = React.createContext();
 function App() {
-
   const darkTheme = useTheme();
-  const idTheme = darkTheme ? "hidden" : "clouds";
+  const idTheme = darkTheme ? "dark" : "light";
+
 
   return (
     <ThemeProvider>
-    <Router>
-      <div className="App" 
-      // id={idTheme}
-      >
-        <Header />
-        <NavMenu
-        />
-        <Route exact path="/login" render={() => <LogIn />} />
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <>
-              <Bubbles /> 
-              <Waves />
-            </>
-          )}
-        />
-        <Route
-          exact
-          path="/aboutme"
-          render={() => (
-            <>
-              <AboutMe />
-              <Timeline />
-            </>
-          )}
-        />
-        <Route exact path="/playlist" render={() => <Recommendations />} />
-        {/* <Route exact path="/map" render={() => <MapContainer />} /> */}
-        <Route exact path="/gazer" render={() => <WebGazer />} />
+      <Router>
+        <div className="App" id={idTheme}>
+          <Header />
+          <NavMenu />
+          <Route exact path="/login" render={() => <LogIn />} />
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <>
+                <Bubbles />
+                <Waves />
+              </>
+            )}
+          />
+          <Route
+            exact
+            path="/aboutme"
+            render={() => (
+              <>
+                <AboutMe />
+                <Timeline />
+              </>
+            )}
+          />
+          <Route exact path="/playlist" render={() => <Recommendations />} />
+          {/* <Route exact path="/map" render={() => <MapContainer />} /> */}
+          <Route exact path="/gazer" render={() => <WebGazer />} />
 
-        <Route exact path="/projects" render={() => <Projects />} />
-        <NavBar />
-      </div>
-    </Router>
+          <Route exact path="/projects" render={() => <Projects />} />
+          <NavBar />
+        </div>
+      </Router>
     </ThemeProvider>
   );
 }
