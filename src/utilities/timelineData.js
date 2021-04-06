@@ -9,7 +9,7 @@ const timelineData = [
         point:
           "Leading and facilitating programs related to sustainability & conservation efforts.",
       },
-      { point: "Traveling throughout New York City, The Amazon, Galápagos, & Costa Rica" },
+      { point: "Working throughout New York City, The Amazon, The Galápagos, & Costa Rica" },
     ],
     date: "June 2018",
     image: "",
