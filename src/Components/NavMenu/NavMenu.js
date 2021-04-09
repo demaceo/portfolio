@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import LightSwitch from "../LightSwitch/LightSwitch";
 import { Link } from "react-router-dom";
 import Matrix from "../Matrix/Matrix.js";
+import Tasks from "../Tasks/Tasks.js";
 
 function NavMenu() {
   const navRef = useRef();
@@ -33,7 +34,9 @@ function NavMenu() {
       ></i>
       <div className="sidenav" ref={navRef}>
         <div id="content-container">
-          <div id="switch-container">{/* <LightSwitch /> */}</div>
+          <div id="switch-container">
+            <LightSwitch />
+          </div>
           <div id="nav-container">
             <Link to="/" aria-label="about-me">
               Home
@@ -44,6 +47,8 @@ function NavMenu() {
             <Link to="/aboutme" aria-label="about-me">
               About Me
             </Link>
+            <Tasks />
+
             {/* <Link to="/playlist" aria-label="playlist" className="isDisabled">
               Playlist
             </Link> */}
@@ -59,7 +64,7 @@ function NavMenu() {
             </Link> */}
             {/* <Matrix /> */}
           </div>
-          <div className="github-container">
+          {/* <div className="github-container">
             <a
               className="github-button"
               href="https://github.com/demaceo"
@@ -70,7 +75,7 @@ function NavMenu() {
             >
               Demaceo
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
