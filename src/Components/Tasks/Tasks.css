@@ -1,0 +1,42 @@
+#taskList {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 2vh;
+  width: 100%;
+  font-size: small;
+}
+
+#taskInput {
+  font-size: 15px;
+}
+
+#taskHelp {
+  color: gray;
+}
+
+.hidden {
+  display: none;
+}
+
+#taskul {
+  list-style-type: none;
+  padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+#taskul li {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+
+#taskul a {
+  color: red;
+  float: right;
+  cursor: pointer;
+}
