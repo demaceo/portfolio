@@ -25,7 +25,6 @@ function NavMenu() {
   };
   return (
     <section className="side-nav-container">
-      {/* <div></div> */}
       <i
         className="fas fa-bars"
         ref={navIconRef}
@@ -34,9 +33,9 @@ function NavMenu() {
       ></i>
       <div className="sidenav" ref={navRef}>
         <div id="content-container">
-          <div id="switch-container">
+          {/* <div id="switch-container">
             <LightSwitch />
-          </div>
+          </div> */}
           <div id="nav-container">
             <Link to="/" aria-label="about-me">
               Home
