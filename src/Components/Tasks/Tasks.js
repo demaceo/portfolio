@@ -20,6 +20,13 @@ class Tasks extends Component {
     this.help = document.querySelector("#taskHelp");
     this.ul = document.querySelector("#taskul");
     this.items = {}; 
+
+    // if(localStorage.getItem("tasks")){
+    //   let storedTasks = JSON.parse(localStorage.getItem("tasks"))
+    //   console.log(storedTasks);
+    //   this.state.tasks = storedTasks;
+    //   console.log(this.state.tasks)
+    // }
   }
 
   handleChange = (e) => {
@@ -44,6 +51,7 @@ class Tasks extends Component {
   addTask = (task) => {
     const id = String(Date.now());
     this.state.tasks = this.state.tasks.concat({ task, id });
+    // localStorage.setItem("tasks", JSON.stringify(this.state.tasks));
     this.updateHelp();
     const ul = document.querySelector("#taskul");
     const li = document.createElement("li");
