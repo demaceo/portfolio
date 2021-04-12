@@ -1,7 +1,6 @@
 .projects-container {
   width: 90%;
   margin: 5vh 0 14vh 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

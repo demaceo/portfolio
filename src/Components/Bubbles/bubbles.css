@@ -136,7 +136,7 @@
     font-family: "quicksand";
     margin: 0;
     padding: 0;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     text-transform: uppercase;
     letter-spacing: 10px;
     background-color: #f3ec78;
@@ -159,7 +159,11 @@
     top: -15vh;
     left: -3vw;
     right: -3vw;
-    font-size: 20vw;
+    font-size: 18vw;
+  }
+  .fa-music {
+    top: -17vh;
+    font-size: 23vw;
   }
 }
 
@@ -256,24 +260,6 @@
     transform: translateY(-120px) rotate(2deg);
   }
 }
-
-/* @keyframes animate {
-  0%{
-    transform: translateY(-10px) rotate(0deg)
-  }
-  25%{
-    transform: translateY(-100px) rotate(180deg)
-  }
-  50%{
-    transform: translateY(-200px) rotate(360deg)
-  }
-  75%{
-    transform: translateY(-100px) rotate(-180deg)
-  }
-  100%{
-    transform: translateY(-30px) rotate(0deg)
-  }
-} */
 
 @media all and (max-width: 740px) {
   .bubble-container {
