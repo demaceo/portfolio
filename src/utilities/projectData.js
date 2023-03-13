@@ -54,7 +54,7 @@ const projectData = [
       { name: "Demaceo Vincent", link: "https://github.com/demaceo" },
       { name: "Caleb Cyphers", link: "https://github.com/CalebCyphers" },
     ],
-    link: "https://rancidtomatillo.herokuapp.com/",
+    link: "https://github.com/demaceo/rantom",
     icon: "fas fa-film icon",
   },
 ];
