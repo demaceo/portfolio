@@ -11,7 +11,7 @@ const projectData = [
       { name: "Scott Brabson", link: "https://github.com/brabbuss" },
       { name: "Bruce Gordon", link: "https://github.com/bruce-gordon" },
     ],
-    link: "https://brabbuss.github.io/moodytunes/",
+    link: "https://github.com/demaceo/moodytunes",
     icon: "fas fa-theater-masks icon",
   },
   {
@@ -28,7 +28,7 @@ const projectData = [
       { name: "Sage Gonzales", link: "https://github.com/SageOfCode" },
       { name: "Brian Liu", link: "https://github.com/the-color-bliu" },
     ],
-    link: "https://cappua-fe.herokuapp.com/",
+    link: "https://github.com/Cappua/cappua-fe",
     icon: "fas fa-music icon",
   },
   {
@@ -54,7 +54,7 @@ const projectData = [
       { name: "Demaceo Vincent", link: "https://github.com/demaceo" },
       { name: "Caleb Cyphers", link: "https://github.com/CalebCyphers" },
     ],
-    link: "https://rancidtomatillo.herokuapp.com/",
+    link: "https://github.com/demaceo/rantom",
     icon: "fas fa-film icon",
   },
 ];
