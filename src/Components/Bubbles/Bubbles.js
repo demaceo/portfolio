@@ -1,5 +1,5 @@
 import React from "react";
-import "./bubbles.css";
+import "./Bubbles.css";
 import projectData from "../../utilities/projectData.js";
 
 export default function Bubbles() {
@@ -10,6 +10,7 @@ export default function Bubbles() {
       event.target.classList.remove("pop");
     }, 1000);
   };
+  // eslint-disable-next-line
   const bubbles = projectData.map((bubble) => {
     const { id, name, icon, link } = bubble;
     if (id < 4) {

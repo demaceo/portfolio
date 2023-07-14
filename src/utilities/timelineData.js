@@ -1,5 +1,35 @@
 const timelineData = [
   {
+    id: 0,
+    job: "Support Engineer",
+    at: "Human Interest",
+    location: "San Francisco, CA",
+    description: [
+      {
+        point:
+          "Contributed to various areas of our code (such as the frontend, backend, & data ingestion layer) by tackling complex technical challenges using SQL, TypeScript, Node.js, Next.js, & React which consistently delivered satisfactory results.",
+      },
+      {
+        point:
+          "Tested, integrated, & enabled over 90% of our partner SBO’s APIs.",
+      },
+      {
+        point:
+          "Constructed UI tools with React, Typescript, CSS, & HTML to be utilized externally by clients and internally by the Product Operations team.",
+      },
+      {
+        point:
+          "Delegated & resolved escalations as the scheduled On-Call engineer.",
+      },
+    ],
+    date: "May 2021",
+    image: "",
+    category: {
+      tag: "Software Engineer",
+      color: "#5f9ea0",
+    },
+  },
+  {
     id: 1,
     job: "Staff Facilitator",
     at: "Sustainable Summer",
@@ -9,7 +39,10 @@ const timelineData = [
         point:
           "Leading and facilitating programs related to sustainability & conservation efforts.",
       },
-      { point: "Working throughout New York City, The Amazon, The Galápagos, & Costa Rica" },
+      {
+        point:
+          "Working throughout New York City, The Amazon, The Galápagos, & Costa Rica",
+      },
     ],
     date: "June 2018",
     image: "",
@@ -27,9 +60,13 @@ const timelineData = [
       { point: "Creating an environmental education curriculum" },
       { point: "Implementing it into the primary schools of Andros island." },
       {
-        point: "Collaborating with partners, researchers, & the local community",
+        point:
+          "Collaborating with partners, researchers, & the local community",
       },
-      { point: "Working on projects geared towards sustainable island development." },
+      {
+        point:
+          "Working on projects geared towards sustainable island development.",
+      },
       { point: "Monitoring and maintaing coral reef propagation site." },
     ],
     date: "December 2017",
@@ -66,8 +103,7 @@ const timelineData = [
         point: "Teaching hands-on classes in coastal, beach, & marsh ecology.",
       },
       {
-        point:
-          "Seine netting, plankton tow labs, herpetology, ornithology",
+        point: "Seine netting, plankton tow labs, herpetology, ornithology",
       },
       { point: "Squid & shark dissections" },
       {
@@ -125,8 +161,7 @@ const timelineData = [
           "Hiked miles throughout the mountains of the San Bernardino National Forest daily.",
       },
       {
-        point:
-          "Creating, adjusting, & adapting lesson plans weekly",
+        point: "Creating, adjusting, & adapting lesson plans weekly",
       },
       {
         point:
@@ -179,7 +214,10 @@ const timelineData = [
         point:
           "Set up laboratory experiments for Andrew Forbes of the University of Iowa.",
       },
-      { point: "Study primarily focused on Strauzia longipennis, a species of fly undergoing evolutionary divergence." },
+      {
+        point:
+          "Study primarily focused on Strauzia longipennis, a species of fly undergoing evolutionary divergence.",
+      },
     ],
     date: "September 2013",
     image: "",
@@ -196,7 +234,7 @@ const timelineData = [
     date: "June 6",
     image: "",
     category: {
-      tag: "Origin",
+      tag: "Origin Story",
       color: "#018f69",
     },
   },
