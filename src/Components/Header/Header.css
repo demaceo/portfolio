@@ -3,12 +3,14 @@
 .header-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100vw;
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  width: 95vw;
+  width: 95%;
   max-height: 19.3vh;
   border-radius: 10px;
   margin: 1em 0em;
@@ -149,32 +151,5 @@
 
   100% {
     margin-left: -101%;
-  }
-}
-
-/* ********* MATRIX HEADER THEMES ********* */
-
-#hidden {
-  visibility: hidden;
-}
-
-.matrix-header {
-  /* background-color: #333; */
-  color: #ccc;
-}
-
-#matrix-clouds {
-  background: linear-gradient(to top, #3b1157 0%, rgb(109, 78, 119) 100%);
-}
-
-@media screen and (max-width: 600px) {
-  .header-container {
-    margin-top: 4vh;
-  }
-  .animated-content {
-    display: none;
-  }
-  #time {
-    display: none;
   }
 }

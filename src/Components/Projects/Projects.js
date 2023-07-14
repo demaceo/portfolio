@@ -1,6 +1,6 @@
 import React from "react";
 import projectData from "../../utilities/projectData.js";
-import "./projects.css";
+import "./Projects.css";
 import { nanoid } from "nanoid";
 
 export default function Projects() {

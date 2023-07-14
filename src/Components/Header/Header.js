@@ -1,12 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Header.css";
-import { useTheme, useThemeUpdate } from "../../utilities/ThemeContext";
 
-function Header() {
-  const darkTheme = useTheme();
-  const idTheme = darkTheme ? "hidden" : "clouds";
-  const headerTheme = darkTheme ? "matrix-header header" : "header";
-
+export default function Header() {
   const [time, setTime] = useState();
   let date = Date().toLocaleString().slice(0, 10);
 
@@ -18,8 +13,8 @@ function Header() {
 
   return (
     <section className="header-container">
-      <div className={headerTheme}>
-        <div className="animated-content" id={idTheme}>
+      <div className="header">
+        <div className="animated-content" id="clouds">
           <div className="cloud c1"></div>
           <div className="cloud c2"></div>
           <div className="cloud c3"></div>
@@ -34,5 +29,3 @@ function Header() {
     </section>
   );
 }
-
-export default Header;

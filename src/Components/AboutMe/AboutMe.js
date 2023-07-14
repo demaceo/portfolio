@@ -1,40 +1,20 @@
 import React from "react";
-import "./aboutMe.css";
+import "./AboutMe.css";
 
 export default function AboutMe() {
   return (
-    <>
-      {/* <div
-        class="badge-base LI-profile-badge"
-        data-locale="en_US"
-        data-size="medium"
-        data-theme="dark"
-        data-type="VERTICAL"
-        data-vanity="demaceo"
-        data-version="v1"
-      >
-        <a
-          class="badge-base__link LI-simple-link"
-          href="https://www.linkedin.com/in/demaceo?trk=profile-badge"
-        >
-          Demaceo Vincent Howard
-        </a>
-      </div> */}
-
+    <section className="aboutme-container">
       <div className="about">
         <div className="basic-info">
           <h2 id="my-name">Demaceo Vincent Howard</h2>
           <h3 id="title">Front End Engineer // Software Developer</h3>
         </div>
         <div id="socials">
-          <a
-            href="https://www.linkedin.com/in/demaceo-vincent-howard-12a9028b/"
-            alt="linked-in"
-          >
+          <a href="https://www.linkedin.com/in/demaceo/" alt="linked-in">
             <i className="social fab fa-linkedin"></i>
           </a>
 
-          <a href="https://www.instagram.com/demaceo.vh/" alt="instagram">
+          <a href="https://www.instagram.com/demaceovincent/" alt="instagram">
             <i className="social fab fa-instagram"></i>
           </a>
           <a href="https://github.com/demaceo" alt="github">
@@ -48,6 +28,6 @@ export default function AboutMe() {
           </a>
         </div>
       </div>
-    </>
+    </section>
   );
 }
