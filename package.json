@@ -1,6 +1,10 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "v20.3.1",
+    "npm": "9.6.7"
+  },
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
