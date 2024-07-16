@@ -1,0 +1,77 @@
+/* @import url("https://fonts.cdnfonts.com/css/gallient"); */
+
+.syne-font {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+.nav-container {
+  display: flex;
+  width: 99vw;
+  height: 5vh;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  align-items: center;
+  align-content: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  /* font-family: "Gallient", sans-serif; */
+  width: 30vw;
+  align-items: center;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin:0vh 1vw;
+}
+
+.descriptor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#name {
+  font-size: 25px;
+}
+
+#occupation {
+  opacity: 55%;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30vw;
+  align-items: flex-start;
+  margin-right: 2vw;
+}
+
+.link {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgba(0, 0, 0, 0.433);
+  color: black;
+  border-radius: 25px;
+  padding: 5px;
+  align-items: center;
+  width: 5vw;
+  height: 3vh;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #264653;
+  color: white;
+}
