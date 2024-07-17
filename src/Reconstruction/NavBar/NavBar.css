@@ -1,7 +1,6 @@
 .syne-font {
   font-family: "Syne", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
   font-style: normal;
 }
 .nav-container {
@@ -10,10 +9,12 @@
   height: 5vh;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white;
+  background-color: whitesmoke;
   padding: 15px;
   align-items: center;
   align-content: center;
+  box-shadow: rgb(50 50 93 / 20%) 0px 30px 60px -12px,
+    rgb(0 0 0 / 28%) 0px 18px 36px -18px;
 }
 
 .logo-container {
@@ -66,16 +67,11 @@
   height: 3vh;
   text-decoration: none;
   font-weight: 100;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.1s ease, color 0.1s ease;
 }
 
 .link:hover {
   background-color: #264653;
-  /* background: -webkit-linear-gradient(
-    left,
-    rgba(92, 129, 202, 1) 0%,
-    rgba(249, 140, 112, 1) 100%
-  ); */
   color: white;
   font-weight: 500;
   font-size: medium;
