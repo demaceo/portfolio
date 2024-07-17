@@ -2,7 +2,7 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import logo from "../../logo.jpg";
 
-function NavBar() {
+export default function NavBar() {
   return (
     <div className="nav-container syne-font">
       <div className="logo-container">
@@ -29,5 +29,3 @@ function NavBar() {
     </div>
   );
 }
-
-export default NavBar;
