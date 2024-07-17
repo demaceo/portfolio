@@ -1,0 +1,62 @@
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  height: 40vh;
+  padding: 1vh 5vw;
+  margin: 2vh 2vw;
+  background-color: whitesmoke;
+}
+
+.contact-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  height: fit-content;
+  font-family: "Gallient", sans-serif;
+  line-height: 0.5;
+}
+
+#contact {
+  font-size: 75px;
+  letter-spacing: 15px;
+  font-weight: 300;
+}
+
+#contact-desc {
+  font-size: 18px;
+  padding-left: 10px;
+  letter-spacing: 10px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.674);
+}
+
+.contact-info-container {
+  border: 2px solid black;
+  border-radius: 100px;
+  width: 45vw;
+  height: 15vh;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Syne", sans-serif;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#linkedIn-icon {
+  margin: 10px;
+  height: 30px;
+}
