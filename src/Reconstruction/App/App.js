@@ -4,7 +4,8 @@ import { Routes, Route } from "react-router-dom";
 
 // import Projects from "../Projects/Projects.js";
 import NavBar from "../../Reconstruction/NavBar/NavBar.js";
-// import Hero from "../../Reconstruction/Hero/Hero.js"
+import Hero from "../../Reconstruction/Hero/Hero.js"
+import Profile from "../Profile/Profile.js";
 
 
 
@@ -17,8 +18,8 @@ function App() {
           element={
             <>
             <NavBar />
-            {/* <Hero/> */}
-            {/* <Profile/> */}
+            <Hero/>
+            <Profile/>
               {/* <Bubbles /> <Waves /> */}
             </>
           }
