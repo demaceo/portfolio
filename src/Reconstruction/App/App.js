@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "../../Reconstruction/NavBar/NavBar.js";
 import Hero from "../../Reconstruction/Hero/Hero.js"
 import Profile from "../Profile/Profile.js";
-
+import Contact from "../Contact/Contact.js";
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <NavBar />
             <Hero/>
             <Profile/>
-              {/* <Bubbles /> <Waves /> */}
+            <Contact/>
             </>
           }
         />
