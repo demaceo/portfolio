@@ -1,16 +1,11 @@
 .hero-container {
   font-family: "Gallient", sans-serif;
   height: 90vh;
-  background-color: rgba(0, 0, 0, 0.62);
-  background: -webkit-linear-gradient(
-    left,
-    rgba(92, 129, 202, 1) 0%,
-    rgba(249, 140, 112, 1) 100%
-  );
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-text-container {
@@ -19,14 +14,22 @@
   justify-content: space-around;
   font-size: 80px;
   font-style: normal;
+  padding-top: 5vh;
+  opacity: 0; /* Initially hide text */
+  transition: opacity 0.9s ease-in-out; /* Smooth transition for opacity */
 }
+
 #top-text {
   letter-spacing: 15px;
   font-weight: 100;
 }
 
 #bttm-text {
-  letter-spacing: 50px;
+  letter-spacing: 60px;
   font-weight: 500;
   margin-bottom: 20vh;
+}
+
+.hero-text-container.hovered {
+  opacity: 1;
 }
