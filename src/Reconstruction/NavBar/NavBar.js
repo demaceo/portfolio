@@ -15,15 +15,15 @@ export default function NavBar() {
       <div className="nav-links">
         <Link to="/" className="link">
           <i className="fa fa-id-badge" aria-hidden="true"></i>
-          <span className="option-text">Profile</span>
+          <span className="option-text">PROFILE</span>
         </Link>
         <Link to="/portfolio" className="link">
           <i className="fa fa-layer-group" aria-hidden="true"></i>
-          <span className="option-text">Portfolio</span>
+          <span className="option-text">PORTFOLIO</span>
         </Link>
         <Link to="/contact" className="link">
           <i className="fa fa-paper-plane" aria-hidden="true"></i>
-          <span className="option-text">Contact</span>
+          <span className="option-text">CONTACT</span>
         </Link>
       </div>
     </div>
