@@ -50,9 +50,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 30vw;
+  width: 20vw;
   align-items: flex-start;
-  margin-right: 2vw;
+  margin-right: 4vw;
+  /* border: 1px solid rgba(0, 0, 0, 0.433); */
 }
 
 .link {
