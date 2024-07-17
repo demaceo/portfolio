@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <div className="nav-container syne-font">
       <div className="logo-container">
-        <img id="logo" src={logo} />
+        <img id="logo" alt="portfolio-logo" src={logo} />
         <div className="descriptor-container">
           <div id="name">Demaceo Vincent</div>
           <div id="occupation">Designer and Developer</div>
