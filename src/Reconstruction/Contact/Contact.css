@@ -107,7 +107,7 @@
     height: auto;
     /* align-items: baseline; */
     /* justify-content: center; */
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     justify-content: baseline;
   }
@@ -118,7 +118,7 @@
     /* width: 65%; */
   }
   .contact-info-container {
-    width: 35%;
+    width: fit-content;
     height: auto;
     padding: 3px;
     margin: 0;

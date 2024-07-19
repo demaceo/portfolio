@@ -83,9 +83,10 @@
 .link:hover {
   background-color: #264653;
   color: white;
-  font-weight: 300;
-  font-size: medium;
+  font-weight: 200;
+  /* font-size: medium; */
 }
+
 
 /* Responsive Design */
 
@@ -195,7 +196,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 15px;
+    overflow: hidden;
+    margin: 0;
   }
+
+
 
   .link {
     width: 100%;

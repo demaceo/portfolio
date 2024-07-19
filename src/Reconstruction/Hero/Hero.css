@@ -107,6 +107,8 @@
     justify-content: baseline;
     text-align: center;
     font-size: 100%;
+    opacity: 1;
+    padding-left: 15px;
   }
 
   #top-text {
@@ -119,5 +121,6 @@
     font-weight: 700;
     margin-bottom: 10vh;
     font-style: oblique;
+    padding-left: 15px;
   }
 }
