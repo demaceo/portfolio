@@ -16,7 +16,7 @@ export default function Contact() {
           className="contact-link"
         >
           <FontAwesomeIcon id="linkedIn-icon" icon={faLinkedinIn} />
-          <span className="option-text">Chat on LinkedIn</span>
+          <span className="option-text contact-text">Chat on LinkedIn</span>
         </Link>
       </div>
     </section>

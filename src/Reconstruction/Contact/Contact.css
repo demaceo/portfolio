@@ -120,9 +120,9 @@
   .contact-info-container {
     width: 35%;
     height: auto;
-    /* padding: 5px; */
+    padding: 3px;
     margin: 0;
-    border: 1px solid black;
+    border: none;
   }
 
   .contact-link {
@@ -136,7 +136,11 @@
     font-size: 11px;
     letter-spacing: 5px;
   }
-  #linkedIn-icon {
+  /* #linkedIn-icon {
     display: none;
+  } */
+
+  .contact-text{
+    display:none;
   }
 }
