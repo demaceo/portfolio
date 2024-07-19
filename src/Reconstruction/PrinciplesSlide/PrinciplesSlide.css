@@ -182,6 +182,10 @@
     justify-content: baseline;
     text-align: center;
   }
+  .principle-main-title-container {
+    /* height: 20vh; */
+    margin-bottom: 5vh;
+  }
   .principle-main-title {
     font-size: 38px;
   }
