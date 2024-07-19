@@ -139,8 +139,12 @@
     align-items: center;
     justify-content: center;
   }
+  .principle-main-title-container {
+    margin-bottom: 5vh;
+  }
   .principle-main-title {
     font-size: 40px;
+    margin-bottom: 5vh;
   }
 
   .principle-boxes-container {
@@ -152,7 +156,7 @@
   }
 
   .principle-box {
-    height: 25vh;
+    height: 35vh;
     border: 1px solid #efd5524e;
     border-radius: 15px;
     width: 65vw;
@@ -184,11 +188,11 @@
   }
   .principle-main-title-container {
     /* height: 20vh; */
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
   }
   .principle-main-title {
     font-size: 38px;
-    margin-bottom: 3vh;
+    /* margin-bottom: 5vh; */
   }
 
   .principle-boxes-container {
