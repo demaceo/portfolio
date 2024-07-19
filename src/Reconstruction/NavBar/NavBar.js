@@ -12,7 +12,7 @@ export default function NavBar() {
           <div id="occupation">Designer and Developer</div>
         </div>
       </div>
-      <div className="nav-links">
+      <div className="nav-links-container">
         <Link to="/" className="link">
           <i className="fa fa-id-badge" aria-hidden="true"></i>
           <span className="option-text">PROFILE</span>

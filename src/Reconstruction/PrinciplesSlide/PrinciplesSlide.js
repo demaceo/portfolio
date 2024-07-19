@@ -18,7 +18,7 @@ export default function PrinciplesSlide() {
       <div className="principle-main-title-container">
         <h2 className="principle-main-title">Principles & Strategies</h2>
       </div>
-      <div className="boxes-container">
+      <div className="principle-boxes-container">
         <div className="principle-box">
           {/* <div className="animation-box"></div> */}
           <div className="principle-text-container">
@@ -34,7 +34,7 @@ export default function PrinciplesSlide() {
           {/* <div className="animation-box"></div> */}
           <div className="principle-text-container">
             <h3 className="principle-title">Creator. Partner. Collaborator.</h3>
-            <p className="service-description">
+            <p className="principle-description">
               Ideas are far from linear. As designer and developer, I can
               spearhead, support or polish your project or product at any stage
               it needs it.

@@ -6,7 +6,7 @@ export default function ServiceSlide() {
       <div className="service-main-title-container">
         <h2 className="service-main-title">Service Spectrum</h2>
       </div>
-      <div className="boxes-container">
+      <div className="service-boxes-container">
         <div className="service-box">
           <div className="animation-box"></div>
           <div className="service-text-container">
