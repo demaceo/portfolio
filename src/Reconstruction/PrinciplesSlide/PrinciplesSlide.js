@@ -54,7 +54,7 @@ export default function PrinciplesSlide() {
         </div>
       </div>
       <div className="tools-icons-container">
-        <FontAwesomeIcon id="figma-icon" icon={faFigma} />
+        <FontAwesomeIcon icon={faFigma} />
         <FontAwesomeIcon icon={faWebflow} />
         <FontAwesomeIcon icon={faGit} />
         <FontAwesomeIcon icon={faNode} />
