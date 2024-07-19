@@ -21,10 +21,10 @@ export default function NavBar() {
           <i className="fa fa-layer-group" aria-hidden="true"></i>
           <span className="option-text">PORTFOLIO</span>
         </Link>
-        <Link to="/contact" className="link">
+        <a href="#contact-jump" className="link">
           <i className="fa fa-paper-plane" aria-hidden="true"></i>
           <span className="option-text">CONTACT</span>
-        </Link>
+        </a>
       </div>
     </div>
   );
