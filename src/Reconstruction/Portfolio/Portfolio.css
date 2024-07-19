@@ -96,23 +96,34 @@
 }
 
 @media (max-width: 800px) {
+  .projects-container {
+    margin-bottom: 5vh;
+  }
+  
   .project-container {
     flex-direction: column;
     /* justify-content: baseline; */
     align-items: center;
     margin-bottom: 3vh;
+    padding-top: 4vh;
+    width: 90%;
   }
 
   .project-img {
-    width: 65vw;
+    width: 80vw;
   }
 
   .project-details {
     width: 70vw;
     padding-top: 0vh;
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
     text-align: start;
-    /* border: 1px solid black; */
+  }
+
+  #project-title {
+    font-size: 1.5rem;
+  }
+
+  #project-description {
+    font-size: 1rem;
   }
 }
