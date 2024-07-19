@@ -3,6 +3,7 @@
   height: 90vh;
   color: white;
   display: flex;
+  /* width: 100%; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -31,6 +32,7 @@
   letter-spacing: 60px;
   font-weight: 500;
   margin-bottom: 10vh;
+  font-style: italic;
 }
 
 .hero-text-container.hovered {
@@ -45,7 +47,6 @@
   }
   #bttm-text {
     letter-spacing: 60px;
-    /* text-decoration: wavy; */
     font-style: italic;
     font-weight: 700;
     margin-bottom: 10vh;
@@ -59,7 +60,7 @@
 
   #bttm-text {
     letter-spacing: 60px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 700;
     margin-bottom: 10vh;
   }
@@ -84,7 +85,7 @@
 
   #bttm-text {
     letter-spacing: 60px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 700;
     margin-bottom: 10vh;
   }
@@ -114,7 +115,7 @@
   }
 
   #bttm-text {
-    letter-spacing: 40px;
+    letter-spacing: 30px;
     font-weight: 700;
     margin-bottom: 10vh;
     font-style: oblique;

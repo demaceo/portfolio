@@ -10,7 +10,7 @@ export default function Hero() {
         className={`hero-text-container ${hovered ? "hovered" : ""}`}
         onMouseEnter={() => setHovered(true)}
       >
-        <h1 id="top-text">Making the invisible</h1>
+        <h2 id="top-text">Making the invisible</h2>
         <h1 id="bttm-text">VISIBLE</h1>
       </div>
     </section>
