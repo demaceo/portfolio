@@ -2,27 +2,29 @@
 
 body {
   margin: 0;
+  /* padding: 0; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 100vw;
   overflow-x: hidden;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   min-height: 100vh;
-  flex-direction: column;
   align-items: center;
   background: linear-gradient(
-      to right,
-      rgba(92, 129, 202, 1) 0%,
-      rgba(249, 140, 112, 1) 100%
-    ),url(https://grainy-gradients.vercel.app/noise.svg);
+    to right,
+    rgba(92, 129, 202, 1) 0%,
+    rgba(249, 140, 112, 1) 100%
+  );
   background-size: 175% 175%;
-  -webkit-animation: Animation 20s ease-in-out infinite;
-  -moz-animation: Animation 20s ease-in-out infinite;
-  animation: Animation 20s ease-in-out infinite;
+  -webkit-animation: bg-animation 20s ease-in-out infinite;
+  -moz-animation: bg-animation 20s ease-in-out infinite;
+  animation: Animatbg-animationion 20s ease-in-out infinite;
 }
 
-@-webkit-keyframes Animation {
+@-webkit-keyframes bg-animation {
   0% {
     background-position: 10% 0%;
   }
@@ -33,7 +35,7 @@ body {
     background-position: 10% 0%;
   }
 }
-@-moz-keyframes Animation {
+@-moz-keyframes bg-animation {
   0% {
     background-position: 10% 0%;
   }
@@ -44,7 +46,7 @@ body {
     background-position: 10% 0%;
   }
 }
-@keyframes Animation {
+@keyframes bg-animation {
   0% {
     background-position: 10% 0%;
   }
@@ -54,4 +56,18 @@ body {
   100% {
     background-position: 10% 0%;
   }
+}
+
+/* Responsive Design */
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
 }
