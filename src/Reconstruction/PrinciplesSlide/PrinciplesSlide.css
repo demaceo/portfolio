@@ -10,6 +10,10 @@
   margin: 2vh 2vw;
 }
 
+.principle-main-title-container {
+  height: 15vh;
+}
+
 .principle-main-title {
   display: flex;
   flex-direction: row;
@@ -30,6 +34,7 @@
   margin-top: 2vh;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2vh;
 }
 
 .principle-box {
@@ -120,7 +125,7 @@
   .principle-description {
     font-size: 20px;
   }
-    .tools-icons-container {
+  .tools-icons-container {
     /* width: 100%; */
     margin: 4vw 0vw;
     /* font-size: 2vh; */
