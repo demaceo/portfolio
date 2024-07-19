@@ -4,7 +4,7 @@ import NavBar from "../../Reconstruction/NavBar/NavBar.js";
 import Hero from "../../Reconstruction/Hero/Hero.js";
 import Profile from "../Profile/Profile.js";
 import Contact from "../Contact/Contact.js";
-import Portfolio from "../Portfolio/Portfolio.js"
+import Portfolio from "../Portfolio/Portfolio.js";
 
 function App() {
   return (
@@ -27,12 +27,11 @@ function App() {
         element={
           <>
             <NavBar />
-            <Portfolio/>
+            <Portfolio />
             <Contact />
           </>
         }
       />
-      {/* <Route exact path="/pg" element={<AllLinksPage />} /> */}
     </Routes>
   );
 }
