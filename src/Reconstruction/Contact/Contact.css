@@ -36,7 +36,7 @@
 }
 
 .contact-info-container {
-  border: 2px solid black;
+  border: 1.5px solid black;
   border-radius: 100px;
   width: 45vw;
   height: 15vh;
@@ -59,4 +59,82 @@
 #linkedIn-icon {
   margin: 10px;
   height: 30px;
+}
+
+/* Responsive Design */
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+}
+
+@media (max-width: 859px) and (min-width: 658px) {
+  .contact-container {
+    /* border: 1px solid black; */
+    height: auto;
+    /* align-items: baseline; */
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+  .contact-title-container {
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    height: auto;
+  }
+  .contact-info-container {
+    width: 40%;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+  }
+
+  #contact {
+    font-size: 55px;
+  }
+  #contact-desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 657px) {
+  .contact-container {
+    /* border: 1px solid black; */
+    height: auto;
+    /* align-items: baseline; */
+    /* justify-content: center; */
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+  .contact-title-container {
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    height: auto;
+    /* width: 65%; */
+  }
+  .contact-info-container {
+    width: 35%;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid black;
+  }
+
+  .contact-link {
+    font-size: 15px;
+  }
+  #contact {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  #contact-desc {
+    font-size: 11px;
+    letter-spacing: 5px;
+  }
 }
