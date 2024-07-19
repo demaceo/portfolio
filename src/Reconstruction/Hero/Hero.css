@@ -1,0 +1,123 @@
+.hero-container {
+  font-family: "Gallient", sans-serif;
+  height: 90vh;
+  color: white;
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 80px;
+  font-style: normal;
+  padding-top: 5vh;
+  opacity: 0; /* Initially hide text */
+  transition: opacity 0.9s ease-in-out; /* Smooth transition for opacity */
+  width: 95%;
+  /* border: 1px solid black; */
+}
+
+#top-text {
+  letter-spacing: 15px;
+  font-weight: 100;
+}
+
+#bttm-text {
+  letter-spacing: 60px;
+  font-weight: 500;
+  margin-bottom: 10vh;
+  font-style: italic;
+}
+
+.hero-text-container.hovered {
+  opacity: 1;
+}
+
+/* Responsive Design */
+
+@media (min-width: 1200px) {
+  .hero-text-container {
+    font-size: 40px;
+  }
+  #bttm-text {
+    letter-spacing: 60px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 10vh;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .hero-text-container {
+    font-size: 40px;
+  }
+
+  #bttm-text {
+    letter-spacing: 60px;
+    /* font-style: italic; */
+    font-weight: 700;
+    margin-bottom: 10vh;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .hero-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-text-container {
+    font-size: 40px;
+  }
+
+  #top-text {
+    letter-spacing: 10px;
+    font-weight: 500;
+  }
+
+  #bttm-text {
+    letter-spacing: 60px;
+    /* font-style: italic; */
+    font-weight: 700;
+    margin-bottom: 10vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    /* align-items: center; */
+  }
+
+  .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    justify-content: baseline;
+    text-align: center;
+    font-size: 100%;
+  }
+
+  #top-text {
+    letter-spacing: 5px;
+    font-weight: 500;
+  }
+
+  #bttm-text {
+    letter-spacing: 30px;
+    font-weight: 700;
+    margin-bottom: 10vh;
+    font-style: oblique;
+  }
+}

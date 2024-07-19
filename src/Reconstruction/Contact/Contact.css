@@ -1,0 +1,143 @@
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  height: 40vh;
+  padding: 1vh 5vw;
+  margin: 2vh 2vw;
+  background-color: whitesmoke;
+}
+
+.contact-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  height: fit-content;
+  font-family: "Gallient", sans-serif;
+  line-height: 0.5;
+}
+
+#contact {
+  font-size: 75px;
+  letter-spacing: 15px;
+  font-weight: 300;
+}
+
+#contact-desc {
+  font-size: 18px;
+  padding-left: 10px;
+  letter-spacing: 10px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.674);
+}
+
+.contact-info-container {
+  border: 1.5px solid black;
+  border-radius: 100px;
+  width: 45vw;
+  height: 15vh;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Syne", sans-serif;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#linkedIn-icon {
+  margin: 10px;
+  height: 30px;
+}
+
+/* Responsive Design */
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+}
+
+@media (max-width: 859px) and (min-width: 658px) {
+  .contact-container {
+    /* border: 1px solid black; */
+    height: auto;
+    /* align-items: baseline; */
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+  .contact-title-container {
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    height: auto;
+  }
+  .contact-info-container {
+    width: 40%;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+  }
+
+  #contact {
+    font-size: 55px;
+  }
+  #contact-desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 657px) {
+  .contact-container {
+    /* border: 1px solid black; */
+    height: auto;
+    /* align-items: baseline; */
+    /* justify-content: center; */
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+  .contact-title-container {
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    height: auto;
+    /* width: 65%; */
+  }
+  .contact-info-container {
+    width: 35%;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid black;
+  }
+
+  .contact-link {
+    font-size: 15px;
+  }
+  #contact {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  #contact-desc {
+    font-size: 11px;
+    letter-spacing: 5px;
+  }
+  #linkedIn-icon {
+    display: none;
+  }
+}

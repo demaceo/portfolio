@@ -1,28 +1,73 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+/* @import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,700); */
 
 body {
   margin: 0;
+  /* padding: 0; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
+  min-width: 100vw;
   overflow-x: hidden;
   display: flex;
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
   align-items: center;
-  color: black;
-  width: auto;
-  background: rgba(92, 129, 202, 1);
-  background: -moz-linear-gradient(
-    left,
+  background: linear-gradient(
+    to right,
     rgba(92, 129, 202, 1) 0%,
     rgba(249, 140, 112, 1) 100%
   );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(92, 129, 202, 1) 0%,
-    rgba(249, 140, 112, 1) 100%
-  );
+  background-size: 175% 175%;
+  -webkit-animation: bg-animation 20s ease-in-out infinite;
+  -moz-animation: bg-animation 20s ease-in-out infinite;
+  animation: Animatbg-animationion 20s ease-in-out infinite;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@-moz-keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+/* Responsive Design */
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
 }
