@@ -234,15 +234,15 @@
 
 
   #logo {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
 
   #name {
-    font-size: 20px;
+    font-size: 15px;
   }
   #occupation {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   #nav-icon{
