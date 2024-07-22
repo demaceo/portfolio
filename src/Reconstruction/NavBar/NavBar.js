@@ -33,7 +33,7 @@ export default function NavBar() {
             <span className="option-text">PORTFOLIO</span>
           </Link>
           <a href="#contact-jump" className="link">
-            <span className="option-text">CONTACT</span>``
+            <span className="option-text">CONTACT</span>
           </a>
         </div>
       </div>
