@@ -30,7 +30,6 @@
 .principle-boxes-container {
   display: flex;
   flex-direction: row;
-  /* width: fit-content; */
   margin-top: 1vh;
   justify-content: space-evenly;
   align-items: center;
@@ -242,7 +241,8 @@
     margin-bottom: 5vh;
   }
   .principle-main-title {
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: 10px;
   }
 
   .principle-boxes-container {
