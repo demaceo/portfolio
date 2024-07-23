@@ -36,7 +36,6 @@
 }
 
 .contact-info-container {
-  /* border: 1.5px solid black; */
   border-radius: 100px;
   width: 45vw;
   height: 15vh;
@@ -71,6 +70,7 @@
 .contact-text {
   color: #ffddcc;
   font-size: 2vh;
+  text-decoration: underline;
 }
 
 .popup-button {
@@ -108,7 +108,7 @@
     height: auto;
   }
   .contact-info-container {
-    width: 40%;
+    width: 45%;
     height: auto;
     padding: 5px;
     margin: 0;
@@ -138,9 +138,13 @@
     height: auto;
   }
   .contact-info-container {
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 35%;
     height: auto;
-    padding: 3px;
+    padding: 10px 0px;
     margin: 0;
     border: none;
   }
@@ -159,5 +163,9 @@
 
   .contact-text {
     display: none;
+  }
+
+  .popup-button{
+    margin: 0px;
   }
 }

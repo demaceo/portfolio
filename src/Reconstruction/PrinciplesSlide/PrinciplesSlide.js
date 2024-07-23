@@ -20,7 +20,6 @@ export default function PrinciplesSlide() {
       </div>
       <div className="principle-boxes-container">
         <div className="principle-box">
-          {/* <div className="animation-box"></div> */}
           <div className="principle-text-container">
             <h3 className="principle-title">UX is the sum of all things.</h3>
             <p className="principle-description">
@@ -30,8 +29,7 @@ export default function PrinciplesSlide() {
             </p>
           </div>
         </div>
-        <div className="principle-box">
-          {/* <div className="animation-box"></div> */}
+        <div className="principle-box principle-box-line">
           <div className="principle-text-container">
             <h3 className="principle-title">Creator. Partner. Collaborator.</h3>
             <p className="principle-description">
@@ -41,8 +39,7 @@ export default function PrinciplesSlide() {
             </p>
           </div>
         </div>
-        <div className="principle-box">
-          {/* <div className="animation-box"></div> */}
+        <div className="principle-box principle-box-line">
           <div className="principle-text-container">
             <h3 className="principle-title">Clean - In thinking, in style.</h3>
             <p className="principle-description">
