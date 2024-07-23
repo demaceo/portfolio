@@ -36,15 +36,21 @@
 }
 
 .contact-info-container {
-  border: 1.5px solid black;
+  /* border: 1.5px solid black; */
   border-radius: 100px;
   width: 45vw;
   height: 15vh;
   margin-top: 5vh;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   font-family: "Syne", sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(92, 129, 202, 1) 0%,
+    rgba(249, 140, 112, 1) 100%
+  );
 }
 
 .contact-link {
@@ -56,9 +62,24 @@
   font-size: 20px;
 }
 
-#linkedIn-icon {
+.contact-icon {
   margin: 10px;
-  height: 30px;
+  font-size: 3vh;
+  color: #f2f1f7;
+}
+
+.contact-text {
+  color: #ffddcc;
+  font-size: 2vh;
+}
+
+.popup-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  font-family: "Syne", sans-serif;
+  margin: 10px;
+  align-items: center;
 }
 
 /* Responsive Design */
@@ -70,19 +91,19 @@
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+  /* .contact-text{
+    font-size: 2vh;
+  } */
 }
 
 @media (max-width: 859px) and (min-width: 658px) {
   .contact-container {
-    /* border: 1px solid black; */
     height: auto;
-    /* align-items: baseline; */
     justify-content: center;
     flex-wrap: wrap;
     justify-content: baseline;
   }
   .contact-title-container {
-    /* border: 1px solid black; */
     justify-content: space-around;
     height: auto;
   }
@@ -99,23 +120,22 @@
   #contact-desc {
     font-size: 15px;
   }
+
+  .contact-text {
+    font-size: 1.5vh;
+  }
 }
 
 @media (max-width: 657px) {
   .contact-container {
-    /* border: 1px solid black; */
     height: auto;
-    /* align-items: baseline; */
-    /* justify-content: center; */
     justify-content: space-around;
     flex-wrap: wrap;
     justify-content: baseline;
   }
   .contact-title-container {
-    /* border: 1px solid black; */
     justify-content: space-around;
     height: auto;
-    /* width: 65%; */
   }
   .contact-info-container {
     width: fit-content;
@@ -136,11 +156,8 @@
     font-size: 11px;
     letter-spacing: 5px;
   }
-  /* #linkedIn-icon {
-    display: none;
-  } */
 
-  .contact-text{
-    display:none;
+  .contact-text {
+    display: none;
   }
 }
