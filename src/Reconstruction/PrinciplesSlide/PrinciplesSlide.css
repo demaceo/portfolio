@@ -115,7 +115,8 @@
   }
 
   .principle-box-line {
-    border-top: 1px solid rgba(255, 255, 255, 0.449);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.449); */
+    border-top: 1px solid #efd55248;
   }
 
   .principle-title {
@@ -162,8 +163,9 @@
     margin-bottom: 2vh;
   }
 
-   .principle-box-line {
-    border-top: 1px solid rgba(255, 255, 255, 0.449);
+  .principle-box-line {
+    /* border-top: 1px solid rgba(255, 255, 255, 0.449); */
+    border-top: 1px solid #efd55248;
   }
 
   .principle-title {
@@ -212,8 +214,9 @@
     margin-bottom: 2vh;
   }
 
-   .principle-box-line {
-    border-top: 1px solid rgba(255, 255, 255, 0.449);
+  .principle-box-line {
+    /* border-top: 1px solid rgba(255, 255, 255, 0.449); */
+    border-top: 1px solid #efd55248;
   }
 
   .principle-title {
@@ -266,8 +269,9 @@
     padding: 5px;
   }
 
-   .principle-box-line {
-    border-top: 1px solid rgba(255, 255, 255, 0.449);
+  .principle-box-line {
+    /* border-top: 1px solid rgba(255, 255, 255, 0.449); */
+    border-top: 1px solid #efd55248;
   }
 
   .principle-title {
