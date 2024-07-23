@@ -12,6 +12,7 @@
 
 .principle-main-title-container {
   height: 15vh;
+  margin-bottom: 3vh;
 }
 
 .principle-main-title {
@@ -29,9 +30,9 @@
 .principle-boxes-container {
   display: flex;
   flex-direction: row;
-  width: fit-content;
-  margin-top: 2vh;
-  justify-content: space-around;
+  /* width: fit-content; */
+  margin-top: 1vh;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 2vh;
 }
@@ -40,30 +41,29 @@
   font-family: "Syne", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 40vh;
-  width: 30%;
+  /* width: 30%; */
   margin: 1vw;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .principle-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 20vh;
+  height: 25vh;
 }
 
 .principle-title {
-  font-weight: 200;
-  width: 100%;
-  font-size: 33px;
+  font-size: 20px;
 }
 
 .principle-description {
+  font-weight: 200;
   opacity: 75%;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .tools-icons-container {
@@ -71,7 +71,7 @@
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 2vw 0vw;
+  margin: 1vh 0vw;
 
   font-size: 3vh;
   color: #efd552cb;
@@ -80,13 +80,12 @@
 /* Responsive Design */
 @media (max-width: 1626px) and (min-width: 1212px) {
   .principle-title {
-    font-weight: 200;
-    width: 100%;
-    font-size: 23px;
+    font-size: 13px;
   }
 
   .principle-description {
-    font-size: 18px;
+    font-size: 15px;
+      font-weight: 200;
   }
 }
 
@@ -189,11 +188,9 @@
     justify-content: center;
   }
   .principle-main-title-container {
-    margin-bottom: 8vh;
   }
   .principle-main-title {
     font-size: 40px;
-    margin-bottom: 5vh;
   }
 
   .principle-boxes-container {
@@ -217,6 +214,7 @@
   .principle-box-line {
     /* border-top: 1px solid rgba(255, 255, 255, 0.449); */
     border-top: 1px solid #efd55248;
+    padding-top: 8vh;
   }
 
   .principle-title {
@@ -272,6 +270,8 @@
   .principle-box-line {
     /* border-top: 1px solid rgba(255, 255, 255, 0.449); */
     border-top: 1px solid #efd55248;
+        padding-top: 5vh;
+
   }
 
   .principle-title {
