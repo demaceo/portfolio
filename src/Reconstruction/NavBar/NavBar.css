@@ -161,6 +161,7 @@
     align-items: center;
     height: inherit;
     padding: 10px 5px;
+    width: 100%;
   }
 
   .logo-container {
@@ -169,7 +170,7 @@
     align-items: flex-start;
     /* margin-bottom: 10px; */
     color: rgb(0, 0, 0);
-    margin-left: 0px;
+    margin-left: 5px;
   }
 
   .nav-links-container {
