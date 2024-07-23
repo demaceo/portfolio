@@ -5,7 +5,7 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "../ContactForm/ContactForm.js";
 
 export default function Contact() {
   const contentStyle = { background: "transparent", border: "none", boxShadow: "none" };
