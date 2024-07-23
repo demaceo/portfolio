@@ -2,7 +2,7 @@ import "./ServiceSlide.css";
 
 export default function ServiceSlide() {
   return (
-    <section className="services-page">
+    <section className="services-page" id="services-slide">
       <div className="service-main-title-container">
         <h2 className="service-main-title">Service Spectrum</h2>
       </div>

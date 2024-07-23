@@ -13,6 +13,9 @@ export default function Hero() {
         <h2 id="top-text">Making the invisible</h2>
         <h1 id="bttm-text">VISIBLE</h1>
       </div>
+      <a href="#services-slide" className="">
+        <div className="scroll-down"></div>
+      </a>
     </section>
   );
 }
