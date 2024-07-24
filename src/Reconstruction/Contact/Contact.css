@@ -182,6 +182,7 @@
   #contact-desc {
     font-size: 10px;
     /* font-weight: 500; */
+    /* display: none; */
     letter-spacing: 5px;
   }
 
@@ -200,7 +201,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     justify-content: baseline;
-    margin: 0vh 5vw 5vh 5vw;
+    margin: 0vh 2vw 5vh 2vw;
   }
   .contact-title-container {
     justify-content: space-around;
@@ -231,6 +232,7 @@
     font-size: 8px;
     /* font-weight: 500; */
     letter-spacing: 5px;
+    display: none;
   }
 
   .contact-text {
