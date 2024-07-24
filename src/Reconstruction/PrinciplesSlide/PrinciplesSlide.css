@@ -221,7 +221,7 @@
     margin: 5vh 5vw;
   }
   .principle-main-title-container {
-    margin-bottom: 15vh;
+    margin-bottom: 80px;
   }
   .principle-main-title {
     font-size: 40px;
@@ -244,6 +244,7 @@
     width: 70vw;
     padding-bottom: 3vh;
     margin-bottom: 0vh;
+    margin-top: 20px;
   }
 
   .principle-box-line {
