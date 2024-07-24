@@ -36,7 +36,6 @@ const ContactForm = () => {
           }, 5000); // hide message after 5 seconds
         }
       );
-
     // Clears form after sending the email
     e.target.reset();
   };
