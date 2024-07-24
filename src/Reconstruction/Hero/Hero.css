@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .hero-text-container {
@@ -30,8 +31,12 @@
 #bttm-text {
   letter-spacing: 60px;
   font-weight: 500;
+  font-size: 90px;
+  font-style: oblique;
+  padding-left: 15px;
+
   margin-bottom: 10vh;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .hero-text-container.hovered {
@@ -127,6 +132,7 @@
     letter-spacing: 60px;
     font-weight: 700;
     margin-bottom: 10vh;
+    font-size: 80px;
   }
 }
 
@@ -151,6 +157,8 @@
     letter-spacing: 60px;
     font-weight: 700;
     margin-bottom: 10vh;
+    font-size: 70px;
+    padding-left: 15px;
   }
 }
 
@@ -181,6 +189,7 @@
     letter-spacing: 30px;
     font-weight: 700;
     margin-bottom: 10vh;
+    font-size: 30px;
     font-style: oblique;
     padding-left: 15px;
   }

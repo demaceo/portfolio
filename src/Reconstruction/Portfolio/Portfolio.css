@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .project-container {
@@ -99,7 +100,7 @@
   .projects-container {
     margin-bottom: 5vh;
   }
-  
+
   .project-container {
     flex-direction: column;
     /* justify-content: baseline; */

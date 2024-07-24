@@ -6,25 +6,27 @@
 
 .nav-container {
   display: flex;
-  width: 100vw;
+  width: 99vw;
+    color: #264653;
+
   height: auto;
   flex-direction: row;
   justify-content: space-between;
   background-color: whitesmoke;
   padding: 15px;
-  overflow: none;
+  overflow-x: hidden;
   align-items: center;
   align-content: center;
   box-shadow: rgb(50 50 93 / 20%) 0px 30px 60px -12px,
     rgb(0 0 0 / 28%) 0px 18px 36px -18px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .logo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
   width: 50%;
   align-items: flex-start;
 }
@@ -66,7 +68,9 @@
 .link {
   display: flex;
   justify-content: space-evenly;
-  color: black;
+  /* color: black; */
+    color: #264653;
+
   border-radius: 25px;
   padding: 5px 15px;
   align-items: center;

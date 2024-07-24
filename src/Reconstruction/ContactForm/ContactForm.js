@@ -47,11 +47,23 @@ const ContactForm = () => {
         <form className="email-form" onSubmit={sendEmail}>
           <h3>Email Me</h3>
           <label>Name</label>
-          <input type="text" name="from_name" id="from_name" required />
+          <input
+            type="text"
+            name="from_name"
+            id="from_name"
+            placeholder="Enter your name"
+            required
+          />
           <label>Email</label>
-          <input type="email" name="reply_to" id="reply_to" required />
+          <input
+            type="email"
+            name="reply_to"
+            id="reply_to"
+            placeholder="Enter your email"
+            required
+          />
           <label>Message</label>
-          <textarea name="message" required />
+          <textarea name="message" placeholder="Enter your message" required />
           <input
             id="submit-button"
             type="submit"

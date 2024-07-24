@@ -33,9 +33,9 @@ export default function PrinciplesSlide() {
           <div className="principle-text-container">
             <h3 className="principle-title">Accessible to All.</h3>
             <p className="principle-description">
-              Beyond beauty and functionality, I strive for inclusivity. Every
-              user, regardless of ability, deserves a seamless and enjoyable
-              experience. Design made for everyone.
+              Design should be made for everyone, hence why I strive for
+              inclusivity. Every user, regardless of ability, deserves a
+              seamless and enjoyable experience.
             </p>
           </div>
         </div>
