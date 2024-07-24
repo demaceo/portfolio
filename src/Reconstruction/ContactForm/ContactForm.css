@@ -69,4 +69,9 @@
 }
 
 @media (max-width: 767px) {
+    .email-form-wrapper {
+    height: 30vh;
+    padding: 20px 45px 100px 45px;
+    margin-left: 100px;
+  }
 }

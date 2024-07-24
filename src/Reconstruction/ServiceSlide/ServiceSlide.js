@@ -7,7 +7,7 @@ export default function ServiceSlide() {
         <h2 className="service-main-title">Service Spectrum</h2>
       </div>
       <div className="service-boxes-container">
-        <div className="service-box">
+        <div className="service-box" id="sb1">
           <div className="illustration-container">
             <div className="col-12 col-lg-4 spectrum-illustration">
               <div className="illustration illustration-web">
@@ -41,7 +41,7 @@ export default function ServiceSlide() {
             </p>
           </div>
         </div>
-        <div className="service-box">
+        <div className="service-box" id="sb2">
           <div className="illustration-container">
             <div className="illustration illustration-mobile">
               <svg
@@ -90,7 +90,7 @@ export default function ServiceSlide() {
             </p>
           </div>
         </div>
-        <div className="service-box">
+        <div className="service-box" id="sb3">
           <div className="illustration-container">
             <div className="illustration illustration-dev">
               <svg
