@@ -152,7 +152,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     justify-content: baseline;
-    margin: 5vh 5vw;
+    margin: 0vh 5vw 5vh 5vw;
   }
   .contact-title-container {
     justify-content: space-around;
@@ -200,7 +200,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     justify-content: baseline;
-    margin: 5vh 5vw;
+    margin: 0vh 5vw 5vh 5vw;
   }
   .contact-title-container {
     justify-content: space-around;
