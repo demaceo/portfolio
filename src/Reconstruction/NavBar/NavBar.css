@@ -12,7 +12,8 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: whitesmoke;
-  padding: 10px 5px;
+  padding: 10px 5px 10px 15px;
+  padding-left: 25px;
   overflow-x: hidden;
   align-items: center;
   align-content: center;
