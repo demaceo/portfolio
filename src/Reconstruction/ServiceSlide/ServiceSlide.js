@@ -9,7 +9,7 @@ export default function ServiceSlide() {
       <div className="service-boxes-container">
         <div className="service-box" id="sb1">
           <div className="illustration-container">
-            <div className="col-12 col-lg-4 spectrum-illustration">
+            <div className="spectrum-illustration">
               <div className="illustration illustration-web">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -6,14 +6,16 @@
 
 .nav-container {
   display: flex;
-  /* width: 100vw; */
+  width: 100vw;
   color: #264653;
-  height: auto;
+  /* height: 100px; */
+  /* height: auto; */
+  /* height: 25vh; */
   flex-direction: row;
   justify-content: space-between;
   background-color: whitesmoke;
-  padding: 10px 5px 10px 15px;
-  padding-left: 25px;
+  padding: 10px 5px 10px 3px;
+  /* padding-left: 25px; */
   overflow-x: hidden;
   align-items: center;
   align-content: center;
@@ -35,7 +37,7 @@
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  margin: 0 1vw;
+  margin: .5vh .5vw;
 }
 
 .descriptor-container {
@@ -51,6 +53,7 @@
 
 #occupation {
   opacity: 55%;
+  font-size: 18px;
 }
 
 .nav-links-container {
@@ -70,7 +73,6 @@
   justify-content: space-evenly;
   /* color: black; */
   color: #264653;
-
   border-radius: 25px;
   padding: 5px 15px;
   align-items: center;
@@ -92,7 +94,7 @@
 
 @media (min-width: 1200px) {
   .nav-container {
-    height: 5vh;
+    /* height: 5vh; */
   }
 
   .logo-container {
@@ -111,9 +113,9 @@
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  .nav-container {
+  /* .nav-container {
     height: 7vh;
-  }
+  } */
 
   .logo-container {
     flex-basis: auto;
@@ -131,15 +133,15 @@
 }
 
 @media (max-width: 991px) and (min-width: 785px) {
-  .nav-container {
+  /* .nav-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     overflow-x: none;
-  }
+  } */
 
   .logo-container {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     flex-basis: auto;
     justify-content: flex-start;
   }

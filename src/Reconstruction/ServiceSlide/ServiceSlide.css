@@ -6,9 +6,10 @@
   flex-direction: column;
   justify-content: center;
   /* padding: 0px 80px 100px 80px; */
-  padding: 50px 80px 120px 80px;
-
-  margin: 25px 2vw;
+  /* padding: 50px 80px 120px 80px;
+  margin: 25px 2vw; */
+  padding: 50px 50px 80px 50px;
+  margin: 50px;
   /* ? margin: 2vh 4vw; */
   border-radius: 15px;
 }
@@ -27,12 +28,13 @@
 .service-boxes-container {
   display: flex;
   flex-direction: row;
-  /* margin-top: 1vh; */
+  margin-top: 50px;
   /* margin-bottom: 30px; */
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   padding: 0px;
-  width: 100%;
+  /* width: fit-content; */
 }
 
 .service-box {
@@ -56,8 +58,8 @@
 }
 
 .illustration {
-  transform: scale(1.5);
-  margin: 50px 0px 20px 0px;
+  transform: scale(1.8);
+  margin: 50px 0px 80px 0px;
   width: 220px;
   height: 160px;
   position: relative;
@@ -252,6 +254,7 @@
   .service-main-title {
     font-size: 60px;
     margin-bottom: 50px;
+    padding-top: 30px;
   }
 
   .service-boxes-container {
@@ -262,11 +265,12 @@
   }
 
   .service-box {
-    min-height: 65vh;
+    /* min-height: 65vh; */
     /* border: 1px solid black; */
+    height: fit-content;
     width: 60vw;
     padding-bottom: 150px;
-    margin: 50px 0vw;
+    /* margin: 50px 0vw; */
   }
 
   .service-text-container {
@@ -393,11 +397,12 @@
 
 @media (max-width: 430px) {
   .services-page {
-    padding: 10px 10px 60px 10px;
+    padding: 10px 0px 60px 0px;
     height: fit-content;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 5vh 0vw;
   }
 
   .service-main-title {
@@ -423,9 +428,14 @@
     /* height: 60vh; */
     width: 80vw;
     /* margin-bottom: 10vh; */
-    padding: 15px;
+    padding: 5px;
     height: fit-content;
     margin: 40px 0px;
+  }
+
+    .illustration {
+    transform: scale(1);
+    margin-bottom: 50px;
   }
 
   .service-text-container {

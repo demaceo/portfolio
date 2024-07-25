@@ -11,15 +11,32 @@ import {
   faGithub,
   faNode,
 } from "@fortawesome/free-brands-svg-icons";
+import CarouselComponent from "../Carousel/Carousel";
 
 export default function PrinciplesSlide() {
+  const getDeviceType = () => {
+    // determine the device type
+    const width = window.innerWidth;
+
+    if (width >= 1024) {
+      return "desktop";
+    } else if (width >= 464 && width < 1024) {
+      return "tablet";
+    } else {
+      return "mobile";
+    }
+  };
+
+  const deviceType = getDeviceType();
   return (
     <section className="principles-page">
       <div className="principle-main-title-container">
         <h2 className="principle-main-title">Principles & Strategies</h2>
       </div>
       <div className="principle-boxes-container">
-        <div className="principle-box">
+        <CarouselComponent deviceType={deviceType} />
+
+        {/* <div className="principle-box">
           <div className="principle-text-container">
             <h3 className="principle-title">UX is the sum of all things.</h3>
             <p className="principle-description">
@@ -57,7 +74,7 @@ export default function PrinciplesSlide() {
               fuss-free interfaces and expert execution, design as it should be.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="tools-icons-container">
         <FontAwesomeIcon icon={faFigma} />

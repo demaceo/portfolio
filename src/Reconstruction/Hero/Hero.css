@@ -1,6 +1,7 @@
 .hero-container {
   font-family: "Gallient", sans-serif;
   height: 90vh;
+  /* width: 100vw; */
   color: white;
   display: flex;
   flex-direction: column;
@@ -12,20 +13,21 @@
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  font-size: 80px;
+  /* font-size: 80px; */
   font-style: normal;
   padding-top: 5vh;
   opacity: 0; /* Initially hide text */
   transition: opacity 0.9s ease-in-out; /* Smooth transition for opacity */
-  width: 95%;
+  /* width: 100%; */
   /* border: 1px solid black; */
 }
 
 #top-text {
   letter-spacing: 15px;
   font-weight: 100;
+  margin-bottom: 100px;
 }
 
 #bttm-text {
@@ -112,8 +114,8 @@
 /* ! Responsive Design */
 
 @media (min-width: 1200px) {
-  .hero-text-container {
-    font-size: 40px;
+  #top-text {
+    font-size: 50px;
   }
   #bttm-text {
     letter-spacing: 60px;
@@ -124,7 +126,7 @@
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  .hero-text-container {
+  #top-text {
     font-size: 40px;
   }
 
@@ -182,14 +184,14 @@
 
   #top-text {
     letter-spacing: 5px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   #bttm-text {
     letter-spacing: 30px;
     font-weight: 700;
     margin-bottom: 10vh;
-    font-size: 30px;
+    font-size: 40px;
     font-style: oblique;
     padding-left: 15px;
   }
