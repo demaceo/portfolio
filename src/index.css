@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  padding: 0px 80px;
+  /* padding: 0px 80px; */
   /* padding: 0; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,7 +22,7 @@ body {
   background-size: 175% 175%;
   -webkit-animation: bg-animation 20s ease-in-out infinite;
   -moz-animation: bg-animation 20s ease-in-out infinite;
-  animation: Animatbg-animationion 20s ease-in-out infinite;
+  animation: bg-animation 20s ease-in-out infinite;
 }
 
 @-webkit-keyframes bg-animation {
