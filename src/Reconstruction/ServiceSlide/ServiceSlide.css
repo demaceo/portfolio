@@ -6,7 +6,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 50px 50px 80px 50px;
-  margin: 50px;
+  /* margin: 50px; */
+  margin: 5vh 2vw;
   border-radius: 15px;
 }
 
