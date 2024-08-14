@@ -35,46 +35,6 @@ export default function PrinciplesSlide() {
       </div>
       <div className="principle-boxes-container">
         <CarouselComponent deviceType={deviceType} />
-
-        {/* <div className="principle-box">
-          <div className="principle-text-container">
-            <h3 className="principle-title">UX is the sum of all things.</h3>
-            <p className="principle-description">
-              There’s no style over substance here. I bring together form and
-              function to create something that looks good and performs
-              brilliantly. Simple.
-            </p>
-          </div>
-        </div>
-        <div className="principle-box principle-box-line">
-          <div className="principle-text-container">
-            <h3 className="principle-title">Accessible to All.</h3>
-            <p className="principle-description">
-              Design should be made for everyone, hence why I strive for
-              inclusivity. Every user, regardless of ability, deserves a
-              seamless and enjoyable experience.
-            </p>
-          </div>
-        </div>
-        <div className="principle-box principle-box-line">
-          <div className="principle-text-container">
-            <h3 className="principle-title">Creator. Partner. Collaborator.</h3>
-            <p className="principle-description">
-              Ideas are far from linear. As designer and developer, I can
-              spearhead, support or polish your project or product at any stage
-              it needs it.
-            </p>
-          </div>
-        </div>
-        <div className="principle-box principle-box-line">
-          <div className="principle-text-container">
-            <h3 className="principle-title">Clean - In thinking, in style.</h3>
-            <p className="principle-description">
-              Minimal and effective. This is my mantra and method. Clean code,
-              fuss-free interfaces and expert execution, design as it should be.
-            </p>
-          </div>
-        </div> */}
       </div>
       <div className="tools-icons-container">
         <FontAwesomeIcon icon={faFigma} />
