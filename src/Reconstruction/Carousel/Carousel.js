@@ -12,7 +12,7 @@ export default function CarouselComponent() {
     width: "100%",
     height: "fit-content",
     padding: "0px",
-    margin: "30px 0px 30px 0px",
+    margin: "0px 0px 30px 0px",
   };
 
   const principles = principlesData.map((principle) => {
