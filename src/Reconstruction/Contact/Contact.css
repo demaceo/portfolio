@@ -8,7 +8,7 @@
   border-radius: 15px;
   height: auto;
   padding: 2vh 5vw;
-  margin: 2vh 5vw;
+  margin: 50px;
   width: auto;
   background-color: whitesmoke;
   color: #264653;
@@ -28,7 +28,7 @@
 #contact {
   font-size: 75px;
   letter-spacing: 15px;
-  margin: 40px 0px;
+  /* margin: 40px 0px; */
   /* font-weight: 300; */
 }
 
@@ -42,8 +42,9 @@
 
 .contact-info-container {
   border-radius: 100px;
-  width: 45vw;
-  height: 15vh;
+  width: fit-content;
+  padding: 25px;
+  /* height: 8rem; */
   /* margin-top: 5vh; */
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
@@ -74,7 +75,7 @@
 
 .contact-text {
   color: #ffddcc;
-  font-size: 2vh;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
@@ -91,26 +92,55 @@
 
 @media (min-width: 1200px) {
   .contact-container {
-    margin: 2vh 2vw;
+    margin: 5vh 2vw;
+    /* padding: 50px 0px; */
+  }
+    .contact-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    height: auto;
+    margin: 0;
   }
 }
 
-@media (max-width: 1199px) and (min-width: 992px) {
-}
 
-@media (max-width: 1200px) and (min-width: 860px) {
+@media (max-width: 1199px) and (min-width: 860px) {
   /* .contact-text{
     font-size: 2vh;
   } */
 
+  .contact-container {
+    margin: 20px;
+    /* padding: 50px 0px; */
+  }
+
+  .contact-title-container {
+    width: 40%;
+  }
+
   #contact {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 600;
     margin: 10px 0px;
   }
   #contact-desc {
-    font-size: 10px;
-    letter-spacing: 7px;
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+  .contact-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    height: auto;
+    margin: 0;
+  }
+
+  .contact-text {
+    /* font-size: 80%; */
+    /* display: none; */
   }
 }
 
@@ -118,16 +148,22 @@
   .contact-container {
     height: auto;
     flex-wrap: wrap;
+    padding: 2vh 1vw;
+    margin: 15px;
+    /* width: ; */
   }
   .contact-title-container {
     justify-content: space-around;
     height: auto;
   }
   .contact-info-container {
-    /* width: 40%; */
+    width: 50%;
     height: auto;
     /* padding: 10px 5px; */
     margin: 0;
+    padding: 0vh 20px;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   #contact {
@@ -141,7 +177,7 @@
   }
 
   .contact-text {
-    font-size: 10px;
+    font-size: 15px;
     /* display: none; */
   }
 }
@@ -152,7 +188,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     justify-content: baseline;
-    margin: 0vh 5vw 5vh 5vw;
+    /* margin: 0vh 5vw 5vh 5vw; */
+    margin: 1rem 1em 2rem;
   }
   .contact-title-container {
     justify-content: space-around;
@@ -161,9 +198,9 @@
   .contact-info-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: space; */
     flex-direction: row;
-    width: 30%;
+    width: 45%;
     height: auto;
     padding: 10px 5px;
     margin: 0;
@@ -201,7 +238,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     justify-content: baseline;
-    margin: 0vh 2vw 5vh 2vw;
+    /* margin: 0vh 2vw 5vh 2vw; */
+    margin: 5px;
   }
   .contact-title-container {
     justify-content: space-around;
@@ -212,7 +250,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 30%;
+    width: 50%;
     height: auto;
     padding: 10px 5px;
     margin: 0;
@@ -223,7 +261,7 @@
     font-size: 15px;
   }
   #contact {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     margin: 10px 0px;
     letter-spacing: 10px;

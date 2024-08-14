@@ -26,6 +26,8 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  border: hidden;
+  border-radius: 15px;
 }
 
 .project-img {
