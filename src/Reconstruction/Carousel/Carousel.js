@@ -9,11 +9,10 @@ import "./Carousel.css";
 
 export default function CarouselComponent() {
   const carouselContainerStyle = {
-    width: "85vw",
+    width: "100%",
     height: "fit-content",
     padding: "0px",
-    margin: "20px 0px 80px 0px",
-    // position: 'center',
+    margin: "30px 0px 30px 0px",
   };
 
   const principles = principlesData.map((principle) => {
