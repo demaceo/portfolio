@@ -26,13 +26,25 @@ export default function NavBar () {
           ></i>
         </button>
         <div className={`nav-links-container${isMenuOpen ? '-open' : ''}`}>
-          <Link to='/' className='link' onClick={toggleMenu}>
+          <Link
+            to='/'
+            className='link'
+            onClick={isMenuOpen ? toggleMenu : ''}
+          >
             <span className='option-text'>PROFILE</span>
           </Link>
-          <Link to='/portfolio' className='link' onClick={toggleMenu}>
+          <Link
+            to='/portfolio'
+            className='link'
+            onClick={isMenuOpen ? toggleMenu : ''}
+          >
             <span className='option-text'>PORTFOLIO</span>
           </Link>
-          <a href='#contact-jump' className='link' onClick={toggleMenu}>
+          <a
+            href='#contact-jump'
+            className='link'
+            onClick={isMenuOpen ? toggleMenu : ''}
+          >
             <span className='option-text'>CONTACT</span>
           </a>
         </div>
