@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+// import { initClient, getEvents } from "../api/googleCalendar";
 import { initClient, getEvents } from "../../api/googleCalendar.ts";
 import "./AvailabilityChecker.css";
-
 interface Event {
   start: { dateTime: string };
   end: { dateTime: string };
@@ -12,8 +12,9 @@ interface FreeTime {
   end: Date;
 }
 
+const EMAIL = "hdemaceo@gmail.com";
+
 const AvailabilityChecker: React.FC = () => {
-  const [events, setEvents] = useState<Event[][]>([]);
   const [mutualFreeTimes, setMutualFreeTimes] = useState<FreeTime[]>([]);
   const [dateRange, setDateRange] = useState<{ start: string; end: string }>({
     start: "",
@@ -28,27 +29,12 @@ const AvailabilityChecker: React.FC = () => {
 
   const handleFetchEvents = async () => {
     try {
-      const participants = [
-        "hdemaceo@gmail.com",
-        "dhoward@uprightedu.com",
-        "deusexdoodlebob@gmail.com",
-      ];
-      const allEvents = await Promise.all(
-        participants.map((email) =>
-          getEvents(email, dateRange.start, dateRange.end)
-        )
-      );
-      setEvents(allEvents);
-      findMutualAvailability(allEvents);
+      const events = await getEvents(EMAIL, dateRange.start, dateRange.end);
+      const freeTimes = findFreeTimes(events);
+      setMutualFreeTimes(freeTimes);
     } catch (error) {
       console.error("Failed to fetch events:", error);
     }
-  };
-
-  const findMutualAvailability = (allEvents: Event[][]) => {
-    const freeTimes = allEvents.map((userEvents) => findFreeTimes(userEvents));
-    const mutualFree = getMutualFreeTimes(freeTimes);
-    setMutualFreeTimes(mutualFree);
   };
 
   const findFreeTimes = (events: Event[]): FreeTime[] => {
@@ -58,48 +44,30 @@ const AvailabilityChecker: React.FC = () => {
     }));
 
     const freeTimes: FreeTime[] = [];
-    let startOfDay = new Date(dateRange.start);
-    let endOfDay = new Date(dateRange.end);
+    const startOfDay = new Date(dateRange.start);
+    startOfDay.setHours(9, 0, 0); // Set start to 9 a.m. MT
+    const endOfDay = new Date(dateRange.end);
+    endOfDay.setHours(18, 0, 0); // Set end to 6 p.m. MT
 
+    let currentStart = new Date(startOfDay);
     busyTimes.forEach((busyTime) => {
-      if (startOfDay < busyTime.start) {
-        freeTimes.push({ start: startOfDay, end: busyTime.start });
+      if (currentStart < busyTime.start) {
+        freeTimes.push({ start: currentStart, end: busyTime.start });
       }
-      startOfDay = busyTime.end;
+      currentStart = new Date(busyTime.end);
     });
 
-    if (startOfDay < endOfDay) {
-      freeTimes.push({ start: startOfDay, end: endOfDay });
+    // If there's remaining free time until the end of the working day
+    if (currentStart < endOfDay) {
+      freeTimes.push({ start: currentStart, end: endOfDay });
     }
+
     return freeTimes;
-  };
-
-  const getMutualFreeTimes = (freeTimes: FreeTime[][]): FreeTime[] => {
-    if (freeTimes.length === 0) return [];
-
-    let mutualFreeTimes = freeTimes[0];
-
-    for (let i = 1; i < freeTimes.length; i++) {
-      const nextUserFreeTimes = freeTimes[i];
-      mutualFreeTimes = mutualFreeTimes.flatMap((mutual) => {
-        return nextUserFreeTimes.flatMap((time) => {
-          const start = new Date(
-            Math.max(mutual.start.getTime(), time.start.getTime())
-          );
-          const end = new Date(
-            Math.min(mutual.end.getTime(), time.end.getTime())
-          );
-          return start < end ? [{ start, end }] : [];
-        });
-      });
-    }
-
-    return mutualFreeTimes;
   };
 
   return (
     <div className="availability-container">
-      <h2>Find Mutual Availability</h2>
+      <h2>Find My Availability</h2>
       <div className="dates-container">
         <label>
           Start Date:
@@ -120,9 +88,11 @@ const AvailabilityChecker: React.FC = () => {
           />
         </label>
       </div>
-      <button className="availability-button" onClick={handleFetchEvents}>Check Availability</button>
+      <button className="availability-button" onClick={handleFetchEvents}>
+        Check Availability
+      </button>
       <div>
-        <h3>Mutual Free Times:</h3>
+        <h3>Mutual Free Times</h3>
         {mutualFreeTimes.map((time, index) => (
           <div key={index}>
             {time.start.toLocaleString()} - {time.end.toLocaleString()}
