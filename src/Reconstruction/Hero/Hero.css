@@ -1,47 +1,52 @@
 .hero-container {
-  font-family: "Gallient", sans-serif;
+  font-family: 'Gallient', sans-serif;
   height: 90vh;
-  /* width: 100vw; */
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  text-align: center;
+  width: 100%;
 }
 
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  /* font-size: 80px; */
   font-style: normal;
-  padding-top: 5vh;
-  opacity: 0; /* Initially hide text */
-  transition: opacity 0.9s ease-in-out; /* Smooth transition for opacity */
-  /* width: 100%; */
+  text-align: center;
   /* border: 1px solid black; */
+  width: 95%;
+  height: 70%;
+  padding-top: 5vh;
+  opacity: 0.05; /* Initially hide text */
+  transition: opacity 0.9s ease-in-out; /* Smooth transition for opacity */
 }
 
 #top-text {
-  letter-spacing: 15px;
+  letter-spacing: 1rem;
   font-weight: 100;
+  font-size: 6rem;
   margin-bottom: 100px;
 }
 
 #bttm-text {
-  letter-spacing: 60px;
+  letter-spacing: 5rem;
   font-weight: 500;
-  font-size: 90px;
+  font-size: 10rem;
   font-style: oblique;
-  padding-left: 15px;
-
+  /* padding-left: 15px; */
   margin-bottom: 10vh;
-  /* font-style: italic; */
 }
 
-.hero-text-container.hovered {
+/* .hero-text-container.hovered {
+  opacity: 1;
+} */
+
+.hero-text-container:hover {
   opacity: 1;
 }
 
@@ -115,10 +120,10 @@
 
 @media (min-width: 1200px) {
   #top-text {
-    font-size: 50px;
+    /* font-size: 50px; */
   }
   #bttm-text {
-    letter-spacing: 60px;
+    /* letter-spacing: 60px; */
     font-style: italic;
     font-weight: 700;
     margin-bottom: 10vh;
