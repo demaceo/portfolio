@@ -2,8 +2,8 @@
 
 import { gapi } from "gapi-script";
 
-const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
-const API_KEY = process.env.YOUR_API_KEY;
+// const CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+// const API_KEY = process.env.REACT_APP_YOUR_API_KEY;
 const SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
 
 export const initClient = () => {
@@ -11,8 +11,8 @@ export const initClient = () => {
         gapi.load("client:auth2", () => {
             gapi.client
                 .init({
-                    apiKey: 'AIzaSyA6hIkE4h0auj-sBOuFSAqikT5rIfpzQ0U',
-                    clientId: '733812945276-f7apirma2rilmfid4c87j6t04ocs0n6t.apps.googleusercontent.com',
+                    apiKey: process.env.REACT_APP_API_KEY,
+                    clientId: process.env.REACT_APP_CLIENT_ID,
                     discoveryDocs: [
                         "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
                     ],

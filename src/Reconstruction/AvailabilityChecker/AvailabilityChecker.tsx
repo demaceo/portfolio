@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { initClient, getEvents } from "../api/googleCalendar";
 import { initClient, getEvents } from "../../api/googleCalendar.ts";
 import "./AvailabilityChecker.css";
 // interface Event {
@@ -117,7 +116,8 @@ interface FreeTime {
   end: Date;
 }
 
-const EMAIL = "hdemaceo@gmail.com";
+const EMAIL = process.env.EMAIL_ADDRESS;
+console.log(EMAIL);
 
 const AvailabilityChecker: React.FC = () => {
   const [mutualFreeTimes, setMutualFreeTimes] = useState<FreeTime[]>([]);
@@ -171,7 +171,7 @@ const AvailabilityChecker: React.FC = () => {
   };
 
   return (
-    <div className="availability-container">
+    <section className="availability-container">
       <h2>Find My Availability</h2>
       <div className="dates-container">
         <label>
@@ -196,15 +196,15 @@ const AvailabilityChecker: React.FC = () => {
       <button className="availability-button" onClick={handleFetchEvents}>
         Check Availability
       </button>
-      <div>
-        <h3>Mutual Free Times</h3>
+      <div className="free-time-container">
+        <h3>Free Times:</h3>
         {mutualFreeTimes.map((time, index) => (
           <div key={index}>
             {time.start.toLocaleString()} - {time.end.toLocaleString()}
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
