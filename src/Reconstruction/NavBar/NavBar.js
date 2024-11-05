@@ -29,21 +29,21 @@ export default function NavBar () {
           <Link
             to='/'
             className='link'
-            onClick={isMenuOpen ? toggleMenu : ''}
+            onClick={isMenuOpen ? toggleMenu : null}
           >
             <span className='option-text'>PROFILE</span>
           </Link>
           <Link
             to='/portfolio'
             className='link'
-            onClick={isMenuOpen ? toggleMenu : ''}
+            onClick={isMenuOpen ? toggleMenu : null}
           >
             <span className='option-text'>PORTFOLIO</span>
           </Link>
           <a
             href='#contact-jump'
             className='link'
-            onClick={isMenuOpen ? toggleMenu : ''}
+            onClick={isMenuOpen ? toggleMenu : null}
           >
             <span className='option-text'>CONTACT</span>
           </a>
