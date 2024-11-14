@@ -1,4 +1,4 @@
-# Spotify MoodyToonz values:
+# Spotify MoodyToonz mood values
 
 1. Happy
    target_valence: 0.7 - 1.0 (high positivity)
