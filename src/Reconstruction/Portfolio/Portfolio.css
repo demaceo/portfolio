@@ -1,6 +1,6 @@
 .projects-container {
   width: 100vw;
-  font-family: "Syne", sans-serif;
+  font-family: 'Syne', sans-serif;
   margin: 5vh 0 14vh 0;
   display: flex;
   flex-direction: column;
@@ -105,7 +105,6 @@
 
   .project-container {
     flex-direction: column;
-    /* justify-content: baseline; */
     align-items: center;
     margin-bottom: 3vh;
     padding-top: 4vh;
@@ -118,12 +117,14 @@
 
   .project-details {
     width: 70vw;
-    padding-top: 0vh;
+    padding-top: 1vh;
     text-align: start;
   }
 
   #project-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin: .8vh 0vw;
+    letter-spacing: 0.5rem;
   }
 
   #project-description {

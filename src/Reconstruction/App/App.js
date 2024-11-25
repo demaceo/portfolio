@@ -1,14 +1,17 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import NavBar from "../../Reconstruction/NavBar/NavBar.js";
-import Hero from "../../Reconstruction/Hero/Hero.js";
-import Profile from "../Profile/Profile.js";
-import Contact from "../Contact/Contact.js";
-import Portfolio from "../Portfolio/Portfolio.js";
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import NavBar from '../../Reconstruction/NavBar/NavBar.js'
+import Hero from '../../Reconstruction/Hero/Hero.js'
+import Profile from '../Profile/Profile.js'
+import Contact from '../Contact/Contact.js'
+import Portfolio from '../Portfolio/Portfolio.js'
+// import AvailabilityChecker from "../AvailabilityChecker/AvailabilityChecker.tsx";
+// import AvailabilityChecker from '../AvailabilityChecker/AvailabilityCheck.jsx'
+import './App.css'
 // import CarouselComponent from "../Carousel/Carousel.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-export default function App() {
+export default function App () {
   // const getDeviceType = () => {
   //   const width = window.innerWidth;
 
@@ -26,29 +29,30 @@ export default function App() {
     <Routes>
       <Route
         exact
-        path="/"
+        path='/'
         element={
-          <>
+          <section className='portfolio-container'>
             <NavBar />
             <Hero />
             <Profile />
             {/* <CarouselComponent deviceType={deviceType} /> */}
 
             <Contact />
-          </>
+          </section>
         }
       />
       <Route
         exact
-        path="/portfolio"
+        path='/portfolio'
         element={
-          <>
+          <section className='portfolio-container'>
             <NavBar />
+            {/* <AvailabilityChecker /> */}
             <Portfolio />
             <Contact />
-          </>
+          </section>
         }
       />
     </Routes>
-  );
+  )
 }

@@ -21,12 +21,11 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  
 }
 
 .project-img {
   position: relative;
-  width: 30vw;
+  min-width: 30vw;
   min-height: 30vh;
   padding: 1vh;
   transition: 1s all ease-in-out;

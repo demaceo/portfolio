@@ -17,9 +17,6 @@
   margin: 2vh;
   box-shadow: rgb(50 50 93 / 20%) 0px 30px 60px -12px,
     rgb(0 0 0 / 28%) 0px 18px 36px -18px;
-  /* padding: 20px 85px 60px 85px; */
-  /* padding: 50px; */
-  /* align-self: center; */
   align-items: center;
 }
 
@@ -27,9 +24,7 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  /* width: 100%; */
   align-items: flex-start;
-  /* align-self: flex-start; */
   justify-content: space-evenly;
 }
 
