@@ -27,9 +27,10 @@ export default function App () {
   // const deviceType = getDeviceType();
   return (
     <Routes>
+      {/* created a route with the path * to get all non-configured paths and assign them to the attached component */}
       <Route
         exact
-        path='/'
+        path='*'
         element={
           <section className='portfolio-container'>
             <NavBar />
@@ -43,7 +44,7 @@ export default function App () {
       />
       <Route
         exact
-        path='/portfolio'
+        path='/projects'
         element={
           <section className='portfolio-container'>
             <NavBar />

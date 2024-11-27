@@ -38,7 +38,7 @@ export default function NavBar () {
             className='link'
             onClick={isMenuOpen ? toggleMenu : null}
           >
-            <span className='option-text'>PORTFOLIO</span>
+            <span className='option-text'>PROJECTS</span>
           </Link>
           <a
             href='#contact-jump'
