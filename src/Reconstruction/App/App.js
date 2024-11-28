@@ -34,10 +34,21 @@ export default function App () {
         element={
           <section className='portfolio-container'>
             <NavBar />
+            {/* <Hero /> */}
+            {/* <Profile /> */}
+            {/* <CarouselComponent deviceType={deviceType} /> */}
+            <Contact />
+          </section>
+        }
+      />
+      <Route
+        exact
+        path='/portfolio'
+        element={
+          <section className='portfolio-container'>
+            <NavBar />
             <Hero />
             <Profile />
-            {/* <CarouselComponent deviceType={deviceType} /> */}
-
             <Contact />
           </section>
         }
@@ -48,7 +59,6 @@ export default function App () {
         element={
           <section className='portfolio-container'>
             <NavBar />
-            {/* <AvailabilityChecker /> */}
             <Portfolio />
             <Contact />
           </section>
