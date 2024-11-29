@@ -34,7 +34,7 @@ export default function NavBar () {
             <span className='option-text'>PROFILE</span>
           </Link>
           <Link
-            to='/portfolio'
+            to='/projects'
             className='link'
             onClick={isMenuOpen ? toggleMenu : null}
           >
