@@ -28,19 +28,16 @@ export default function App () {
   return (
     <Routes>
       {/* created a route with the path * to get all non-configured paths and assign them to the attached component */}
-      <Route
+      {/* <Route
         exact
         path='*'
         element={
           <section className='portfolio-container'>
             <NavBar />
-            {/* <Hero /> */}
-            {/* <Profile /> */}
-            {/* <CarouselComponent deviceType={deviceType} /> */}
             <Contact />
           </section>
-        }
-      />
+        } 
+      /> */}
       <Route
         exact
         path='/portfolio'
