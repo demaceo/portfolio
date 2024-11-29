@@ -1,7 +1,7 @@
 
 # Deployed Page
 
-[Demaceo's Portfolio](http://demaceo.com/).
+[Demaceo's Portfolio](https://demaceo.github.io/portfolio).
 
 # Getting Started with Create React App
 
