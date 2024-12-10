@@ -39,7 +39,7 @@ export default function App () {
       /> */}
       <Route
         exact
-        path='/'
+        path='*'
         element={
           <section className='portfolio-container'>
             <NavBar />
