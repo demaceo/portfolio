@@ -5,7 +5,7 @@
     "node": "v20.3.1",
     "npm": "9.6.7"
   },
-  "homepage": "https://demaceo.github.io",
+  "homepage": "https://demaceo.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -15,7 +15,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@heroku/buildpack-registry": "^1.0.1",
     "@tensorflow/tfjs-core": "^4.22.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
