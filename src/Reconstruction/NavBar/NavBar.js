@@ -27,7 +27,7 @@ export default function NavBar () {
         </button>
         <div className={`nav-links-container${isMenuOpen ? '-open' : ''}`}>
           <Link
-            to='/portfolio'
+            to='/'
             className='link'
             onClick={isMenuOpen ? toggleMenu : null}
           >
