@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "../../Reconstruction/NavBar/NavBar.js";
-import Hero from "../../Reconstruction/Hero/Hero.js";
+import NavBar from "../NavBar/NavBar.js";
+import Hero from "../Hero/Hero.js";
 import Profile from "../Profile/Profile.js";
 import Contact from "../Contact/Contact.js";
 import Portfolio from "../Portfolio/Portfolio.js";
