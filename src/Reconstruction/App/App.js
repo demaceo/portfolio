@@ -1,16 +1,16 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import NavBar from '../../Reconstruction/NavBar/NavBar.js'
-import Hero from '../../Reconstruction/Hero/Hero.js'
-import Profile from '../Profile/Profile.js'
-import Contact from '../Contact/Contact.js'
-import Portfolio from '../Portfolio/Portfolio.js'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "../../Reconstruction/NavBar/NavBar.js";
+import Hero from "../../Reconstruction/Hero/Hero.js";
+import Profile from "../Profile/Profile.js";
+import Contact from "../Contact/Contact.js";
+import Portfolio from "../Portfolio/Portfolio.js";
 // import AvailabilityChecker from "../AvailabilityChecker/AvailabilityChecker.tsx";
-import './App.css'
+import "./App.css";
 // import CarouselComponent from "../Carousel/Carousel.js";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function App () {
+export default function App() {
   // const getDeviceType = () => {
   //   const width = window.innerWidth;
 
@@ -29,19 +29,21 @@ export default function App () {
       {/* created a route with the path * to get all non-configured paths and assign them to the attached component */}
       {/* <Route
         exact
-        path='*'
+        path="*"
         element={
-          <section className='portfolio-container'>
+          <section className="portfolio-container">
             <NavBar />
+            <Hero />
+            <Profile />
             <Contact />
           </section>
-        } 
+        }
       /> */}
       <Route
         exact
-        path='/'
+        path="/"
         element={
-          <section className='portfolio-container'>
+          <section className="portfolio-container">
             <NavBar />
             <Hero />
             <Profile />
@@ -51,9 +53,9 @@ export default function App () {
       />
       <Route
         exact
-        path='/projects'
+        path="/projects"
         element={
-          <section className='portfolio-container'>
+          <section className="portfolio-container">
             <NavBar />
             <Portfolio />
             <Contact />
@@ -61,5 +63,5 @@ export default function App () {
         }
       />
     </Routes>
-  )
+  );
 }
