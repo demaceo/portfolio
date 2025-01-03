@@ -12,6 +12,8 @@
 
 # misc
 .DS_Store
+server.csr
+server.key
 .env 
 .env.local
 .env.development.local
