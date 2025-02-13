@@ -8,7 +8,11 @@ import "reactjs-popup/dist/index.css";
 import ContactForm from "../ContactForm/ContactForm.js";
 
 export default function Contact() {
-  const contentStyle = { background: "transparent", border: "none", boxShadow: "none" };
+  const contentStyle = {
+    background: "transparent",
+    border: "none",
+    boxShadow: "none",
+  };
   const overlayStyle = { background: "transparent" };
   const arrowStyle = { color: "#000" }; // style for an svg element
   return (
@@ -39,7 +43,7 @@ export default function Contact() {
           className="contact-link"
         >
           <FontAwesomeIcon className="contact-icon" icon={faLinkedinIn} />
-          <span className="option-text contact-text">Chat on LinkedIn</span>
+          <span className="option-text contact-text">Connect on LinkedIn</span>
         </Link>
       </div>
     </section>
