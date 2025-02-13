@@ -2,8 +2,7 @@
 
 body {
   margin: 0;
-  /* padding: 0px 80px; */
-  /* padding: 0; */
+  padding: 0; /* Adjusted to a single padding setting */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 100vw;
@@ -14,6 +13,7 @@ body {
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
+  align-content: center;
   align-self: center;
   background: linear-gradient(
     to right,
