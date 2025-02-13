@@ -1,4 +1,17 @@
 const projectData = [
+  // {
+  //   id: 0,
+  //   name: "Adopt Don't Shop",
+  //   image:
+  //     "",
+  //   description:
+  //     "",
+  //   partners: [
+  //     { name: "Demaceo Vincent", link: "https://github.com/demaceo" },
+  //   ],
+  //   link: "https://demaceo.github.io/adoptdontshop/",
+  //   icon: "fas fa-dog icon",
+  // },
   {
     id: 1,
     name: "Moody Tunes",
