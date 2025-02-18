@@ -1,5 +1,3 @@
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
 import principlesData from '../../utilities/principlesData'
 import { nanoid } from 'nanoid'
 import Carousel from 'react-bootstrap/Carousel'

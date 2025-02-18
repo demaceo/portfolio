@@ -15,9 +15,7 @@ import CarouselComponent from "../Carousel/Carousel";
 
 export default function PrinciplesSlide() {
   const getDeviceType = () => {
-    // determine the device type
     const width = window.innerWidth;
-
     if (width >= 1024) {
       return "desktop";
     } else if (width >= 464 && width < 1024) {

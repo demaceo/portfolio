@@ -14,7 +14,7 @@ export default function Contact() {
     boxShadow: "none",
   };
   const overlayStyle = { background: "transparent" };
-  const arrowStyle = { color: "#000" }; // style for an svg element
+  const arrowStyle = { color: "#000" };
   return (
     <section className="contact-container" id="contact-jump">
       <div className="contact-title-container">
