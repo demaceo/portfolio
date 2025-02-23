@@ -6,13 +6,6 @@ import CarouselCaption from 'react-bootstrap/CarouselCaption'
 import './Carousel.css'
 
 export default function CarouselComponent () {
-  const carouselContainerStyle = {
-    width: '100%',
-    height: 'fit-content',
-    padding: '0px',
-    margin: '0px 0px 30px 0px'
-  }
-
   const principles = principlesData.map(principle => {
     const { id, title, description } = principle
     return (
@@ -32,13 +25,13 @@ export default function CarouselComponent () {
 
   return (
     <Carousel
-      style={carouselContainerStyle}
+      className="carousel-container"
       interval={7000}
-      keyboard={true}
-      touch={true}
-      pause={'hover'}
+      keyboard
+      touch
+      pause="hover"
     >
       {principles}
     </Carousel>
-  )
+  );
 }
