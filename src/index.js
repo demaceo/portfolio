@@ -1,15 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./Components/App/App.js";
 import reportWebVitals from "./reportWebVitals";
+import RouterProvider from "./RouterProvider";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <BrowserRouter basename="/portfolio">
-    <App />
-  </BrowserRouter>
-);
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  window.dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "G-M3BBBKLMKF");
 
+// Ensure root element exists before rendering
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <RouterProvider>
+        <App />
+      </RouterProvider>
+    </React.StrictMode>
+  );
+}
+
+// Measure performance (optional, can be removed if not needed)
 reportWebVitals();
