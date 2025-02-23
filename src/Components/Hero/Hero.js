@@ -1,7 +1,7 @@
 import "./Hero.css";
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 
-export default function Hero() {
+const Hero = memo(() => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -11,6 +11,7 @@ export default function Hero() {
         <div
           className={`bttm-text-container ${hovered ? "hovered" : ""}`}
           onMouseEnter={() => setHovered(true)}
+          // onMouseLeave={() => setHovered(false)}
         >
           <h1 id="bttm-text">VISIBLE</h1>
         </div>
@@ -20,4 +21,6 @@ export default function Hero() {
       </a>
     </section>
   );
-}
+});
+
+export default Hero;
