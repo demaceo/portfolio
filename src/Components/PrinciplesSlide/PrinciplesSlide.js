@@ -12,20 +12,23 @@ import {
   faNode,
 } from "@fortawesome/free-brands-svg-icons";
 import CarouselComponent from "../Carousel/Carousel";
+import { useEffect, useState } from "react";
 
 export default function PrinciplesSlide() {
-  const getDeviceType = () => {
-    const width = window.innerWidth;
-    if (width >= 1024) {
-      return "desktop";
-    } else if (width >= 464 && width < 1024) {
-      return "tablet";
-    } else {
-      return "mobile";
-    }
-  };
 
-  const deviceType = getDeviceType();
+   const [deviceType, setDeviceType] = useState("desktop");
+
+   useEffect(() => {
+     const updateDeviceType = () => {
+       const width = window.innerWidth;
+       setDeviceType(
+         width >= 1024 ? "desktop" : width >= 464 ? "tablet" : "mobile"
+       );
+     };
+     updateDeviceType();
+     window.addEventListener("resize", updateDeviceType);
+     return () => window.removeEventListener("resize", updateDeviceType);
+   }, []);
   return (
     <section className="principles-page">
       <div className="principle-main-title-container">
