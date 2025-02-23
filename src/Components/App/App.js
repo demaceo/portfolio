@@ -9,19 +9,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
-  // const getDeviceType = () => {
-  //   const width = window.innerWidth;
-
-  //   if (width >= 1024) {
-  //     return "desktop";
-  //   } else if (width >= 464 && width < 1024) {
-  //     return "tablet";
-  //   } else {
-  //     return "mobile";
-  //   }
-  // };
-
-  // const deviceType = getDeviceType();
   return (
     <Routes>
       {/* created a route with the path * to get all non-configured paths and assign them to the attached component */}
