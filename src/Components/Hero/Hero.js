@@ -1,21 +1,21 @@
 import "./Hero.css";
-import React, { useState, memo } from "react";
-
+import React, { memo } from "react";
+import PurpleHaze from "../PurpleHaze/PurpleHaze.tsx";
 const Hero = memo(() => {
-  const [hovered, setHovered] = useState(false);
+  // const [hovered, setHovered] = useState(false);
 
   return (
     <section className="hero-container">
-      <div className={`hero-text-container`}>
+      <PurpleHaze />
+      {/* <div className={`hero-text-container`}>
         <h2 id="top-text">Making the invisible</h2>
         <div
           className={`bttm-text-container ${hovered ? "hovered" : ""}`}
           onMouseEnter={() => setHovered(true)}
-          // onMouseLeave={() => setHovered(false)}
         >
           <h1 id="bttm-text">VISIBLE</h1>
         </div>
-      </div>
+      </div> */}
       <a href="#services-slide" className="">
         <div className="scroll-down"></div>
       </a>
