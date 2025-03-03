@@ -1,6 +1,6 @@
 .projects-container {
   width: 100vw;
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   margin: 5vh 0 14vh 0;
   display: flex;
   flex-direction: column;
@@ -19,13 +19,17 @@
   border-radius: 15px;
   width: 75vw;
   padding: 10px;
+  /* text-decoration: none; */
 }
 
 .img-container {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  width: 40%;
+  transition: 1s all ease-in-out;
   border: hidden;
   border-radius: 15px;
 }
@@ -83,9 +87,26 @@
   color: rgba(249, 140, 112, 1);
 }
 
+.icon {
+  display: none; /* Hidden by default, shown only when image fails */
+  font-size: 7rem;
+  color: #264653;
+  text-align: center;
+  margin: auto;
+  transition: 0.8s all ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #16a3db;
+}
+
 /* Responsive Design */
 
 @media (min-width: 1200px) {
+  .icon {
+    display: block;
+  }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -96,6 +117,9 @@
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+  .icon {
+    font-size: 5rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -123,7 +147,7 @@
 
   #project-title {
     font-size: 2.5rem;
-    margin: .8vh 0vw;
+    margin: 0.8vh 0vw;
     letter-spacing: 0.5rem;
   }
 
