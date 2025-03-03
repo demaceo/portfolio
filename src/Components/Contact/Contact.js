@@ -40,7 +40,7 @@ export default function Contact() {
         </Popup>
         <Link
           to="https://www.linkedin.com/in/demaceo/"
-          className="contact-link"
+          className="footer-contact-link"
         >
           <FontAwesomeIcon className="contact-icon" icon={faLinkedinIn} />
           <span className="option-text contact-text">Connect on LinkedIn</span>

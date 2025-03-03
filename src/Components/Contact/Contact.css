@@ -53,7 +53,7 @@
   );
 }
 
-.contact-link {
+.footer-contact-link {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -69,7 +69,7 @@
 }
 
 .contact-text {
-  color: #ffddcc;
+  color: #faefe9;
   font-size: 1rem;
   text-decoration: underline;
 }
@@ -184,7 +184,7 @@
     border: none;
   }
 
-  .contact-link {
+  .footer-contact-link {
     font-size: 15px;
   }
   #contact {
@@ -232,7 +232,7 @@
     border: none;
   }
 
-  .contact-link {
+  .footer-contact-link {
     font-size: 15px;
   }
   #contact {
