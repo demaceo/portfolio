@@ -1,19 +1,27 @@
 const projectData = [
-  // {
-  //   id: 0,
-  //   name: "Adopt Don't Shop",
-  //   image:
-  //     "",
-  //   description:
-  //     "",
-  //   partners: [
-  //     { name: "Demaceo Vincent", link: "https://github.com/demaceo" },
-  //   ],
-  //   link: "https://demaceo.github.io/adoptdontshop/",
-  //   icon: "fas fa-dog icon",
-  // },
+  {
+    id: 0,
+    name: "Pinpoint",
+    image: "",
+    description:
+      "A tool to help U.S. citizens find and engage with their elected officials using data visualization and AI-powered message drafting.",
+    partners: [{ name: "Demaceo Vincent", link: "https://github.com/demaceo" }],
+    link: "https://github.com/demaceo/pinpoint",
+    icon: "fa fa-map-pin",
+    // icon: "fas fa-theater-masks icon",
+  },
   {
     id: 1,
+    name: "Adopt Don't Shop",
+    image: "",
+    description:
+      "A pet adoption platform that connects users with rescue shelters across the U.S., integrating the Petfinder API for real-time listings.",
+    partners: [{ name: "Demaceo Vincent", link: "https://github.com/demaceo" }],
+    link: "https://demaceo.github.io/adoptdontshop/",
+    icon: "fa fa-paw icon",
+  },
+  {
+    id: 2,
     name: "Moody Tunes",
     image:
       "https://user-images.githubusercontent.com/66697338/104397652-796aac00-550a-11eb-8f64-4b7f7e0c07cc.gif",
@@ -28,7 +36,17 @@ const projectData = [
     icon: "fas fa-theater-masks icon",
   },
   {
-    id: 2,
+    id: 3,
+    name: "Automations & Productivity Scripts",
+    image: "",
+    description:
+      "A personal collection of scripts and tools designed to automate workflows, speed up development, and eliminate repetitive tasks.",
+    partners: [{ name: "Demaceo Vincent", link: "https://github.com/demaceo" }],
+    link: "https://github.com/demaceo/automations",
+    icon: "fas fa-robot icon",
+  },
+  {
+    id: 4,
     name: "Cappua",
     image: "https://media.giphy.com/media/VTLAVXMEcDEMuGWDV5/giphy.gif",
     description:
@@ -45,7 +63,7 @@ const projectData = [
     icon: "fas fa-music icon",
   },
   {
-    id: 3,
+    id: 6,
     name: "What's Cookin",
     image: "https://media.giphy.com/media/yHlPATYrKHmIBcgHpM/giphy.gif",
     description:
@@ -58,7 +76,7 @@ const projectData = [
     icon: "fas fa-cookie-bite icon",
   },
   {
-    id: 4,
+    id: 5,
     name: "Rancid Tomatillos",
     image: "https://media.giphy.com/media/0aJoS84OErWv5MlCmw/giphy.gif",
     description:
@@ -72,4 +90,4 @@ const projectData = [
   },
 ];
 
-export default projectData
+export default projectData;
