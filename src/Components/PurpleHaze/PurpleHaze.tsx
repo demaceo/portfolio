@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./PurpleHaze.css";
+import "./PurpleHaze.scss";
 
 const PurpleHaze: React.FC = () => {
   const heroText = "Demaceo Vincent Developer Designer";
@@ -37,7 +37,7 @@ const PurpleHaze: React.FC = () => {
           clearInterval(interval);
           setIsRevealed(true);
         }
-      }, 110);
+      }, 210);
 
       return () => clearInterval(interval);
     }
@@ -46,9 +46,9 @@ const PurpleHaze: React.FC = () => {
   return (
     <section className="haze-wrapper">
       <div className="purple-haze-container">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <filter id="blur">
-            <feGaussianBlur stdDeviation="10" />
+        <svg width="0" height="0">
+          <filter id="blur-filter">
+            <feGaussianBlur stdDeviation="3" />
           </filter>
         </svg>
 
@@ -62,7 +62,7 @@ const PurpleHaze: React.FC = () => {
           <h2 className={`haze-subtitle  ${isRevealed ? "revealed" : ""}`}>
             {words[2]} | {words[3]}
           </h2>
-          {Array.from({ length: 60 }).map((_, i) => (
+          {Array.from({ length: 80 }).map((_, i) => (
             <div key={i} className="c"></div>
           ))}
         </div>
