@@ -1,7 +1,7 @@
 import React from "react";
 import "./TinyDesk.css";
 
-const StudyIcon: React.FC = () => {
+const TinyDesk: React.FC = () => {
   return (
     <div className="study-icon-container">
       <svg
@@ -102,4 +102,4 @@ const StudyIcon: React.FC = () => {
   );
 };
 
-export default StudyIcon;
+export default TinyDesk;
