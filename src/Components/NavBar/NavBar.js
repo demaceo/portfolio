@@ -7,7 +7,7 @@ const NavBar = memo(() => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
-
+  // ! change Nav Links to WHO WHAT HOW WHY
   return (
     <div className="nav-container syne-font">
       <div className="logo-container">
@@ -25,13 +25,17 @@ const NavBar = memo(() => {
           ></i>
         </button>
         <div className={`nav-links-container${isMenuOpen ? "-open" : ""}`}>
-          <Link to="/" className="link" onClick={closeMenu}>
+          <Link to="/" className="nav-link" onClick={closeMenu}>
             PROFILE
           </Link>
-          <Link to="/projects" className="link" onClick={closeMenu}>
+          <Link to="/projects" className="nav-link" onClick={closeMenu}>
             PROJECTS
           </Link>
-          <a href="#contact-jump" className="link" onClick={closeMenu}>
+          <a
+            href="#contact-jump"
+            className="nav-link contact-link"
+            onClick={closeMenu}
+          >
             CONTACT
           </a>
         </div>
