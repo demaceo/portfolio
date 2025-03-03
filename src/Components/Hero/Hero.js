@@ -16,9 +16,9 @@ const Hero = memo(() => {
           <h1 id="bttm-text">VISIBLE</h1>
         </div>
       </div> */}
-      <a href="#services-slide" className="">
+      {/* <a href="#services-slide" className="">
         <div className="scroll-down"></div>
-      </a>
+      </a> */}
     </section>
   );
 });
