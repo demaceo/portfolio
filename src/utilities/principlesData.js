@@ -23,6 +23,30 @@ const principlesData = [
     description:
       "Minimal and effective. This is my mantra and method. Clean code, fuss-free interfaces and expert execution, design as it should be.",
   },
+  {
+    id: 6,
+    title: "Transparency in Code & Collaboration.",
+    description:
+      "I believe in writing clean, self-documenting code and fostering open communication. Whether in code reviews or team discussions, clarity is key.",
+  },
+  {
+    id: 7,
+    title: "Performance Matters.",
+    description:
+      "A great user experience extends beyond design. Optimized code, fast load times, and smooth interactions make all the difference.",
+  },
+  {
+    id: 8,
+    title: "Automation Over Repetition.",
+    description:
+      "If a task can be automated, it should be. From CI/CD pipelines to utility scripts, I minimize redundant work and maximize efficiency.",
+  },
+  {
+    id: 7,
+    title: "Tech for Good.",
+    description:
+      "Technology should empower and uplift. Whether it’s environmental sustainability, accessibility, or community-driven innovation, I build with impact in mind.",
+  },
 ];
 
 export default principlesData;
