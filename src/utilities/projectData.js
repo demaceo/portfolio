@@ -37,7 +37,7 @@ const projectData = [
   },
   {
     id: 3,
-    name: "Automations & Productivity Scripts",
+    name: "Automation Scripts",
     image: "",
     description:
       "A personal collection of scripts and tools designed to automate workflows, speed up development, and eliminate repetitive tasks.",
