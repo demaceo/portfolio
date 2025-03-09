@@ -1,25 +1,26 @@
 .projects-container {
-  width: 100vw;
   font-family: "Syne", sans-serif;
-  margin: 5vh 0 14vh 0;
+  margin: 1vh 0 10vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  overflow-x: hidden;
+  align-self: center;
+  align-items: center !important;
+  align-content: center !important;
+  place-items: center center !important;
+  /* overflow-x: hidden; */
 }
 
 .project-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.4);
   color: #ffddcc;
   margin-bottom: 1vw;
   border-radius: 15px;
   width: 75vw;
   padding: 10px;
-  /* text-decoration: none; */
 }
 
 .img-container {
@@ -50,25 +51,27 @@
 .project-details {
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
   align-content: center;
   /* align-items: flex-start; */
-  font-weight: lighter;
+  /* font-weight: lighter; */
   text-align: start;
   width: 35vw;
-  padding: 15px;
+  padding: 25px;
 }
 
 #project-title {
   font-size: 2.5rem;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 #project-description {
   font-size: 1.3rem;
   padding-left: 0.5vw;
   padding-bottom: 3vh;
+  font-weight: 100;
 }
 
 .contributors {
@@ -89,10 +92,12 @@
 
 .icon {
   display: none; /* Hidden by default, shown only when image fails */
-  font-size: 7rem;
+  font-size: 10rem;
   color: #264653;
   text-align: center;
   margin: auto;
+  text-shadow: 0 2px 0 rgb(247, 170, 233);
+
   transition: 0.8s all ease-in-out;
 }
 
@@ -101,8 +106,7 @@
   color: #16a3db;
 }
 
-/* Responsive Design */
-
+/* !Responsive Design */
 @media (min-width: 1200px) {
   .icon {
     display: block;
@@ -135,6 +139,10 @@
     width: 90%;
   }
 
+  .img-container {
+    width: 90%;
+  }
+
   .project-img {
     width: 80vw;
   }
@@ -146,12 +154,23 @@
   }
 
   #project-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0.8vh 0vw;
     letter-spacing: 0.5rem;
+    font-weight: 5100;
+    overflow-x: scroll;
   }
 
   #project-description {
     font-size: 1rem;
+    font-weight: 100;
+  }
+  .icon {
+    width: 80vw;
+    font-size: 10rem;
+    padding: 2vh 0vw;
+    /* color: rgba(249, 140, 112, 1); */
+    color: #264653;
+    text-shadow: 0 2px 0 rgb(247, 170, 233);
   }
 }

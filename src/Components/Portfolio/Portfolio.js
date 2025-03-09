@@ -30,5 +30,12 @@ export default function Portfolio() {
     }
   );
 
-  return <><section className="projects-container"><TinyDesk/>{projects}</section></>;
+  return (
+    // <>
+      <section className="projects-container">
+        <TinyDesk />
+        {projects}
+      </section>
+    // </>
+  );
 }
