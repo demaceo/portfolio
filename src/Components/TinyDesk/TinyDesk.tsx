@@ -5,9 +5,12 @@ const TinyDesk: React.FC = () => {
   return (
     <div className="study-icon-container">
       <svg
-        width="64"
-        height="64"
-        viewBox="0 0 64 64"
+        // width="64"
+        // height="64"
+        // viewBox="0 0 64 64"
+        width="740"
+        height="540"
+        viewBox="0 5 45 35"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
