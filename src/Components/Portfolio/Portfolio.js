@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import projectData from "../../utilities/projectData.js";
 import "./Portfolio.css";
-import TinyDesk from "../TinyDesk/TinyDesk.tsx";
+// import TinyDesk from "../TinyDesk/TinyDesk.tsx";
 export default function Portfolio() {
   const [imageError, setImageError] = useState(false);
 
@@ -33,7 +33,7 @@ export default function Portfolio() {
   return (
     // <>
       <section className="projects-container">
-        <TinyDesk />
+        {/* <TinyDesk /> */}
         {projects}
       </section>
     // </>

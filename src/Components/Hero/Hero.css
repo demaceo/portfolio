@@ -32,7 +32,7 @@
   overflow: hidden;
   white-space: nowrap; /* keeps on a single line */
   border-right: 3px solid; /* acts as cursor */
-  animation: typing 4s steps(22) forwards, blink 1.3s step-end infinite;
+  animation: typing 3s steps(22) forwards, blink 1.3s step-end infinite;
 }
 
 /* .bttm-text-container {

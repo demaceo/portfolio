@@ -7,7 +7,7 @@ const PurpleHaze: React.FC = () => {
     "Demaceo Vincent Developer Designer"
   );
   const [isRevealed, setIsRevealed] = useState(false);
-  const words = cipherText.split(" "); 
+  const words = cipherText.split(" ");
 
   useEffect(() => {
     const randomChar = () => {
@@ -33,15 +33,15 @@ const PurpleHaze: React.FC = () => {
         });
 
         i++;
-        if (i > heroText.length) {
+        if (i > cipherText.length) {
           clearInterval(interval);
           setIsRevealed(true);
         }
-      }, 210);
+      }, 200);
 
       return () => clearInterval(interval);
     }
-  }, [isRevealed]);
+  }, [cipherText.length, isRevealed]);
 
   return (
     <section className="haze-wrapper">
