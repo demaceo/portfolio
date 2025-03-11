@@ -6,7 +6,7 @@ const projectData = [
     description:
       "A tool to help U.S. citizens find and engage with their elected officials using data visualization and AI-powered message drafting.",
     partners: [{ name: "Demaceo Vincent", link: "https://github.com/demaceo" }],
-    link: "https://github.com/demaceo/pinpoint",
+    link: "https://pinpoint-flax.vercel.app/",
     icon: "fa fa-map-pin",
     // icon: "fas fa-theater-masks icon",
   },
