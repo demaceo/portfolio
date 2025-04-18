@@ -1,5 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
-
+import { Analytics } from "@vercel/analytics/react";
 export default function RouterProvider({ children }) {
-  return <BrowserRouter>{children}</BrowserRouter>;
+  return (
+    <BrowserRouter>
+      <Analytics />
+      {children}
+    </BrowserRouter>
+  );
 }
