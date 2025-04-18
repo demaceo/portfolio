@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./Components/App/App.js";
 import reportWebVitals from "./reportWebVitals";
 import RouterProvider from "./RouterProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 window.dataLayer = window.dataLayer || [];
 function gtag() {
@@ -20,6 +21,7 @@ if (rootElement) {
     <React.StrictMode>
       <RouterProvider>
         <App />
+        <Analytics />
       </RouterProvider>
     </React.StrictMode>
   );
