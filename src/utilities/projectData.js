@@ -8,10 +8,20 @@ const projectData = [
     partners: [{ name: "Demaceo Vincent", link: "https://github.com/demaceo" }],
     link: "https://pinpoint-flax.vercel.app/",
     icon: "fa fa-map-pin",
-    // icon: "fas fa-theater-masks icon",
   },
   {
     id: 1,
+    name: "Unmasked Coaching",
+    image: "", 
+    description:
+      "A career coaching platform focused on empowering individuals to unmask their true potential through personalized guidance, professional development, and strategic career navigation.",
+    partners: [{ name: "Demaceo Vincent", link: "https://github.com/demaceo" }],
+    link: "https://unmasked-coaching.com",
+    icon: "fas fa-mask",
+  },
+
+  {
+    id: 2,
     name: "Adopt Don't Shop",
     image: "",
     description:
@@ -21,7 +31,7 @@ const projectData = [
     icon: "fa fa-paw icon",
   },
   {
-    id: 2,
+    id: 3,
     name: "Moody Tunes",
     image:
       "https://user-images.githubusercontent.com/66697338/104397652-796aac00-550a-11eb-8f64-4b7f7e0c07cc.gif",
@@ -36,7 +46,7 @@ const projectData = [
     icon: "fas fa-theater-masks icon",
   },
   {
-    id: 3,
+    id: 4,
     name: "Automation Scripts",
     image: "",
     description:
@@ -46,7 +56,7 @@ const projectData = [
     icon: "fas fa-robot icon",
   },
   {
-    id: 4,
+    id: 5,
     name: "Cappua",
     image: "https://media.giphy.com/media/VTLAVXMEcDEMuGWDV5/giphy.gif",
     description:
@@ -76,7 +86,7 @@ const projectData = [
     icon: "fas fa-cookie-bite icon",
   },
   {
-    id: 5,
+    id: 7,
     name: "Rancid Tomatillos",
     image: "https://media.giphy.com/media/0aJoS84OErWv5MlCmw/giphy.gif",
     description:
