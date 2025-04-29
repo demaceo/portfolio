@@ -8,43 +8,45 @@ import Portfolio from "../Portfolio/Portfolio.js";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+function Layout({ children }) {
+  return (
+    <section className="portfolio-container">
+      <NavBar />
+      {children}
+      <Contact />
+    </section>
+  );
+}
+
+
 export default function App() {
   return (
     <Routes>
       {/* created a route with the path * to get all non-configured paths and assign them to the attached component */}
       <Route
-        exact
         path="*"
         element={
-          <section className="portfolio-container">
-            <NavBar />
+          <Layout>
             <Hero />
             <Profile />
-            <Contact />
-          </section>
+          </Layout>
         }
       />
       <Route
-        exact
         path="/"
         element={
-          <section className="portfolio-container">
-            <NavBar />
+          <Layout>
             <Hero />
             <Profile />
-            <Contact />
-          </section>
+          </Layout>
         }
       />
       <Route
-        exact
         path="/projects"
         element={
-          <section className="portfolio-container">
-            <NavBar />
+          <Layout>
             <Portfolio />
-            <Contact />
-          </section>
+          </Layout>
         }
       />
     </Routes>

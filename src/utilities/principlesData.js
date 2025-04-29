@@ -42,7 +42,7 @@ const principlesData = [
       "If a task can be automated, it should be. From CI/CD pipelines to utility scripts, I minimize redundant work and maximize efficiency.",
   },
   {
-    id: 7,
+    id: 9,
     title: "Tech for Good.",
     description:
       "Technology should empower and uplift. Whether it’s environmental sustainability, accessibility, or community-driven innovation, I build with impact in mind.",
