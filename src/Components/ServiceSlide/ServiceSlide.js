@@ -1,128 +1,197 @@
 import "./ServiceSlide.css";
 
 export default function ServiceSlide() {
+  const services = [
+    {
+      id: "sb1",
+      title: `Web Apps & Corporate Sites`,
+      description:
+        "Where problem-solving meets visual impact. I unite products and users, design and experiences.",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 220 160"
+          width="220"
+          height="160"
+        >
+          {/* Static rectangles */}
+          <rect
+            x="9"
+            y="9"
+            width="62"
+            height="62"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="2"
+          />
+          <rect
+            x="71"
+            y="9"
+            width="140"
+            height="140"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="2"
+          />
+          <rect
+            x="9"
+            y="71"
+            width="31"
+            height="31"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="2"
+          />
+          <rect
+            x="9"
+            y="102"
+            width="31"
+            height="49"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="2"
+          />
+          <rect
+            x="40"
+            y="71"
+            width="31"
+            height="80"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="2"
+          />
+
+          {/* Animated path */}
+          <path
+            d="M71 0 L0 0 L0 142 L71 142 L141 72"
+            fill="none"
+            stroke="#264653"
+            strokeWidth="2"
+            strokeDasharray="385"
+            strokeDashoffset="385"
+            // className="animate"
+            className="glow-path"
+            transform="translate(9 9)"
+          />
+        </svg>
+      ),
+    },
+    {
+      id: "sb2",
+      title: "Mobile App Design",
+      description:
+        "Using iOS, Android, and an expert vision, I elevate applications to the next level.",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 220 160"
+          width="220"
+          height="160"
+        >
+          {/* Static mobile wireframe */}
+          <rect
+            x="60"
+            y="10"
+            width="100"
+            height="140"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="3"
+            rx="10"
+          />
+          <circle cx="110" cy="25" r="4" fill="#b0b0b0" />
+          <rect x="70" y="40" width="80" height="20" fill="#b0b0b0" rx="5" />
+          <rect x="70" y="70" width="80" height="20" fill="#b0b0b0" rx="5" />
+          <rect x="70" y="100" width="80" height="20" fill="#b0b0b0" rx="5" />
+
+          {/* Animated path */}
+          <path
+            d="M0,0 L114,77"
+            fill="none"
+            stroke="#264653"
+            strokeWidth="2"
+            strokeDasharray="138"
+            strokeDashoffset="138"
+            // className="animate"
+            className="glow-path"
+            transform="translate(46 28)"
+          />
+        </svg>
+      ),
+    },
+    {
+      id: "sb3",
+      title: "Front End Development",
+      description:
+        "Bridging the gap between beautiful design and seamless functionality.",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 220 160"
+          width="220"
+          height="160"
+        >
+          {/* Static frontend wireframe */}
+          <path
+            d="M40 50 L110 20 L180 50 L180 110 L110 140 L40 110 Z"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="2"
+          />
+          <path
+            d="M40 80 L110 50 L180 80"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="2"
+          />
+          <path
+            d="M40 110 L110 80 L180 110"
+            stroke="#b0b0b0"
+            fill="none"
+            strokeWidth="2"
+          />
+
+          {/* Animated path */}
+          <path
+            d="M0.4,0.4 L31.2,34.5 C32,35.3 33.5,36 34.6,36 L120.5,36"
+            fill="none"
+            stroke="#264653"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            strokeDasharray="138"
+            strokeDashoffset="138"
+            // className="animate"
+            className="glow-path"
+            transform="translate(26 111)"
+          />
+        </svg>
+      ),
+    },
+  ];
+
   return (
     <section className="services-page" id="services-slide">
       <div className="service-main-title-container">
         <h2 className="service-main-title">Service Spectrum</h2>
       </div>
       <div className="service-boxes-container">
-        <div className="service-box" id="sb1">
-          <div className="illustration-container">
-            <div className="spectrum-illustration">
-              <div className="illustration illustration-web">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="220"
-                  height="160"
-                  viewBox="0 0 220 160"
-                >
-                  <path
-                    id="line-web"
-                    fill="none"
-                    stroke="#264653"
-                    strokeWidth="2"
-                    d="M71 0 0 0 .066 142 71.217 142 141.009 72.207"
-                    transform="translate(9 9)"
-                    strokeDashoffset="385"
-                    strokeDasharray="385"
-                    className="animate"
-                  ></path>
-                </svg>
-                <span id="blob-1" className="blob animate"></span>
-              </div>
+        {services.map(({ id, title, description, svg }, index) => (
+          <div
+            className="service-box"
+            id={id}
+            key={id}
+            style={{ "--i": index }}
+          >
+            <div className="illustration-container">
+              <div className="illustration">{svg}</div>
+            </div>
+            <div className="service-text-container">
+              <h3 className="service-title">{title}</h3>
+              <p className="service-description">{description}</p>
             </div>
           </div>
-          <div className="service-text-container">
-            <h3 className="service-title">Web Apps & Corporate Sites</h3>
-            <p className="service-description">
-              This is where problem solving meets visual impact. I will unite
-              products and users, design and experiences.
-            </p>
-          </div>
-        </div>
-        <div className="service-box" id="sb2">
-          <div className="illustration-container">
-            <div className="illustration illustration-mobile">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="220"
-                height="160"
-                viewBox="0 0 220 160"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="220"
-                  height="160"
-                  viewBox="0 0 220 160"
-                >
-                  <g
-                    fill="none"
-                    fillRule="evenodd"
-                    transform="translate(46 28)"
-                  >
-                    <path
-                      id="line-mobile"
-                      stroke="#264653"
-                      strokeWidth="2"
-                      d="M0,0 L114,77"
-                      strokeDashoffset="138"
-                      strokeDasharray="138"
-                      className="animate"
-                    ></path>
-                    <path
-                      stroke="#faf3e9"
-                      strokeDasharray="3 6"
-                      strokeWidth="3"
-                      d="M0,0 L114,77"
-                    ></path>
-                  </g>
-                </svg>
-              </svg>
-              <span id="blob-2" className="blob animate"></span>
-            </div>
-          </div>
-          <div className="service-text-container">
-            <h3 className="service-title">Mobile App Design</h3>
-            <p className="service-description">
-              Using iOS, Android and an expert vision, I will take your
-              application to the next level.
-            </p>
-          </div>
-        </div>
-        <div className="service-box" id="sb3">
-          <div className="illustration-container">
-            <div className="illustration illustration-dev">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="220"
-                height="160"
-                viewBox="0 0 220 160"
-              >
-                <path
-                  id="line-dev"
-                  fill="none"
-                  stroke="#264653"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeDashoffset="138"
-                  strokeDasharray="138"
-                  strokeWidth="2"
-                  d="M0.386206897,0.379310345 L31.2568263,34.5147736 C31.9986406,35.3350415 33.4982916,36 34.6003615,36 L120.468966,36"
-                  transform="translate(26 111)"
-                  className="animate"
-                ></path>
-              </svg>
-              <span id="blob-3" className="blob animate"></span>
-            </div>
-          </div>
-          <div className="service-text-container">
-            <h3 className="service-title">Front End Development</h3>
-            <p className="service-description">
-              I will help you to bridge the gap between design and development.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
