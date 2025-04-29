@@ -15,12 +15,19 @@ const NavBar = memo(() => {
   // Track scroll direction
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setShowNavbar(false); // scrolling down ➔ hide navbar
-      } else {
-        setShowNavbar(true); // scrolling up ➔ show navbar
+      const currentScrollY = window.scrollY;
+
+      if (Math.abs(currentScrollY - lastScrollY) < 20) {
+        // If user scrolls less than 20px, do nothing
+        return;
       }
-      setLastScrollY(window.scrollY);
+
+      if (currentScrollY > lastScrollY) {
+        setShowNavbar(false); // scrolling down
+      } else {
+        setShowNavbar(true); // scrolling up
+      }
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
