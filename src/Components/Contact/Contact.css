@@ -5,253 +5,121 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
-  height: auto;
-  padding: 2vh 5vw;
-  margin: 50px;
+  padding: 3vh 5vw;
+  margin: 5vh 2vw;
   width: auto;
-  background-color: whitesmoke;
+  background: linear-gradient(to bottom right, #f2f2f2, #e0e0e0);
   color: #264653;
+  gap: 2rem;
 }
 
 .contact-title-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
-  height: fit-content;
   font-family: "Gallient", sans-serif;
-  line-height: 0.5;
+  gap: 0.8rem;
 }
 
 #contact {
-  font-size: 75px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  letter-spacing: 15px;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 10px;
+  margin: 0;
 }
 
 #contact-desc {
-  font-size: 18px;
-  padding-left: 5px;
-  letter-spacing: 10px;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.674);
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 5px;
 }
 
 .contact-info-container {
-  border-radius: 100px;
-  width: fit-content;
-  padding: 25px;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-family: "Syne", sans-serif;
-  background: linear-gradient(
-    to right,
-    rgba(92, 129, 202, 1) 0%,
-    rgba(249, 140, 112, 1) 100%
-  );
-}
-
-.footer-contact-link {
+  background: linear-gradient(to right, rgba(92, 129, 202, 1), rgba(249, 140, 112, 1));
+  border-radius: 50px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.footer-contact-link, .popup-button {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  font-size: 20px;
+  font-family: "Syne", sans-serif;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #faefe9;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-contact-link:hover, .popup-button:hover {
+  color: #f9a97a;
+  transform: translateY(-2px);
 }
 
 .contact-icon {
-  margin: 10px;
-  font-size: 3vh;
+  margin-right: 0.5rem;
+  font-size: 1.8rem;
   color: #f2f1f7;
 }
 
 .contact-text {
-  color: #faefe9;
   font-size: 1rem;
   text-decoration: underline;
 }
 
-.popup-button {
-  background-color: transparent;
-  border: none;
-  display: flex;
-  font-family: "Syne", sans-serif;
-  margin: 10px;
-  align-items: center;
+/* Glide In Animation */
+.popup-content.glide-in {
+  animation: glideIn 0.5s ease forwards;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
 }
+
+@keyframes glideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 
 /* Responsive Design */
-@media (min-width: 1200px) {
+@media (max-width: 860px) {
   .contact-container {
-    margin: 5vh 2vw;
-  }
-  .contact-info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
-    height: auto;
-    margin: 0;
-  }
-}
-
-@media (max-width: 1199px) and (min-width: 860px) {
-  .contact-container {
-    margin: 20px;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3vh 2vw;
+    padding: 2vh 4vw;
   }
 
   .contact-title-container {
-    width: 40%;
-  }
-
-  #contact {
-    font-size: 60px;
-    font-weight: 600;
-    margin: 10px 0px;
-  }
-  #contact-desc {
-    font-size: 20px;
-    letter-spacing: 6px;
-  }
-  .contact-info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
-    height: auto;
-    margin: 0;
-  }
-}
-
-@media (max-width: 859px) and (min-width: 658px) {
-  .contact-container {
-    height: auto;
-    flex-wrap: wrap;
-    padding: 2vh 1vw;
-    margin: 15px;
-  }
-  .contact-title-container {
-    justify-content: space-around;
-    height: auto;
-  }
-  .contact-info-container {
-    width: 50%;
-    height: auto;
-    margin: 0;
-    padding: 0vh 20px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  #contact {
-    font-size: 35px;
-    font-weight: 600;
-    margin: 10px 0px;
-  }
-  #contact-desc {
-    font-size: 10px;
-    letter-spacing: 7px;
-  }
-
-  .contact-text {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 657px) and (min-width: 375px) {
-  .contact-container {
-    height: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    justify-content: baseline;
-    margin: 1rem 1em 2rem;
-  }
-  .contact-title-container {
-    justify-content: space-around;
-    height: auto;
-  }
-  .contact-info-container {
-    display: flex;
     align-items: center;
-    flex-direction: row;
-    width: 45%;
-    height: auto;
-    padding: 10px 5px;
-    margin: 0;
-    border: none;
+    text-align: center;
   }
 
-  .footer-contact-link {
-    font-size: 15px;
-  }
   #contact {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 10px 0px;
-    letter-spacing: 10px;
-  }
-  #contact-desc {
-    font-size: 10px;
-    display: none;
-    letter-spacing: 5px;
+    font-size: clamp(2rem, 6vw, 4rem);
   }
 
-  .contact-text {
-    display: none;
-  }
-
-  .popup-button {
-    margin: 0px;
+  .contact-info-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 15px 20px;
   }
 }
 
-@media (max-width: 374px) {
-  .contact-container {
-    height: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    justify-content: baseline;
-    margin: 5px;
-  }
-  .contact-title-container {
-    justify-content: space-around;
-    height: auto;
-  }
+@media (max-width: 500px) {
   .contact-info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 50%;
-    height: auto;
-    padding: 10px 5px;
-    margin: 0;
-    border: none;
-  }
-
-  .footer-contact-link {
-    font-size: 15px;
-  }
-  #contact {
-    font-size: 25px;
-    font-weight: 700;
-    margin: 10px 0px;
-    letter-spacing: 10px;
-  }
-  #contact-desc {
-    font-size: 8px;
-    letter-spacing: 5px;
-    display: none;
-  }
-
-  .contact-text {
-    display: none;
-  }
-
-  .popup-button {
-    margin: 0px;
+    gap: 1rem;
   }
 }
