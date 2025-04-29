@@ -1,41 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import projectData from "../../utilities/projectData.js";
 import "./Portfolio.css";
-// import TinyDesk from "../TinyDesk/TinyDesk.tsx";
+
 export default function Portfolio() {
-  const [imageError, setImageError] = useState(false);
-
-  const projects = projectData.map(
-    ({ id, image, name, description, link, icon }) => {
-      return (
-        <section className="project-container" key={id} id={id}>
-          <a className="img-container" href={link}>
-            {!imageError && image ? (
-              <img
-                className="project-img"
-                src={image}
-                alt={name}
-                onError={() => setImageError(true)}
-              />
-            ) : (
-              <i className={`${icon} icon`}></i>
-            )}
-          </a>
-          <div className="project-details">
-            <h1 id="project-title">{name}</h1>
-            <p id="project-description">{description}</p>
-          </div>
-        </section>
-      );
-    }
-  );
-
   return (
-    // <>
-      <section className="projects-container">
-        {/* <TinyDesk /> */}
-        {projects}
-      </section>
-    // </>
+    <section className="projects-container">
+      {projectData.map(
+        ({ id, image, name, description, link, icon }, index) => (
+          <motion.article
+            key={id}
+            className="project-card"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+              delay: index * 0.15, // <--- 🌟 Cascading effect here!
+            }}
+            viewport={{ once: true }}
+          >
+            <a
+              className="project-image-link"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {image ? (
+                <img
+                  className="project-image"
+                  src={image}
+                  alt={name}
+                  onError={(e) => (e.target.style.display = "none")}
+                />
+              ) : (
+                <i className={`${icon} project-icon`} aria-hidden="true"></i>
+              )}
+            </a>
+            <div className="project-info">
+              <h2 className="project-title">{name}</h2>
+              <p className="project-description">{description}</p>
+            </div>
+          </motion.article>
+        )
+      )}
+    </section>
   );
 }
