@@ -24,6 +24,7 @@
     "base-64": "^1.0.0",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
+    "framer-motion": "^12.9.2",
     "gapi-script": "^1.2.0",
     "nanoid": "^5.0.8",
     "prototype": "^0.0.5",
