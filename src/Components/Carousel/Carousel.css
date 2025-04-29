@@ -24,7 +24,7 @@
 }
 
 .principle-header {
-  font-size: 50px;
+  font-size: clamp(1.8rem, 5vw, 3rem);
   letter-spacing: 3px;
 }
 
@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: 646px) and (min-width: 400px) {
+@media (max-width: 646px) and (min-width: 401px) {
   .principle-item {
     height: 250px;
     width: 100%;

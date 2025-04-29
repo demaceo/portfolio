@@ -1,4 +1,5 @@
 import "./ServiceSlide.css";
+import { motion } from "framer-motion";
 
 export default function ServiceSlide() {
   const services = [
@@ -171,8 +172,14 @@ export default function ServiceSlide() {
   ];
 
   return (
-    <section className="services-page" id="services-slide">
-      <div className="service-main-title-container">
+    <motion.section
+      className="services-page"
+      id="services-slide"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >      <div className="service-main-title-container">
         <h2 className="service-main-title">Service Spectrum</h2>
       </div>
       <div className="service-boxes-container">
@@ -193,6 +200,6 @@ export default function ServiceSlide() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
