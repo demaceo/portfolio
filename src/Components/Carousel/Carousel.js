@@ -26,7 +26,7 @@ export default function CarouselComponent () {
   return (
     <Carousel
       className="carousel-container"
-      interval={7000}
+      interval={5000}
       keyboard
       touch
       pause="hover"

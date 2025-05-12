@@ -19,7 +19,6 @@ const projectData = [
     link: "https://unmasked-coaching.com",
     icon: "fas fa-mask",
   },
-
   {
     id: 2,
     name: "Adopt Don't Shop",

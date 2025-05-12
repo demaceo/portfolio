@@ -5,27 +5,22 @@ import React, { useState, memo, useEffect } from "react";
 
 const NavBar = memo(() => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true); // ✨ new
-  const [lastScrollY, setLastScrollY] = useState(0); // ✨ new
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
-  const location = useLocation();
 
-  // Track scroll direction
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      if (Math.abs(currentScrollY - lastScrollY) < 20) return;
 
-      if (Math.abs(currentScrollY - lastScrollY) < 20) {
-        // If user scrolls less than 20px, do nothing
-        return;
-      }
-
-      if (currentScrollY > lastScrollY) {
-        setShowNavbar(false); // scrolling down
-      } else {
-        setShowNavbar(true); // scrolling up
+      if (currentScrollY - lastScrollY > 30) {
+        setShowNavbar(false);
+      } else if (lastScrollY - currentScrollY > 10) {
+        setShowNavbar(true);
       }
       setLastScrollY(currentScrollY);
     };
@@ -33,8 +28,6 @@ const NavBar = memo(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
-
-  /* ! change Nav Links to WHO WHAT HOW WHY */
 
   return (
     <header className={`nav-container ${showNavbar ? "visible" : "hidden"}`}>
@@ -51,6 +44,8 @@ const NavBar = memo(() => {
           className="dropbtn"
           onClick={toggleMenu}
           aria-label="Toggle navigation"
+          aria-expanded={isMenuOpen}
+          aria-controls="nav-menu"
         >
           <i
             className={`fa fa-${isMenuOpen ? "close" : "bars"}`}
@@ -58,7 +53,10 @@ const NavBar = memo(() => {
           ></i>
         </button>
 
-        <nav className={`nav-links-container${isMenuOpen ? "-open" : ""}`}>
+        <nav
+          id="nav-menu"
+          className={`nav-links-container${isMenuOpen ? "-open" : ""}`}
+        >
           <Link
             to="/"
             className={`nav-link ${

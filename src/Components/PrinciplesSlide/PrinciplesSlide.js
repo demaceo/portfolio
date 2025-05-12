@@ -38,15 +38,15 @@ export default function PrinciplesSlide() {
         <CarouselComponent deviceType={deviceType} />
       </div>
       <div className="tools-icons-container">
-        <FontAwesomeIcon icon={faFigma} />
-        <FontAwesomeIcon icon={faWebflow} />
-        <FontAwesomeIcon icon={faGit} />
-        <FontAwesomeIcon icon={faNode} />
-        <FontAwesomeIcon icon={faReact} />
-        <FontAwesomeIcon icon={faJs} />
-        <FontAwesomeIcon icon={faCss3} />
-        <FontAwesomeIcon icon={faHtml5} />
-        <FontAwesomeIcon icon={faGithub} />
+        <FontAwesomeIcon icon={faFigma} title="Figma" />
+        <FontAwesomeIcon icon={faWebflow} title="Webflow" />
+        <FontAwesomeIcon icon={faGit} title="Git" />
+        <FontAwesomeIcon icon={faNode} title="Node.js" />
+        <FontAwesomeIcon icon={faReact} title="React" />
+        <FontAwesomeIcon icon={faJs} title="JavaScript" />
+        <FontAwesomeIcon icon={faCss3} title="CSS3" />
+        <FontAwesomeIcon icon={faHtml5} title="HTML5" />
+        <FontAwesomeIcon icon={faGithub} title="GitHub" />
       </div>
     </section>
   );

@@ -1,161 +1,110 @@
 /* === Container === */
 .services-page {
-  background: linear-gradient(to bottom right, #faf3e9, #f9e4d4);
+  background: linear-gradient(135deg, #faf3e9 0%, #f9e4d4 100%);
   color: #264653;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 60px 30px;
-  margin: 5vh 2vw;
-  border-radius: 20px;
-  overflow-x: hidden;
+  padding: clamp(2rem, 5vw, 4rem) 1rem;
+  margin: 5vh auto;
+  max-width: 1400px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
+/* === Title === */
+.service-main-title-container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
 .service-main-title {
   font-family: "Syne", sans-serif;
-  font-size: clamp(2.5rem, 7vw, 5rem);
-  letter-spacing: 10px;
-  font-weight: 700;
-  text-align: center;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: 0.15em;
+  font-weight: 800;
   color: #264653;
-  margin-bottom: 3rem;
 }
 
-/* === Service Cards === */
+/* === Service Grid === */
 .service-boxes-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
+  width: 100%;
 }
 
+/* === Cards === */
 .service-box {
-  background: linear-gradient(to bottom, #ffffff, #fdf7f2);
-  font-family: "Syne", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 28%;
-  min-width: 300px;
-  padding: 40px 25px;
-  border-radius: 18px;
-  box-shadow: 0 20px 40px -12px rgba(50, 50, 93, 0.15),
-    0 10px 20px -15px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(38, 70, 83, 0.1);
   text-align: center;
-  opacity: 0;
-  transform: translateY(10px) scale(0.98);
-  animation: fadeUp 1s ease forwards;
-  animation-delay: calc(var(--i) * 0.2s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
-
-/* Hover Enhancements */
 .service-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px -15px rgba(50, 50, 93, 0.25),
-    0 20px 40px -20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(38, 70, 83, 0.15);
 }
 
-/* Slight SVG glow on card hover */
-.service-box:hover .illustration svg {
-  filter: drop-shadow(0 0 8px rgba(38, 70, 83, 0.35));
-  transition: filter 0.4s ease;
-}
-
-.service-box:hover .glow-path {
-  filter: drop-shadow(0 0 8px rgba(38, 70, 83, 0.45));
-  transition: filter 0.4s ease;
-}
-
-.glow-path {
-  transition: filter 0.4s ease;
-}
-
-
-/* === Illustrations === */
+/* SVG Illustrations */
 .illustration-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
-
 .illustration {
-  width: 220px;
-  height: 160px;
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  margin: 0 auto;
+  transition: filter 0.3s ease;
+}
+.service-box:hover .illustration {
+  filter: drop-shadow(0 4px 8px rgba(38, 70, 83, 0.2));
 }
 
-.illustration svg {
-  transition: filter 0.4s ease;
-}
-
-/* === Text Content === */
-.service-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* Text */
 .service-title {
-  font-size: 1.8rem;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  color: #264653;
 }
-
 .service-description {
-  font-size: 1.2rem;
-  opacity: 0.8;
-  max-width: 90%;
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  color: #4b5563;
 }
 
-/* === Fade In Animation === */
+/* Fade-up Animation */
 @keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(10px) scale(0.98);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  0%   { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0px); }
 }
-
-/* === Responsive Adjustments === */
-@media (max-width: 1024px) {
-  .service-box {
-    width: 80%;
-  }
-  .illustration {
-    transform: scale(1.5);
-  }
+.service-box {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
 }
+.service-box:nth-child(1) { animation-delay: 0.2s; }
+.service-box:nth-child(2) { animation-delay: 0.4s; }
+.service-box:nth-child(3) { animation-delay: 0.6s; }
+.service-box:nth-child(4) { animation-delay: 0.8s; }
+.service-box:nth-child(5) { animation-delay: 1.0s; }
+.service-box:nth-child(6) { animation-delay: 1.2s; }
 
+/* === Responsive Tweaks === */
 @media (max-width: 640px) {
   .service-main-title {
     font-size: 2.5rem;
-    letter-spacing: 5px;
+    letter-spacing: 0.1em;
+  }
+  .service-boxes-container {
+    gap: 1.5rem;
   }
   .service-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .service-description {
     font-size: 1rem;
-  }
-}
-
-@keyframes dash-1 {
-  from {
-    stroke-dashoffset: 385;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash-2 {
-  from {
-    stroke-dashoffset: 138;
-  }
-  to {
-    stroke-dashoffset: 0;
   }
 }

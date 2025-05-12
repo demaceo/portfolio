@@ -45,7 +45,7 @@ const principlesData = [
     id: 9,
     title: "Tech for Good.",
     description:
-      "Technology should empower and uplift. Whether it’s environmental sustainability, accessibility, or community-driven innovation, I build with impact in mind.",
+      "Whether it’s environmental sustainability, accessibility, or community-driven innovation, I build with impact in mind.",
   },
 ];
 

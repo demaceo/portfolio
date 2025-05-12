@@ -35,7 +35,8 @@ const ContactForm = () => {
       <div className="email-form-wrapper">
         <form className="email-form" onSubmit={sendEmail}>
           <h3>Email Me</h3>
-          <label>Name</label>
+
+          <label htmlFor="from_name">Name</label>
           <input
             type="text"
             name="from_name"
@@ -43,7 +44,8 @@ const ContactForm = () => {
             placeholder="Enter your name"
             required
           />
-          <label>Email</label>
+
+          <label htmlFor="reply_to">Email</label>
           <input
             type="email"
             name="reply_to"
@@ -51,18 +53,35 @@ const ContactForm = () => {
             placeholder="Enter your email"
             required
           />
-          <label>Message</label>
-          <textarea name="message" placeholder="Enter your message" required />
+
+          <label htmlFor="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter your message"
+            required
+          />
+
           <input
             id="submit-button"
             type="submit"
-            value="Send"
+            value={isSubmitting ? "Sending..." : "Send"}
             disabled={isSubmitting}
+            aria-disabled={isSubmitting}
           />
         </form>
-        {stateMessage && <p id="form-sent-status">{stateMessage}</p>}
+
+        <p
+          id="form-sent-status"
+          aria-live="polite"
+          role="status"
+          style={{ minHeight: "1.5rem" }}
+        >
+          {stateMessage}
+        </p>
       </div>
     </div>
   );
 };
+
 export default ContactForm;

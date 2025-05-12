@@ -169,6 +169,69 @@ export default function ServiceSlide() {
         </svg>
       ),
     },
+    {
+      id: "sb4",
+      title: "API & Microservices",
+      description:
+        "Designing and building RESTful & GraphQL APIs with Node.js/Express, ensuring secure data exchange and scalability.",
+      svg: (
+        <svg width="80" height="80" viewBox="0 0 24 24">
+          <path d="M4 4h16v4H4z" fill="#264653" />
+          <path d="M4 10h16v4H4z" fill="#60a5fa" />
+          <path d="M4 16h16v4H4z" fill="#264653" />
+        </svg>
+      ),
+    },
+    {
+      id: "sb5",
+      title: "Cloud & DevOps",
+      description:
+        "Automating CI/CD pipelines on AWS/Azure, containerizing with Docker & Kubernetes for rock-solid deployments.",
+      svg: (
+        <svg width="80" height="80" viewBox="0 0 24 24">
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="#264653"
+            fill="none"
+            strokeWidth="2"
+          />
+          <path d="M12 6v12M6 12h12" stroke="#60a5fa" strokeWidth="2" />
+        </svg>
+      ),
+    },
+    {
+      id: "sb6",
+      title: "Data & Database Design",
+      description:
+        "Modeling and optimizing SQL/NoSQL databases (MongoDB, PostgreSQL), ensuring data integrity and lightning-fast queries.",
+      svg: (
+        <svg width="80" height="80" viewBox="0 0 24 24">
+          <rect
+            x="4"
+            y="4"
+            width="16"
+            height="16"
+            stroke="#264653"
+            fill="none"
+            strokeWidth="2"
+          />
+          <path d="M4 10h16M4 14h16" stroke="#60a5fa" strokeWidth="2" />
+        </svg>
+      ),
+    },
+    {
+      id: "sb7",
+      title: "Automation & Scripting",
+      description:
+        "Building custom scripts and tools to automate repetitive tasks, boost developer productivity, and eliminate manual errors.",
+      svg: (
+        <svg width="80" height="80" viewBox="0 0 24 24">
+          <polygon points="4,4 20,12 4,20" fill="#60a5fa" />
+        </svg>
+      ),
+    },
   ];
 
   return (
@@ -179,7 +242,9 @@ export default function ServiceSlide() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-    >      <div className="service-main-title-container">
+    >
+      {" "}
+      <div className="service-main-title-container">
         <h2 className="service-main-title">Service Spectrum</h2>
       </div>
       <div className="service-boxes-container">
