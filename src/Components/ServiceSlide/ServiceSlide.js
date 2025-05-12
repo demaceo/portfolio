@@ -152,7 +152,6 @@ export default function ServiceSlide() {
         <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
           <circle cx="32" cy="32" r="28" stroke="#264653" strokeWidth="3" />
           <path d="M24 24l16 8-16 8v-16z" fill="#facc15" />
-          {/* <circle cx="32" cy="32" r="4" fill="#60a5fa" /> */}
         </svg>
       ),
     },
