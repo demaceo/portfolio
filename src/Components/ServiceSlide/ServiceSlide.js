@@ -9,71 +9,12 @@ export default function ServiceSlide() {
       description:
         "Where problem-solving meets visual impact. I unite products and users, design and experiences.",
       svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 220 160"
-          width="220"
-          height="160"
-        >
-          {/* Static rectangles */}
-          <rect
-            x="9"
-            y="9"
-            width="62"
-            height="62"
-            stroke="#b0b0b0"
-            fill="none"
-            strokeWidth="2"
-          />
-          <rect
-            x="71"
-            y="9"
-            width="140"
-            height="140"
-            stroke="#b0b0b0"
-            fill="none"
-            strokeWidth="2"
-          />
-          <rect
-            x="9"
-            y="71"
-            width="31"
-            height="31"
-            stroke="#b0b0b0"
-            fill="none"
-            strokeWidth="2"
-          />
-          <rect
-            x="9"
-            y="102"
-            width="31"
-            height="49"
-            stroke="#b0b0b0"
-            fill="none"
-            strokeWidth="2"
-          />
-          <rect
-            x="40"
-            y="71"
-            width="31"
-            height="80"
-            stroke="#b0b0b0"
-            fill="none"
-            strokeWidth="2"
-          />
-
-          {/* Animated path */}
-          <path
-            d="M71 0 L0 0 L0 142 L71 142 L141 72"
-            fill="none"
-            stroke="#264653"
-            strokeWidth="2"
-            strokeDasharray="385"
-            strokeDashoffset="385"
-            // className="animate"
-            className="glow-path"
-            transform="translate(9 9)"
-          />
+        <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+          <rect x="4" y="12" width="56" height="40" rx="4" fill="#264653" />
+          <rect x="8" y="16" width="48" height="32" rx="2" fill="white" />
+          <rect x="12" y="20" width="12" height="4" rx="1" fill="#facc15" />
+          <rect x="12" y="28" width="24" height="4" rx="1" fill="#60a5fa" />
+          <rect x="12" y="36" width="32" height="4" rx="1" fill="#60a5fa" />
         </svg>
       ),
     },
@@ -83,40 +24,10 @@ export default function ServiceSlide() {
       description:
         "Using iOS, Android, and an expert vision, I elevate applications to the next level.",
       svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 220 160"
-          width="220"
-          height="160"
-        >
-          {/* Static mobile wireframe */}
-          <rect
-            x="60"
-            y="10"
-            width="100"
-            height="140"
-            stroke="#b0b0b0"
-            fill="none"
-            strokeWidth="3"
-            rx="10"
-          />
-          <circle cx="110" cy="25" r="4" fill="#b0b0b0" />
-          <rect x="70" y="40" width="80" height="20" fill="#b0b0b0" rx="5" />
-          <rect x="70" y="70" width="80" height="20" fill="#b0b0b0" rx="5" />
-          <rect x="70" y="100" width="80" height="20" fill="#b0b0b0" rx="5" />
-
-          {/* Animated path */}
-          <path
-            d="M0,0 L114,77"
-            fill="none"
-            stroke="#264653"
-            strokeWidth="2"
-            strokeDasharray="138"
-            strokeDashoffset="138"
-            // className="animate"
-            className="glow-path"
-            transform="translate(46 28)"
-          />
+        <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+          <rect x="20" y="8" width="24" height="48" rx="4" fill="#264653" />
+          <rect x="24" y="12" width="16" height="28" rx="2" fill="white" />
+          <circle cx="32" cy="46" r="2" fill="#facc15" />
         </svg>
       ),
     },
@@ -126,45 +37,24 @@ export default function ServiceSlide() {
       description:
         "Bridging the gap between beautiful design and seamless functionality.",
       svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 220 160"
-          width="220"
-          height="160"
-        >
-          {/* Static frontend wireframe */}
+        <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+          <rect x="4" y="12" width="56" height="40" rx="4" fill="#264653" />
+          <rect x="8" y="16" width="48" height="32" rx="2" fill="white" />
           <path
-            d="M40 50 L110 20 L180 50 L180 110 L110 140 L40 110 Z"
-            stroke="#b0b0b0"
+            d="M18 26 L24 32 L18 38"
+            stroke="#facc15"
+            strokeWidth="3"
             fill="none"
-            strokeWidth="2"
-          />
-          <path
-            d="M40 80 L110 50 L180 80"
-            stroke="#b0b0b0"
-            fill="none"
-            strokeWidth="2"
-          />
-          <path
-            d="M40 110 L110 80 L180 110"
-            stroke="#b0b0b0"
-            fill="none"
-            strokeWidth="2"
-          />
-
-          {/* Animated path */}
-          <path
-            d="M0.4,0.4 L31.2,34.5 C32,35.3 33.5,36 34.6,36 L120.5,36"
-            fill="none"
-            stroke="#264653"
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth="2"
-            strokeDasharray="138"
-            strokeDashoffset="138"
-            // className="animate"
-            className="glow-path"
-            transform="translate(26 111)"
+          />
+          <path
+            d="M46 26 L40 32 L46 38"
+            stroke="#60a5fa"
+            strokeWidth="3"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ),
@@ -175,10 +65,16 @@ export default function ServiceSlide() {
       description:
         "Designing and building RESTful & GraphQL APIs with Node.js/Express, ensuring secure data exchange and scalability.",
       svg: (
-        <svg width="80" height="80" viewBox="0 0 24 24">
-          <path d="M4 4h16v4H4z" fill="#264653" />
-          <path d="M4 10h16v4H4z" fill="#60a5fa" />
-          <path d="M4 16h16v4H4z" fill="#264653" />
+        <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="28" stroke="#264653" strokeWidth="3" />
+          <path
+            d="M20 32h24"
+            stroke="#60a5fa"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+          <circle cx="20" cy="32" r="3" fill="#facc15" />
+          <circle cx="44" cy="32" r="3" fill="#facc15" />
         </svg>
       ),
     },
@@ -188,16 +84,21 @@ export default function ServiceSlide() {
       description:
         "Automating CI/CD pipelines on AWS/Azure, containerizing with Docker & Kubernetes for rock-solid deployments.",
       svg: (
-        <svg width="80" height="80" viewBox="0 0 24 24">
-          <circle
-            cx="12"
-            cy="12"
-            r="10"
+        <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+          <path
+            d="M20 44h24c6 0 10-4 10-9s-4-9-10-9c-1-8-10-13-18-10-5 2-8 6-8 11-6 0-10 4-10 9s4 9 10 9z"
+            fill="#60a5fa"
             stroke="#264653"
-            fill="none"
             strokeWidth="2"
           />
-          <path d="M12 6v12M6 12h12" stroke="#60a5fa" strokeWidth="2" />
+          <path
+            d="M28 32l4 4 8-8"
+            stroke="#facc15"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       ),
     },
@@ -207,17 +108,38 @@ export default function ServiceSlide() {
       description:
         "Modeling and optimizing SQL/NoSQL databases (MongoDB, PostgreSQL), ensuring data integrity and lightning-fast queries.",
       svg: (
-        <svg width="80" height="80" viewBox="0 0 24 24">
-          <rect
-            x="4"
-            y="4"
-            width="16"
-            height="16"
+        <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+          <ellipse
+            cx="32"
+            cy="16"
+            rx="20"
+            ry="8"
+            fill="#60a5fa"
             stroke="#264653"
-            fill="none"
             strokeWidth="2"
           />
-          <path d="M4 10h16M4 14h16" stroke="#60a5fa" strokeWidth="2" />
+          <path
+            d="M12 16v24c0 4.4 8.9 8 20 8s20-3.6 20-8V16"
+            fill="none"
+            stroke="#264653"
+            strokeWidth="2"
+          />
+          <line
+            x1="12"
+            y1="28"
+            x2="52"
+            y2="28"
+            stroke="#facc15"
+            strokeWidth="2"
+          />
+          <line
+            x1="12"
+            y1="36"
+            x2="52"
+            y2="36"
+            stroke="#facc15"
+            strokeWidth="2"
+          />
         </svg>
       ),
     },
@@ -227,8 +149,10 @@ export default function ServiceSlide() {
       description:
         "Building custom scripts and tools to automate repetitive tasks, boost developer productivity, and eliminate manual errors.",
       svg: (
-        <svg width="80" height="80" viewBox="0 0 24 24">
-          <polygon points="4,4 20,12 4,20" fill="#60a5fa" />
+        <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="28" stroke="#264653" strokeWidth="3" />
+          <path d="M24 24l16 8-16 8v-16z" fill="#facc15" />
+          {/* <circle cx="32" cy="32" r="4" fill="#60a5fa" /> */}
         </svg>
       ),
     },
@@ -243,7 +167,6 @@ export default function ServiceSlide() {
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      {" "}
       <div className="service-main-title-container">
         <h2 className="service-main-title">Service Spectrum</h2>
       </div>
