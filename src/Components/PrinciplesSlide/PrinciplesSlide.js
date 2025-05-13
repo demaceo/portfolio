@@ -12,8 +12,21 @@ import {
   faHtml5,
   faGithub,
   faNode,
+  faNpm,
+  faPython,
+  faAws,
+  faDocker,
+  faLinux,
+  faSlack,
+  faJira,
+  faMarkdown,
+  // faTerminal,
+  // faDatabase,
+  // faCode,
+  // faRocket,
+  // faLeaf,
 } from "@fortawesome/free-brands-svg-icons";
-// import CarouselComponent from "../Carousel/Carousel";
+
 import { useEffect, useState } from "react";
 
 export default function PrinciplesSlide() {
@@ -64,34 +77,56 @@ export default function PrinciplesSlide() {
         </button>
       </div>
       <div className="tools-icons-container">
-        <div className="tools-icons-container">
-          <div className="icon-wrapper" data-tooltip="Figma">
-            <FontAwesomeIcon icon={faFigma} />
-          </div>
-          <div className="icon-wrapper" data-tooltip="Webflow">
-            <FontAwesomeIcon icon={faWebflow} />
-          </div>
-          <div className="icon-wrapper" data-tooltip="Git">
-            <FontAwesomeIcon icon={faGit} />
-          </div>
-          <div className="icon-wrapper" data-tooltip="Node.js">
-            <FontAwesomeIcon icon={faNode} />
-          </div>
-          <div className="icon-wrapper" data-tooltip="React">
-            <FontAwesomeIcon icon={faReact} />
-          </div>
-          <div className="icon-wrapper" data-tooltip="JavaScript">
-            <FontAwesomeIcon icon={faJs} />
-          </div>
-          <div className="icon-wrapper" data-tooltip="CSS">
-            <FontAwesomeIcon icon={faCss3} />
-          </div>
-          <div className="icon-wrapper" data-tooltip="HTML5">
-            <FontAwesomeIcon icon={faHtml5} />
-          </div>
-          <div className="icon-wrapper" data-tooltip="GitHub">
-            <FontAwesomeIcon icon={faGithub} />
-          </div>
+        <div className="icon-wrapper" data-tooltip="Figma">
+          <FontAwesomeIcon icon={faFigma} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Webflow">
+          <FontAwesomeIcon icon={faWebflow} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Git">
+          <FontAwesomeIcon icon={faGit} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Node.js">
+          <FontAwesomeIcon icon={faNode} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="React">
+          <FontAwesomeIcon icon={faReact} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="JavaScript">
+          <FontAwesomeIcon icon={faJs} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="CSS">
+          <FontAwesomeIcon icon={faCss3} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="HTML5">
+          <FontAwesomeIcon icon={faHtml5} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="GitHub">
+          <FontAwesomeIcon icon={faGithub} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="NPM">
+          <FontAwesomeIcon icon={faNpm} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Python">
+          <FontAwesomeIcon icon={faPython} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="AWS">
+          <FontAwesomeIcon icon={faAws} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Docker">
+          <FontAwesomeIcon icon={faDocker} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Linux">
+          <FontAwesomeIcon icon={faLinux} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Slack">
+          <FontAwesomeIcon icon={faSlack} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Jira">
+          <FontAwesomeIcon icon={faJira} />
+        </div>
+        <div className="icon-wrapper" data-tooltip="Markdown">
+          <FontAwesomeIcon icon={faMarkdown} />
         </div>
       </div>
     </section>

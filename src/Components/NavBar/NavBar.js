@@ -1,6 +1,6 @@
 import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../logo(light).png";
+import logo from "../../assets/logo/logo(light).png";
 import { useState, memo, useEffect } from "react";
 
 const NavBar = memo(() => {
