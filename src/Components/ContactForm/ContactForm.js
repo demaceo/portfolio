@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 
-const ContactForm = () => {
+const ContactForm = ({ onClose }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
+  const nameInputRef = useRef();
+
+  useEffect(() => {
+    nameInputRef.current?.focus();
+  }, []);
 
   const showMessage = (message) => {
     setStateMessage(message);
@@ -33,11 +38,20 @@ const ContactForm = () => {
   return (
     <div className="contact-form-container">
       <div className="email-form-wrapper">
+        <button
+          className="close-modal-btn"
+          onClick={onClose}
+          aria-label="Close Contact Form"
+        >
+          &times;
+        </button>
+
         <form className="email-form" onSubmit={sendEmail}>
           <h3>Email Me</h3>
 
           <label htmlFor="from_name">Name</label>
           <input
+            ref={nameInputRef}
             type="text"
             name="from_name"
             id="from_name"

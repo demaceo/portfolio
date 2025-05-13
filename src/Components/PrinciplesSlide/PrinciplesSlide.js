@@ -27,23 +27,23 @@ import {
   // faLeaf,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function PrinciplesSlide() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [deviceType, setDeviceType] = useState("desktop");
+  // const [deviceType, setDeviceType] = useState("desktop");
 
-  useEffect(() => {
-    const updateDeviceType = () => {
-      const width = window.innerWidth;
-      setDeviceType(
-        width >= 1024 ? "desktop" : width >= 464 ? "tablet" : "mobile"
-      );
-    };
-    updateDeviceType();
-    window.addEventListener("resize", updateDeviceType);
-    return () => window.removeEventListener("resize", updateDeviceType);
-  }, []);
+  // useEffect(() => {
+  //   const updateDeviceType = () => {
+  //     const width = window.innerWidth;
+  //     setDeviceType(
+  //       width >= 1024 ? "desktop" : width >= 464 ? "tablet" : "mobile"
+  //     );
+  //   };
+  //   updateDeviceType();
+  //   window.addEventListener("resize", updateDeviceType);
+  //   return () => window.removeEventListener("resize", updateDeviceType);
+  // }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % principlesData.length);

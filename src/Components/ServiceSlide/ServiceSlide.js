@@ -1,10 +1,21 @@
 import "./ServiceSlide.css";
 import { motion } from "framer-motion";
 import services from "../../utilities/servicesData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import ContactForm from "../ContactForm/ContactForm";
+import logoFelt from "../../assets/icons/logo-felt.png";
 
 export default function ServiceSlide() {
   const [flippedIndex, setFlippedIndex] = useState(null);
+  const [showContactForm, setShowContactForm] = useState(false);
+
+  useEffect(() => {
+    if (showContactForm) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showContactForm]);
 
   const handleCardToggle = (index) => {
     setFlippedIndex((prev) => (prev === index ? null : index));
@@ -44,7 +55,30 @@ export default function ServiceSlide() {
             </div>
           </div>
         ))}
+        <div
+          className="service-box contact-logo-card"
+          onClick={() => setShowContactForm(true)}
+        >
+          <div className="card-inner no-flip">
+            <div className="card-front">
+              <img src={logoFelt} alt="Contact Logo" className="illustration" />
+            </div>
+          </div>
+        </div>
       </div>
+      {showContactForm && (
+        <div
+          className="contact-modal-overlay"
+          onClick={() => setShowContactForm(false)}
+        >
+          <div
+            className="contact-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ContactForm onClose={() => setShowContactForm(false)} />
+          </div>
+        </div>
+      )}
     </motion.section>
   );
 }

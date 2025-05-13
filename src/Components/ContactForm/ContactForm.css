@@ -7,7 +7,17 @@
   padding: 2rem;
 }
 
+/* .email-form-wrapper {
+  background-color: #111827;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+} */
+
 .email-form-wrapper {
+  position: relative;
   background-color: #111827;
   border-radius: 20px;
   padding: 2rem;
@@ -85,6 +95,22 @@
   text-align: center;
   font-weight: 600;
   color: #facc15; /* Yellow for success/info */
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  color: #f9fafb;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-modal-btn:hover {
+  transform: scale(1.2);
 }
 
 /* Responsive */
