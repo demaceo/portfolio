@@ -1,5 +1,7 @@
 import "./PrinciplesSlide.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import principlesData from "../../utilities/principlesData";
+
 import {
   faFigma,
   faWebflow,
@@ -11,42 +13,86 @@ import {
   faGithub,
   faNode,
 } from "@fortawesome/free-brands-svg-icons";
-import CarouselComponent from "../Carousel/Carousel";
+// import CarouselComponent from "../Carousel/Carousel";
 import { useEffect, useState } from "react";
 
 export default function PrinciplesSlide() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [deviceType, setDeviceType] = useState("desktop");
 
-   const [deviceType, setDeviceType] = useState("desktop");
+  useEffect(() => {
+    const updateDeviceType = () => {
+      const width = window.innerWidth;
+      setDeviceType(
+        width >= 1024 ? "desktop" : width >= 464 ? "tablet" : "mobile"
+      );
+    };
+    updateDeviceType();
+    window.addEventListener("resize", updateDeviceType);
+    return () => window.removeEventListener("resize", updateDeviceType);
+  }, []);
 
-   useEffect(() => {
-     const updateDeviceType = () => {
-       const width = window.innerWidth;
-       setDeviceType(
-         width >= 1024 ? "desktop" : width >= 464 ? "tablet" : "mobile"
-       );
-     };
-     updateDeviceType();
-     window.addEventListener("resize", updateDeviceType);
-     return () => window.removeEventListener("resize", updateDeviceType);
-   }, []);
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % principlesData.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) =>
+      prev === 0 ? principlesData.length - 1 : prev - 1
+    );
+  };
+
+  const { title, description } = principlesData[currentIndex];
   return (
     <section className="principles-page">
       <div className="principle-main-title-container">
         <h2 className="principle-main-title">Principles & Strategies</h2>
       </div>
+
       <div className="principle-boxes-container">
-        <CarouselComponent deviceType={deviceType} />
+        <button className="carousel-nav-btn" onClick={prevSlide}>
+          ‹
+        </button>
+        <div className="principle-box">
+          <div className="principle-text-container">
+            <h3 className="principle-header">{title}</h3>
+            <p className="principle-desc">{description}</p>
+          </div>
+        </div>
+        <button className="carousel-nav-btn" onClick={nextSlide}>
+          ›
+        </button>
       </div>
       <div className="tools-icons-container">
-        <FontAwesomeIcon icon={faFigma} title="Figma" />
-        <FontAwesomeIcon icon={faWebflow} title="Webflow" />
-        <FontAwesomeIcon icon={faGit} title="Git" />
-        <FontAwesomeIcon icon={faNode} title="Node.js" />
-        <FontAwesomeIcon icon={faReact} title="React" />
-        <FontAwesomeIcon icon={faJs} title="JavaScript" />
-        <FontAwesomeIcon icon={faCss3} title="CSS3" />
-        <FontAwesomeIcon icon={faHtml5} title="HTML5" />
-        <FontAwesomeIcon icon={faGithub} title="GitHub" />
+        <div className="tools-icons-container">
+          <div className="icon-wrapper" data-tooltip="Figma">
+            <FontAwesomeIcon icon={faFigma} />
+          </div>
+          <div className="icon-wrapper" data-tooltip="Webflow">
+            <FontAwesomeIcon icon={faWebflow} />
+          </div>
+          <div className="icon-wrapper" data-tooltip="Git">
+            <FontAwesomeIcon icon={faGit} />
+          </div>
+          <div className="icon-wrapper" data-tooltip="Node.js">
+            <FontAwesomeIcon icon={faNode} />
+          </div>
+          <div className="icon-wrapper" data-tooltip="React">
+            <FontAwesomeIcon icon={faReact} />
+          </div>
+          <div className="icon-wrapper" data-tooltip="JavaScript">
+            <FontAwesomeIcon icon={faJs} />
+          </div>
+          <div className="icon-wrapper" data-tooltip="CSS">
+            <FontAwesomeIcon icon={faCss3} />
+          </div>
+          <div className="icon-wrapper" data-tooltip="HTML5">
+            <FontAwesomeIcon icon={faHtml5} />
+          </div>
+          <div className="icon-wrapper" data-tooltip="GitHub">
+            <FontAwesomeIcon icon={faGithub} />
+          </div>
+        </div>
       </div>
     </section>
   );
