@@ -7,7 +7,11 @@
   border-radius: 15px;
   justify-content: space-evenly;
   overflow-x: hidden;
-  padding: 30px 50px 50px 50px;
+  /* padding: 30px 50px 50px 50px; */
+  padding: clamp(2rem, 5vw, 4rem) 1rem;
+
+  width: 95%;
+
   margin: 5vh 2vw;
 }
 
@@ -18,7 +22,7 @@
 .principle-main-title {
   display: flex;
   justify-content: center;
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 75px;
   color: #efd452;
   letter-spacing: 15px;
@@ -36,7 +40,7 @@
 }
 
 .principle-box {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,7 +119,6 @@
 .icon-wrapper:hover::after {
   opacity: 1;
 }
-
 
 /* Responsive Design */
 @media (max-width: 1024px) {

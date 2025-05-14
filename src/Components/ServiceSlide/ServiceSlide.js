@@ -41,7 +41,7 @@ export default function ServiceSlide() {
             }`}
             id={id}
             key={id}
-            onClick={() => handleCardToggle(index)}
+            onHover={() => handleCardToggle(index)}
           >
             <div className="card-inner">
               <div className="card-front">
@@ -60,8 +60,9 @@ export default function ServiceSlide() {
           onClick={() => setShowContactForm(true)}
         >
           <div className="card-inner no-flip">
-            <div className="card-front">
+            <div className="card-front" id="serviceLogo">
               <img src={logoFelt} alt="Contact Logo" className="illustration" />
+              <h3 className="service-title">Contact</h3>
             </div>
           </div>
         </div>

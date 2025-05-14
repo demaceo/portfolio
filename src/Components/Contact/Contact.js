@@ -2,23 +2,21 @@ import "./Contact.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import Popup from "reactjs-popup";
 import ContactForm from "../ContactForm/ContactForm.js";
-import { motion } from "framer-motion"; // ✨ Added
-
-// Move Popup styling config outside
-const popupStyles = {
-  contentStyle: {
-    background: "transparent",
-    border: "none",
-    boxShadow: "none",
-    padding: "0",
-  },
-  overlayStyle: { background: "rgba(0, 0, 0, 0.3)" }, // subtle dark overlay
-  arrowStyle: { color: "#000" },
-};
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function Contact() {
+  const [showContactForm, setShowContactForm] = useState(false);
+
+  useEffect(() => {
+    if (showContactForm) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showContactForm]);
+
   return (
     <motion.section
       className="contact-container"
@@ -34,21 +32,27 @@ export default function Contact() {
       </div>
 
       <div className="contact-info-container">
-        <Popup
-          trigger={
-            <button className="popup-button">
-              <i className="fa fa-envelope contact-icon"></i>
-              <span className="contact-text">Email Me</span>
-            </button>
-          }
-          {...popupStyles}
-          position="left bottom"
-          modal
-          nested
-          className="popup-content glide-in" // ✨ ADD THIS
+        <button
+          className="popup-button"
+          onClick={() => setShowContactForm(true)}
         >
-          <ContactForm />
-        </Popup>
+          <i className="fa fa-envelope contact-icon"></i>
+          <span className="contact-text">Email Me</span>
+        </button>
+
+        {showContactForm && (
+          <div
+            className="contact-modal-overlay"
+            onClick={() => setShowContactForm(false)}
+          >
+            <div
+              className="contact-modal-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <ContactForm onClose={() => setShowContactForm(false)} />
+            </div>
+          </div>
+        )}
 
         <Link
           to="https://www.linkedin.com/in/demaceo/"
