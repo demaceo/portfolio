@@ -9,25 +9,25 @@ const principlesData = [
     id: 2,
     title: "Accessible to All.",
     description:
-      "Design should be made for everyone, hence why I strive for inclusivity. Every user, regardless of ability, deserves a seamless and enjoyable experience.",
+      "Design should be made for everyone, hence why I strive for inclusivity. Every user, regardless of ability, deserves a seamless, enjoyable experience.",
   },
   {
     id: 3,
     title: "Creator. Partner. Collaborator.",
     description:
-      "Ideas are far from linear. As designer and developer, I can spearhead, support or polish your project or product at any stage it needs it",
+      "Ideas are far from linear. As designer and developer, I can spearhead, support or polish your project or product at any stage it needs it.",
   },
   {
     id: 4,
-    title: "Clean - In thinking, in style.",
+    title: "Clean - In thinking & in style.",
     description:
       "Minimal and effective. This is my mantra and method. Clean code, fuss-free interfaces and expert execution, design as it should be.",
   },
   {
     id: 6,
-    title: "Transparency in Code & Collaboration.",
+    title: "Transparency in Collaboration.",
     description:
-      "I believe in writing clean, self-documenting code and fostering open communication. Whether in code reviews or team discussions, clarity is key.",
+      "I believe in writing clean, well-documented code and fostering open communication. Whether in code reviews or team discussions, clarity is key.",
   },
   {
     id: 7,

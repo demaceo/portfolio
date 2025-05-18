@@ -1,6 +1,7 @@
 import "./PrinciplesSlide.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import principlesData from "../../utilities/principlesData";
+import { useRef, useEffect, useState } from "react";
 
 import {
   faFigma,
@@ -27,35 +28,30 @@ import {
   // faLeaf,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { useState } from "react";
-
 export default function PrinciplesSlide() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [deviceType, setDeviceType] = useState("desktop");
+  const [boxMinHeight, setBoxMinHeight] = useState(0);
+  const descRefs = useRef([]);
 
-  // useEffect(() => {
-  //   const updateDeviceType = () => {
-  //     const width = window.innerWidth;
-  //     setDeviceType(
-  //       width >= 1024 ? "desktop" : width >= 464 ? "tablet" : "mobile"
-  //     );
-  //   };
-  //   updateDeviceType();
-  //   window.addEventListener("resize", updateDeviceType);
-  //   return () => window.removeEventListener("resize", updateDeviceType);
-  // }, []);
+  // 1. Render all descriptions (invisible for measurement)
+  useEffect(() => {
+    if (!descRefs.current.length) return;
+    const heights = descRefs.current.map((ref) => ref?.offsetHeight || 0);
+    // Add a buffer for the header/progress dots etc.
+    const maxHeight = Math.max(...heights) + 150;
+    setBoxMinHeight(maxHeight);
+  }, []);
 
-  const nextSlide = () => {
+  // Navigation
+  const nextSlide = () =>
     setCurrentIndex((prev) => (prev + 1) % principlesData.length);
-  };
-
-  const prevSlide = () => {
+  const prevSlide = () =>
     setCurrentIndex((prev) =>
       prev === 0 ? principlesData.length - 1 : prev - 1
     );
-  };
 
   const { title, description } = principlesData[currentIndex];
+
   return (
     <section className="principles-page">
       <div className="principle-main-title-container">
@@ -66,16 +62,58 @@ export default function PrinciplesSlide() {
         <button className="carousel-nav-btn" onClick={prevSlide}>
           ‹
         </button>
-        <div className="principle-box">
+        <div
+          className="principle-box"
+          style={{
+            minHeight: `${boxMinHeight}px`,
+            transition: "min-height 0.3s",
+          }}
+        >
           <div className="principle-text-container">
             <h3 className="principle-header">{title}</h3>
             <p className="principle-desc">{description}</p>
+          </div>
+          <div className="principle-progress-indicator">
+            {principlesData.map((_, idx) => (
+              <span
+                key={idx}
+                className={`progress-dot${
+                  idx === currentIndex ? " active" : ""
+                }`}
+              />
+            ))}
           </div>
         </div>
         <button className="carousel-nav-btn" onClick={nextSlide}>
           ›
         </button>
       </div>
+      {/* This block renders all descriptions offscreen for measuring heights */}
+      <div
+        style={{
+          visibility: "hidden",
+          position: "absolute",
+          left: -9999,
+          top: 0,
+          height: "auto",
+          pointerEvents: "none",
+        }}
+      >
+        {principlesData.map((item, idx) => (
+          <div key={idx} style={{ width: "60vw", padding: 0, margin: 0 }}>
+            <h3 style={{ fontSize: 50, margin: 0, padding: 0 }}>
+              {item.title}
+            </h3>
+            <p
+              ref={(el) => (descRefs.current[idx] = el)}
+              style={{ fontSize: 28, margin: 0, padding: 0 }}
+            >
+              {item.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
       <div className="tools-icons-container">
         <div className="icon-wrapper" data-tooltip="Figma">
           <FontAwesomeIcon icon={faFigma} />
