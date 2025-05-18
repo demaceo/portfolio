@@ -1,7 +1,7 @@
 import "./PrinciplesSlide.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import principlesData from "../../utilities/principlesData";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useState } from "react";
 
 import {
   faFigma,
@@ -30,19 +30,9 @@ import {
 
 export default function PrinciplesSlide() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [boxMinHeight, setBoxMinHeight] = useState(0);
   const descRefs = useRef([]);
 
-  // 1. Render all descriptions (invisible for measurement)
-  useEffect(() => {
-    if (!descRefs.current.length) return;
-    const heights = descRefs.current.map((ref) => ref?.offsetHeight || 0);
-    // Add a buffer for the header/progress dots etc.
-    const maxHeight = Math.max(...heights) + 150;
-    setBoxMinHeight(maxHeight);
-  }, []);
 
-  // Navigation
   const nextSlide = () =>
     setCurrentIndex((prev) => (prev + 1) % principlesData.length);
   const prevSlide = () =>
@@ -65,7 +55,7 @@ export default function PrinciplesSlide() {
         <div
           className="principle-box"
           style={{
-            minHeight: `${boxMinHeight}px`,
+            // minHeight: `${boxMinHeight}px`,
             transition: "min-height 0.3s",
           }}
         >

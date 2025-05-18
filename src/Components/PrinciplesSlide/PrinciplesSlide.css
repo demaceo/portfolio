@@ -27,8 +27,8 @@
   font-weight: bold;
   width: 100%;
   text-align: center;
-  /* line-height: 10vh; */
-  margin-bottom: 3vh;
+  line-height: 5vh;
+  /* margin-bottom: 3vh; */
 }
 
 .principle-boxes-container {

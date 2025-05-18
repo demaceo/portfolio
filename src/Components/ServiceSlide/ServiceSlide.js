@@ -41,7 +41,8 @@ export default function ServiceSlide() {
             }`}
             id={id}
             key={id}
-            onHover={() => handleCardToggle(index)}
+            onMouseEnter={() => handleCardToggle(index)}
+            onMouseLeave={() => handleCardToggle(index)}
           >
             <div className="card-inner">
               <div className="card-front">
