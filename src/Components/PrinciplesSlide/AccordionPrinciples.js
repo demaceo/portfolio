@@ -1,8 +1,7 @@
-import "./PrinciplesSlide.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import principlesData from "../../utilities/principlesData";
-import { useRef, useState } from "react";
-
+import "./AccordionPrinciples.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFigma,
   faWebflow,
@@ -28,19 +27,19 @@ import {
   // faLeaf,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function PrinciplesSlide() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const descRefs = useRef([]);
+export default function AccordionPrinciples() {
+  const [openIndex, setOpenIndex] = useState(null);
 
+  const toggleItem = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
-  const nextSlide = () =>
-    setCurrentIndex((prev) => (prev + 1) % principlesData.length);
-  const prevSlide = () =>
-    setCurrentIndex((prev) =>
-      prev === 0 ? principlesData.length - 1 : prev - 1
-    );
-
-  const { title, description } = principlesData[currentIndex];
+  const handleKeyDown = (event, index) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleItem(index);
+    }
+  };
 
   return (
     <section className="principles-page">
@@ -48,60 +47,49 @@ export default function PrinciplesSlide() {
         <h2 className="principle-main-title">Principles & Strategies</h2>
       </div>
 
-      <div className="principle-boxes-container">
-        <button className="carousel-nav-btn" onClick={prevSlide}>
-          ‹
-        </button>
-        <div
-          className="principle-box"
-          style={{
-            // minHeight: `${boxMinHeight}px`,
-            transition: "min-height 0.3s",
-          }}
-        >
-          <div className="principle-text-container">
-            <h3 className="principle-header">{title}</h3>
-            <p className="principle-desc">{description}</p>
-          </div>
-          <div className="principle-progress-indicator">
-            {principlesData.map((_, idx) => (
-              <span
-                key={idx}
-                className={`progress-dot${
-                  idx === currentIndex ? " active" : ""
+      <div className="accordion-container" role="presentation">
+        {principlesData.map((item, index) => {
+          const isOpen = openIndex === index;
+          return (
+            <div key={item.id}>
+              <div
+                className="accordion-title"
+                id={`accordion-header-${index}`}
+                role="button"
+                tabIndex={0}
+                aria-expanded={isOpen}
+                aria-controls={`accordion-content-${index}`}
+                onClick={() => toggleItem(index)}
+                onKeyDown={(e) => handleKeyDown(e, index)}
+              >
+                <span className="accordion-title-text">{item.title}</span>
+                <span className="accordion-arrow">
+                  <i
+                    className={`fa fa-angle-down ${
+                      isOpen ? "fa-rotate-180" : ""
+                    }`}
+                  ></i>
+                </span>
+              </div>
+              <div
+                id={`accordion-content-${index}`}
+                className={`accordion-content ${
+                  isOpen ? "accordion-content-open" : ""
                 }`}
-              />
-            ))}
-          </div>
-        </div>
-        <button className="carousel-nav-btn" onClick={nextSlide}>
-          ›
-        </button>
-      </div>
-      {/* This block renders all descriptions offscreen for measuring heights */}
-      <div
-        style={{
-          visibility: "hidden",
-          position: "absolute",
-          left: -9999,
-          top: 0,
-          height: "auto",
-          pointerEvents: "none",
-        }}
-      >
-        {principlesData.map((item, idx) => (
-          <div key={idx} style={{ width: "60vw", padding: 0, margin: 0 }}>
-            <h3 style={{ fontSize: 50, margin: 0, padding: 0 }}>
-              {item.title}
-            </h3>
-            <p
-              ref={(el) => (descRefs.current[idx] = el)}
-              style={{ fontSize: 28, margin: 0, padding: 0 }}
-            >
-              {item.description}
-            </p>
-          </div>
-        ))}
+                role="region"
+                aria-labelledby={`accordion-header-${index}`}
+              >
+                <p
+                  className={`accordion-text ${
+                    isOpen ? "accordion-text-open" : ""
+                  }`}
+                >
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       <div className="tools-icons-container">
