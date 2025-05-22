@@ -35,7 +35,7 @@ const NavBar = memo(() => {
         <img className="logo" alt="portfolio-logo" src={logo} />
         <div className="descriptor-container">
           <div className="name">Demaceo Vincent</div>
-          <div className="occupation">Designer and Developer</div>
+          <div className="occupation">Developer | Designer </div>
         </div>
       </div>
 

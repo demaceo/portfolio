@@ -10,16 +10,11 @@ export default function ServiceSlide() {
   const [showContactForm, setShowContactForm] = useState(false);
 
   useEffect(() => {
-    if (showContactForm) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = showContactForm ? "hidden" : "auto";
   }, [showContactForm]);
 
-  const handleCardToggle = (index) => {
+  const handleCardToggle = (index) =>
     setFlippedIndex((prev) => (prev === index ? null : index));
-  };
 
   return (
     <motion.section
@@ -33,20 +28,20 @@ export default function ServiceSlide() {
       <div className="service-main-title-container">
         <h2 className="service-main-title">Service Spectrum</h2>
       </div>
+
       <div className="service-boxes-container">
-        {services.map(({ id, title, description, icon }, index) => (
+        {services.map(({ id, title, description, icon }, i) => (
           <div
-            className={`service-box ${
-              flippedIndex === index ? "is-flipped" : ""
-            }`}
-            id={id}
             key={id}
-            onMouseEnter={() => handleCardToggle(index)}
-            onMouseLeave={() => handleCardToggle(index)}
+            className={`service-box ${flippedIndex === i ? "is-flipped" : ""}`}
+            onMouseEnter={() => handleCardToggle(i)}
+            onMouseLeave={() => handleCardToggle(i)}
           >
             <div className="card-inner">
               <div className="card-front">
-                <img src={icon} alt={title} className="illustration" />
+                <div className="illustration-container">
+                  <img src={icon} alt={title} className="illustration" />
+                </div>
                 <h3 className="service-title">{title}</h3>
               </div>
               <div className="card-back">
@@ -56,18 +51,23 @@ export default function ServiceSlide() {
             </div>
           </div>
         ))}
+
+        {/* Contact card */}
         <div
           className="service-box contact-logo-card"
           onClick={() => setShowContactForm(true)}
         >
           <div className="card-inner no-flip">
-            <div className="card-front" id="serviceLogo">
-              <img src={logoFelt} alt="Contact Logo" className="illustration" />
+            <div className="card-front">
+              <div className="illustration-container">
+                <img src={logoFelt} alt="Contact" className="illustration" />
+              </div>
               <h3 className="service-title">Contact</h3>
             </div>
           </div>
         </div>
       </div>
+
       {showContactForm && (
         <div
           className="contact-modal-overlay"
