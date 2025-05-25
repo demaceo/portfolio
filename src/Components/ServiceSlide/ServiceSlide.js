@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import ContactForm from "../ContactForm/ContactForm";
 import logoFelt from "../../assets/logo/logo-felt.png";
 
-export default function ServiceSlide() {
+const ServiceSlide = () => {
   const [flippedIndex, setFlippedIndex] = useState(null);
   const [showContactForm, setShowContactForm] = useState(false);
 
@@ -83,4 +83,6 @@ export default function ServiceSlide() {
       )}
     </motion.section>
   );
-}
+};
+
+export default ServiceSlide;
