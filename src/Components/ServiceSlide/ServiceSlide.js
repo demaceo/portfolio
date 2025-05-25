@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import services from "../../utilities/servicesData";
 import { useState, useEffect } from "react";
 import ContactForm from "../ContactForm/ContactForm";
-import logoFelt from "../../assets/icons/logo-felt.png";
+import logoFelt from "../../assets/logo/logo-felt.png";
 
 export default function ServiceSlide() {
   const [flippedIndex, setFlippedIndex] = useState(null);
