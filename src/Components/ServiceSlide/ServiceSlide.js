@@ -42,7 +42,7 @@ const ServiceSlide = () => {
                 <div className="illustration-container">
                   <img src={icon} alt={title} className="illustration" />
                 </div>
-                <h3 className="service-title">{title}</h3>
+                <h3 className="service-title mobile-hide">{title}</h3>
               </div>
               <div className="card-back">
                 <h3 className="service-title">{title}</h3>
