@@ -11,7 +11,7 @@
   /* max-width: 1200px; */
   border-radius: 15px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
 }
 
 /* === Title === */
@@ -104,6 +104,7 @@
   font-size: 2rem;
   object-fit: contain;
   color: #ffddcc;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
 }
 
 /* === Text === */
@@ -113,6 +114,9 @@
   margin: 0.5rem 0 0;
   color: #ffddcc;
   text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
 }
 .service-title:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
@@ -129,14 +133,13 @@
   color: #ffddcc;
   opacity: 0.85;
   margin-top: 0.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .card-inner.no-flip {
   transform: none !important;
   box-shadow: none !important;
 }
-
 
 /* === Responsive === */
 @media (max-width: 992px) {

@@ -40,7 +40,13 @@ const ServiceSlide = () => {
             <div className="card-inner">
               <div className="card-front">
                 <div className="illustration-container">
-                  <img src={icon} alt={title} className="illustration" />
+                  <img
+                    src={icon}
+                    alt={title}
+                    loading="lazy"
+                    decoding="async"
+                    className="illustration"
+                  />
                 </div>
                 <h3 className="service-title mobile-hide">{title}</h3>
               </div>
@@ -60,9 +66,15 @@ const ServiceSlide = () => {
           <div className="card-inner no-flip">
             <div className="card-front">
               <div className="illustration-container">
-                <img src={logoFelt} alt="Contact" className="illustration" />
+                <img
+                  src={logoFelt}
+                  alt="Contact"
+                  loading="lazy"
+                  decoding="async"
+                  className="illustration"
+                />
               </div>
-              <h3 className="service-title">Contact</h3>
+              <h3 className="contact-title">Contact</h3>
             </div>
           </div>
         </div>
