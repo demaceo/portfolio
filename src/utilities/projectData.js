@@ -5,7 +5,6 @@ const projectData = [
     image: "",
     description:
       "A tool to help U.S. citizens find and engage with their elected officials using data visualization and AI-powered message drafting.",
-    // partners: [{ name: "Demaceo Vincent", link: "https://github.com/demaceo" }],
     link: "https://pinpoint-flax.vercel.app/",
     icon: "fa fa-map-pin",
   },
@@ -26,7 +25,7 @@ const projectData = [
       "A pet adoption platform that connects users with rescue shelters across the U.S., integrating the Petfinder API for real-time listings.",
     link: "https://demaceo.github.io/adoptdontshop/",
     icon: "fa fa-paw icon",
-    archived: true, // ← will appear under “Archived Projects”
+    archived: true,
   },
   {
     id: 3,
@@ -48,7 +47,7 @@ const projectData = [
       "A personal collection of scripts and tools designed to automate workflows, speed up development, and eliminate repetitive tasks.",
     link: "https://github.com/demaceo/automations",
     icon: "fas fa-robot icon",
-    archived: true, // ← will appear under “Archived Projects”
+    archived: true,
   },
   {
     id: 5,
@@ -58,7 +57,7 @@ const projectData = [
       "One part crowdsourced songwriting; one part rap battle. Cappua is a monthly Hip-Hop music competition app in which users compete to get their verse included in the given month's featured track. Users upload their verse for a month's track and vote on their favorite uploaded verses as they vie for their place on the Cappua Hall of Fame, otherwise known as Olympus.",
     link: "https://github.com/Cappua/cappua-fe",
     icon: "fas fa-music icon",
-    archived: true, // ← will appear under “Archived Projects”
+    archived: true,
   },
   {
     id: 6,
@@ -68,7 +67,7 @@ const projectData = [
       "A simple and elegant site to search, share and store your recipes. This site presents the user with the ability to 'log-in' and search the site for recipes.",
     link: "https://demaceo.github.io/whats-cookin/",
     icon: "fas fa-cookie-bite icon",
-    archived: true, // ← will appear under “Archived Projects”
+    archived: true, 
   },
   {
     id: 7,
@@ -78,7 +77,7 @@ const projectData = [
       "The site presents the user an assortment of movies with their corresponding information and gives the user the ability to sort movies based on their ratings.",
     link: "https://github.com/demaceo/rantom",
     icon: "fas fa-film icon",
-    archived: true, // ← will appear under “Archived Projects”
+    archived: true, 
   },
   {
     id: 8,
