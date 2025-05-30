@@ -1,9 +1,9 @@
- import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import NavBar from "../NavBar/NavBar.js";
 import Hero from "../Hero/Hero.js";
-import Profile from "../Profile/Profile";
-import Contact from "../Contact/Contact";
-import Projects from "../Projects/Projects";
+import Profile from "../Profile/Profile.js";
+import Contact from "../Contact/Contact.js";
+import Projects from "./Projects/Projects.js";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -16,7 +16,6 @@ function Layout({ children }) {
     </section>
   );
 }
-
 
 export default function App() {
   return (

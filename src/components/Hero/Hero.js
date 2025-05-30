@@ -1,6 +1,6 @@
 import "./Hero.css";
 import React, { memo } from "react";
-import PurpleHaze from "../PurpleHaze/PurpleHaze.tsx";
+import PurpleHaze from "../PurpleHaze/PurpleHaze";
 const Hero = memo(() => {
   // const [hovered, setHovered] = useState(false);
 
