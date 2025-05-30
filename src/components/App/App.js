@@ -1,10 +1,9 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+ import { Routes, Route } from "react-router-dom";
 import NavBar from "../NavBar/NavBar.js";
 import Hero from "../Hero/Hero.js";
 import Profile from "../Profile/Profile.js";
 import Contact from "../Contact/Contact.js";
-import Portfolio from "../Portfolio/Portfolio.js";
+import Projects from "../Projects/Projects.js";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -45,7 +44,7 @@ export default function App() {
         path="/projects"
         element={
           <Layout>
-            <Portfolio />
+            <Projects />
           </Layout>
         }
       />

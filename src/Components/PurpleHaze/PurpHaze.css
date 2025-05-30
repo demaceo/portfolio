@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300');
+
+.purple-haze-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  /* background: #332B33; */
+  overflow: hidden;
+}
+
+/* hide the SVG filter element */
+.purple-haze-container svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.h {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 80vw;
+  height: 40vh;
+  margin: auto;
+  transform: translateY(-50%);
+  overflow: hidden;
+  border: 4px solid white;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/overlay.png");
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.h h1,
+.h h2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 10px rgba(0,0,0,0.15);
+  z-index: 3;
+  transform: translateY(-50%);
+}
+
+.h h1 {
+  top: 50%;
+  font-size: 14px;
+  letter-spacing: 28px;
+}
+
+.h h2 {
+  top: 60%;
+  font-size: 10px;
+  letter-spacing: 10px;
+}
+
+.h .c {
+  position: absolute;
+  margin: auto;
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 400px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
