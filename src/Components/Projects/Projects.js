@@ -32,6 +32,7 @@ export default function Projects() {
             className="project-image"
             src={image}
             alt={name}
+            loading="lazy"
             onError={(e) => (e.target.style.display = "none")}
           />
         ) : (
@@ -51,7 +52,7 @@ export default function Projects() {
       {/* ── current projects ── */}
       <>
         <h2 className="section-title archived-title">Active</h2>
-        {activeProjects.map((p, i) => card(p, i, ""))}
+        {activeProjects.map((p, i) => card(p, i, "icon-container"))}
       </>
       {/* ── archived projects ── */}
       {archivedProjects.length > 0 && (

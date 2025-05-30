@@ -1,21 +1,24 @@
+import ppLogo from "../assets/icons/pp_icon.png";
+import unmaskedIcon from "../assets/icons/unmasked-logo.png";
+
 const projectData = [
   {
     id: 0,
     name: "Pinpoint",
-    image: "",
+    image: ppLogo,
     description:
       "A tool to help U.S. citizens find and engage with their elected officials using data visualization and AI-powered message drafting.",
     link: "https://pinpoint-flax.vercel.app/",
-    icon: "fa fa-map-pin",
+    icon: "",
   },
   {
     id: 1,
     name: "Unmasked Coaching",
-    image: "",
+    image: unmaskedIcon,
     description:
       "Unmasked Coaching helps individuals unlock their true potential through personalized career guidance, professional development, and strategic growth.",
     link: "https://unmasked-coaching.com",
-    icon: "fas fa-mask",
+    icon: "",
   },
   {
     id: 2,
@@ -39,16 +42,16 @@ const projectData = [
     con: "fa fa-paw icon",
     archived: true,
   },
-  {
-    id: 4,
-    name: "Automation Scripts",
-    image: "",
-    description:
-      "A personal collection of scripts and tools designed to automate workflows, speed up development, and eliminate repetitive tasks.",
-    link: "https://github.com/demaceo/automations",
-    icon: "fas fa-robot icon",
-    archived: true,
-  },
+  // {
+  //   id: 4,
+  //   name: "Automation Scripts",
+  //   image: "",
+  //   description:
+  //     "A personal collection of scripts and tools designed to automate workflows, speed up development, and eliminate repetitive tasks.",
+  //   link: "https://github.com/demaceo/automations",
+  //   icon: "fas fa-robot icon",
+  //   archived: true,
+  // },
   {
     id: 5,
     name: "Cappua",
@@ -67,7 +70,7 @@ const projectData = [
       "A simple and elegant site to search, share and store your recipes. This site presents the user with the ability to 'log-in' and search the site for recipes.",
     link: "https://demaceo.github.io/whats-cookin/",
     icon: "fas fa-cookie-bite icon",
-    archived: true, 
+    archived: true,
   },
   {
     id: 7,
@@ -77,7 +80,7 @@ const projectData = [
       "The site presents the user an assortment of movies with their corresponding information and gives the user the ability to sort movies based on their ratings.",
     link: "https://github.com/demaceo/rantom",
     icon: "fas fa-film icon",
-    archived: true, 
+    archived: true,
   },
   {
     id: 8,
