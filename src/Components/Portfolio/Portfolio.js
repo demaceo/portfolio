@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import projectData from "../../utilities/projectData.js";
-import "./Projects.css";
+import "./Portfolio.css";
 
-export default function Projects() {
+export default function Portfolio() {
   // ── separate live vs. archived work ──────────────────────────────
   const activeProjects = projectData.filter((p) => !p.archived);
   const archivedProjects = projectData.filter((p) => p.archived);
