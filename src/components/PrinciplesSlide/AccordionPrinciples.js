@@ -34,12 +34,12 @@ export default function AccordionPrinciples() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // const handleKeyDown = (event, index) => {
-  //   if (event.key === "Enter" || event.key === " ") {
-  //     event.preventDefault();
-  //     toggleItem(index);
-  //   }
-  // };
+  const handleKeyDown = (event, index) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleItem(index);
+    }
+  };
 
   return (
     <section className="principles-page">
@@ -59,10 +59,8 @@ export default function AccordionPrinciples() {
                 tabIndex={0}
                 aria-expanded={isOpen}
                 aria-controls={`accordion-content-${index}`}
-                onMouseEnter={() => toggleItem(index)}
-                onMouseLeave={() => toggleItem(index)}
-                // onClick={() => toggleItem(index)}
-                // onKeyDown={(e) => handleKeyDown(e, index)}
+                onClick={() => toggleItem(index)}
+                onKeyDown={(e) => handleKeyDown(e, index)}
               >
                 <span className="accordion-title-text">{item.title}</span>
                 <span className="accordion-arrow">
