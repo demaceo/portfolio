@@ -1,0 +1,130 @@
+.countdown-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #121212 0%, #2d2d2d 100%);
+  color: #ffffff;
+}
+
+.countdown-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 3rem 4rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  width: 90%;
+}
+
+.countdown-title {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #ff6b6b 0%, #ffb347 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.countdown-value {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  font-family: "Syne", sans-serif;
+}
+
+.countdown-text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.bet-text {
+  position: relative;
+  cursor: pointer;
+  color: #ffb347;
+  border-bottom: 2px solid #ffb347;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.bet-text:hover {
+  color: #ff6b6b;
+  border-bottom: 2px solid #ff6b6b;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  white-space: nowrap;
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown-value {
+    font-size: 6rem;
+  }
+
+  .countdown-box {
+    padding: 2rem;
+  }
+
+  .countdown-title {
+    font-size: 2rem;
+  }
+
+  .countdown-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-value {
+    font-size: 5rem;
+  }
+
+  .countdown-title {
+    font-size: 1.8rem;
+  }
+
+  .countdown-text {
+    font-size: 1.2rem;
+  }
+}

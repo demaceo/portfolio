@@ -4,6 +4,8 @@ import Hero from "../Hero/Hero.js";
 import Profile from "../Profile/Profile";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
+// Add this import at the top of your App.js file
+import Countdown from "../Countdown/Countdown";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -44,6 +46,14 @@ export default function App() {
         element={
           <Layout>
             <Portfolio />
+          </Layout>
+        }
+      />
+      <Route
+        path="/jazzy"
+        element={
+          <Layout>
+            <Countdown />
           </Layout>
         }
       />
