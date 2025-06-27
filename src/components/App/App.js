@@ -4,7 +4,7 @@ import Hero from "../Hero/Hero.js";
 import Profile from "../Profile/Profile";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
-// Add this import at the top of your App.js file
+import AboutMe from "../AboutMe/AboutMe";
 import Countdown from "../Countdown/Countdown";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -49,12 +49,8 @@ export default function App() {
           </Layout>
         }
       />
-      <Route
-        path="/jazzy"
-        element={
-            <Countdown />
-        }
-      />
+      <Route path="/about" element={<Layout><AboutMe /></Layout>} />
+      <Route path="/jazzy" element={<Countdown />} />
     </Routes>
   );
 }
