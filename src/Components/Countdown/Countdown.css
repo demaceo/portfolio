@@ -46,34 +46,37 @@
 }
 
 .bet-text {
-  position: relative;
-  cursor: pointer;
-  color: #ffb347;
-  border-bottom: 2px solid #ffb347;
-  padding-bottom: 2px;
-  transition: all 0.3s ease;
-}
-
-.bet-text:hover {
-  color: #ff6b6b;
-  border-bottom: 2px solid #ff6b6b;
-}
-
-.tooltip {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-size: 1rem;
-  white-space: nowrap;
-  z-index: 100;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 0.3s ease;
-}
+    position: relative;
+    cursor: pointer;
+    color: #ffb347;
+    border-bottom: 2px solid #ffb347;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+    display: inline-block; /* This helps with positioning the tooltip */
+  }
+  
+  .bet-text:hover {
+    color: #ff6b6b;
+    border-bottom: 2px solid #ff6b6b;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    white-space: nowrap;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 10s ease;
+    /* pointer-events: none; Prevents the tooltip from capturing mouse events */
+    min-width: 200px; /* Ensure minimum width */
+  }
 
 .tooltip::before {
   content: "";

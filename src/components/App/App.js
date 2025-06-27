@@ -52,9 +52,7 @@ export default function App() {
       <Route
         path="/jazzy"
         element={
-          <Layout>
             <Countdown />
-          </Layout>
         }
       />
     </Routes>
