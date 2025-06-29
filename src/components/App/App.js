@@ -1,11 +1,10 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "../NavBar/NavBar.js";
+import NavBar from "../NavBar/NavBar";
 import Hero from "../Hero/Hero.js";
 import Profile from "../Profile/Profile";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
-import AboutMe from "../AboutMe/AboutMe";
-import Countdown from "../Countdown/Countdown";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -18,6 +17,7 @@ function Layout({ children }) {
     </section>
   );
 }
+
 
 export default function App() {
   return (
@@ -49,8 +49,6 @@ export default function App() {
           </Layout>
         }
       />
-      <Route path="/about" element={<Layout><AboutMe /></Layout>} />
-      <Route path="/jazzy" element={<Countdown />} />
     </Routes>
   );
 }

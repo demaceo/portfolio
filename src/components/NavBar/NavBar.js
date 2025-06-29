@@ -73,7 +73,7 @@ const NavBar = memo(() => {
             }`}
             onClick={closeMenu}
           >
-            MINDSET
+            MINDSET{" "}
           </Link>
           <Link
             to="/projects"
