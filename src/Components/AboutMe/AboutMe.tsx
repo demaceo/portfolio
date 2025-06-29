@@ -9,30 +9,40 @@ const AboutMe: React.FC = () => {
       </div>
       <div className="about-me-content">
         <p>
-          Curious, adaptive, and deeply insightful, I thrive at the intersection
-          of ideas, people, and purpose. I naturally combine versatility, keen
-          observation, and a love for lifelong learning. These qualities that
-          drive me to explore new frontiers and solve problems in creative,
-          practical ways.
+          I’m endlessly curious and thrive on connecting the dots between ideas,
+          people, and possibilities. At my core, I’m a lifelong learner who
+          loves breaking down big problems and turning complexity into something
+          clear, practical, and sometimes even fun. Whether it’s diving into the details
+          or zooming out to see the bigger picture, I’m just as comfortable
+          navigating ambiguity as I am making things happen.
         </p>
         <p>
-          My thinking style is Intuitive-Conceptual: I excel at spotting
-          connections, clarifying complexity, and uncovering the "why" behind
-          challenges. Whether I’m mapping out a new project or helping a team
-          untangle ambiguity, I’m energized by fresh insights and innovative
-          solutions. As a Transformer, I embrace change and variety, seeking out
-          adventure, spontaneity, and new perspectives. Complexity doesn’t
-          rattle me - I see it as a jungle gym for growth.
+          People know me for my adaptability, empathy, and reliability. I get
+          things done - solo or in a team - and I’m always ready to jump into new
+          tech, new conversations, or whatever challenge comes next. I don’t
+          just collect knowledge; I put it to work, always aiming to make a positive
+          impact.
         </p>
         <p>
-          Rooted in empathy, I build genuine connections and listen deeply,
-          intuitively understanding the experiences and motivations of others.
-          This allows me to bridge diverse perspectives and foster
-          collaboration, always with a focus on meaningful impact. My approach
-          is grounded in Wisdom & Knowledge: I’m passionate about personal
-          growth, authentic living, and using knowledge not just for its own
-          sake, but to enrich lives and communities.
+          Untangling messy problems, finding unexpected connections, and getting
+          to the root of “why” is where I do my best work. I genuinely enjoy
+          rolling with change and seeing what new perspectives have to offer.
+          For me, complexity isn’t a roadblock - it’s an open-invite to grow.
         </p>
+        <p>
+          I bring a big-picture mindset and an eye for patterns that others
+          might miss, but I never lose sight of the people involved. Real
+          conversations, honest collaboration, and a sense of purpose are what
+          energize me, and I believe in showing up with integrity, always.
+        </p>
+        <p>
+          Empathy isn’t just a buzzword for me - it’s how I approach
+          relationships, team dynamics, and even the toughest projects. I listen
+          deeply, value different viewpoints, and naturally enjoy building bridges. My
+          north star is growth: personal, professional, and collective. If I can
+          use what I know to help others and create change for good, I’m in!
+        </p>
+        <br />
         <h2>In a nutshell:</h2>
         <ul className="about-me-list">
           <li>
@@ -52,12 +62,14 @@ const AboutMe: React.FC = () => {
             authentic action in everything I do
           </li>
         </ul>
+        <br />
         <p>
           Whether I’m leading a project, supporting a team, or exploring new
           ideas, I bring together curiosity, reliability, and a genuine desire
           to make a difference. I’m at my best where insight meets action, and
           where growth is both the journey and the goal.
         </p>
+        <br />
         <h2>Strengths at a Glance:</h2>
         <ul className="about-me-list">
           <li>
@@ -75,7 +87,7 @@ const AboutMe: React.FC = () => {
           </li>
           <li>
             <strong>Continuous Learner:</strong>
-             Motivated by curiosity, growth, and the pursuit of understanding.
+            Motivated by curiosity, growth, and the pursuit of understanding.
           </li>
         </ul>
       </div>
