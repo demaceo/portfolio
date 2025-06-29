@@ -5,6 +5,7 @@ import Hero from "../Hero/Hero.js";
 import Profile from "../Profile/Profile";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
+import AboutMe from "../AboutMe/AboutMe";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -46,6 +47,14 @@ export default function App() {
         element={
           <Layout>
             <Portfolio />
+          </Layout>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <Layout>
+            <AboutMe />
           </Layout>
         }
       />
