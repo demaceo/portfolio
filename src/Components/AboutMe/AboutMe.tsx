@@ -12,35 +12,37 @@ const AboutMe: React.FC = () => {
           I’m endlessly curious and thrive on connecting the dots between ideas,
           people, and possibilities. At my core, I’m a lifelong learner who
           loves breaking down big problems and turning complexity into something
-          clear, practical, and sometimes even fun. Whether it’s diving into the details
-          or zooming out to see the bigger picture, I’m just as comfortable
-          navigating ambiguity as I am making things happen.
+          clear, practical, and sometimes even fun. Whether it’s diving into the
+          details or zooming out to see the bigger picture, I’m just as
+          comfortable navigating ambiguity as I am making things happen.
         </p>
         <p>
-          People know me for my adaptability, empathy, and reliability. I get
-          things done - solo or in a team - and I’m always ready to jump into new
-          tech, new conversations, or whatever challenge comes next. I don’t
-          just collect knowledge; I put it to work, always aiming to make a positive
-          impact.
+          People know me for my adaptability, empathy, and reliability. Whether
+          working solo or collaborating closely with a team, I deliver results.
+          I'm always eager to dive into new tech, spark fresh conversations, and
+          tackle whatever comes my way. I don’t just collect knowledge; I put it
+          to work, always aiming to make a tangible, positive impact.
         </p>
         <p>
           Untangling messy problems, finding unexpected connections, and getting
           to the root of “why” is where I do my best work. I genuinely enjoy
           rolling with change and seeing what new perspectives have to offer.
-          For me, complexity isn’t a roadblock - it’s an open-invite to grow.
+          For me, complexity isn’t a roadblock—it’s an open invitation to grow.
         </p>
         <p>
-          I bring a big-picture mindset and an eye for patterns that others
-          might miss, but I never lose sight of the people involved. Real
-          conversations, honest collaboration, and a sense of purpose are what
-          energize me, and I believe in showing up with integrity, always.
+          I naturally take a big picture approach, noticing patterns others
+          might overlook while always keeping the human element front and
+          center. Genuine conversations, honest collaboration, and a shared
+          sense of purpose energize me, and integrity is fundamental to how I
+          show up.
         </p>
         <p>
-          Empathy isn’t just a buzzword for me - it’s how I approach
-          relationships, team dynamics, and even the toughest projects. I listen
-          deeply, value different viewpoints, and naturally enjoy building bridges. My
-          north star is growth: personal, professional, and collective. If I can
-          use what I know to help others and create change for good, I’m in!
+          Empathy isn’t just a buzzword in my vocabulary; it guides how I build
+          relationships, navigate team dynamics, and tackle challenging
+          projects. I listen deeply, value diverse viewpoints, and am naturally
+          drawn toward creating connections. My north star is continuous growth:
+          personal, professional, and collective. If I can leverage what I know
+          to help others and spark meaningful change, count me in!
         </p>
         <br />
         <h2>In a nutshell:</h2>
@@ -62,7 +64,6 @@ const AboutMe: React.FC = () => {
             authentic action in everything I do
           </li>
         </ul>
-        <br />
         <p>
           Whether I’m leading a project, supporting a team, or exploring new
           ideas, I bring together curiosity, reliability, and a genuine desire
