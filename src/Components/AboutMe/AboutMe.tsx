@@ -87,7 +87,7 @@ const AboutMe: React.FC = () => {
             always willing to help; values making a difference through service.
           </li>
           <li>
-            <strong>Continuous Learner:</strong>
+            <strong>Continuous Learner: </strong>
             Motivated by curiosity, growth, and the pursuit of understanding.
           </li>
         </ul>
