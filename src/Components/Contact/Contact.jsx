@@ -2,7 +2,7 @@ import "./Contact.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import ContactForm from "../ContactForm/ContactForm.js";
+import ContactForm from "../ContactForm/ContactForm";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 

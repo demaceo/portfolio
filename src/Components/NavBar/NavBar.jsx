@@ -64,7 +64,16 @@ const NavBar = memo(() => {
             }`}
             onClick={closeMenu}
           >
-            PROFILE
+            SKILLSET
+          </Link>
+          <Link
+            to="/about"
+            className={`nav-link ${
+              location.pathname === "/about" ? "active-link" : ""
+            }`}
+            onClick={closeMenu}
+          >
+            MINDSET{" "}
           </Link>
           <Link
             to="/projects"
@@ -75,13 +84,15 @@ const NavBar = memo(() => {
           >
             PROJECTS
           </Link>
-          <a
-            href="#contact-jump"
-            className="nav-link contact-link"
+          <Link
+            to="/resume"
+            className={`nav-link ${
+              location.pathname === "/resume" ? "active-link" : ""
+            }`}
             onClick={closeMenu}
           >
-            CONTACT
-          </a>
+            XP
+          </Link>
         </nav>
       </div>
     </header>

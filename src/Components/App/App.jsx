@@ -1,13 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
-import Hero from "../Hero/Hero.js";
+import Hero from "../Hero/Hero";
 import Profile from "../Profile/Profile";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
 import AboutMe from "../AboutMe/AboutMe";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import InteractiveResume from "../WorkXP/InteractiveResume";
 
 function Layout({ children }) {
   return (
@@ -55,6 +56,14 @@ export default function App() {
         element={
           <Layout>
             <AboutMe />
+          </Layout>
+        }
+      />
+      <Route
+        path="/resume"
+        element={
+          <Layout>
+            <InteractiveResume />
           </Layout>
         }
       />
