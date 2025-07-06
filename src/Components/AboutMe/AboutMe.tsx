@@ -27,7 +27,7 @@ const AboutMe: React.FC = () => {
           Untangling messy problems, finding unexpected connections, and getting
           to the root of “why” is where I do my best work. I genuinely enjoy
           rolling with change and seeing what new perspectives have to offer.
-          For me, complexity isn’t a roadblock—it’s an open invitation to grow.
+          For me, complexity isn’t a roadblock - it’s an open invitation to grow.
         </p>
         <p>
           I naturally take a big picture approach, noticing patterns others
