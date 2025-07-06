@@ -28,7 +28,7 @@ export default function InteractiveResume() {
     name,
     title,
     location,
-    email,
+    // email,
     website,
     linkedin,
     skills,
