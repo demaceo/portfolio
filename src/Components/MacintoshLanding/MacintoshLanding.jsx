@@ -177,7 +177,7 @@ const MacintoshLanding = () => {
                 <div className="close-btn"></div>
               </div>
               <span className="window-title">
-                Welcome to Demaceo's Portfolio
+                Welcome to My Portfolio
               </span>
             </div>
             <div className="window-content">
@@ -194,10 +194,7 @@ const MacintoshLanding = () => {
                   View Projects
                 </button>
                 <button onClick={() => handleAppClick("/contact")}>
-                  Contact Me
-                </button>
-                <button onClick={() => handleAppClick("/resume")}>
-                  My Resume
+                  Contact
                 </button>
               </div>
             </div>
@@ -205,7 +202,7 @@ const MacintoshLanding = () => {
         </div>
 
         <div className="taskbar">
-          <div className="start-menu">Demaceo's Mac</div>
+          <div className="start-menu">Machina Ex Demaceo</div>
           <div className="running-apps">
             <div className="app-tab active">Finder</div>
             <div className="app-tab">Portfolio</div>
