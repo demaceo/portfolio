@@ -187,7 +187,7 @@ const MacintoshLanding = () => {
                 my work, learn about me, and/or how to contact me.
               </p>
               <div className="quick-links">
-                <button onClick={() => handleAppClick("/about")}>
+                <button onClick={() => handleAppClick("/mindset")}>
                   About Me
                 </button>
                 <button onClick={() => handleAppClick("/projects")}>
