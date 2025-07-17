@@ -125,7 +125,7 @@ const MacintoshLanding = () => {
           <div className="contact-overlay">
             <div className="contact-window">
               <div className="contact-header">
-                {/* <span>Contact Me</span> */}
+                
                 <button className="close-contact" onClick={handleCloseContact}>
                   ✕
                 </button>
