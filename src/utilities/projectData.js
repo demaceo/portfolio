@@ -2,6 +2,15 @@ import ppLogo from "../assets/icons/pp_icon.png";
 import unmaskedIcon from "../assets/icons/unmasked-logo.png";
 
 const projectData = [
+    {
+    id: 8,
+    name: "Engineer My Career",
+    image: "", // supply a hero image or GIF later
+    description:
+      "Engineer My Career helps developers plan, track, and accelerate their growth with personalized road-maps, skill assessments, and job-search tooling.",
+    link: "https://engineermycareer.com",
+    icon: "fas fa-briefcase icon",
+  },
   {
     id: 0,
     name: "Pinpoint",
@@ -28,7 +37,7 @@ const projectData = [
       "A pet adoption platform that connects users with rescue shelters across the U.S., integrating the Petfinder API for real-time listings.",
     link: "https://demaceo.github.io/adoptdontshop/",
     icon: "fa fa-paw icon",
-    archived: true,
+    // archived: true,
   },
   {
     id: 3,
@@ -82,15 +91,7 @@ const projectData = [
     icon: "fas fa-film icon",
     archived: true,
   },
-  {
-    id: 8,
-    name: "Engineer My Career",
-    image: "", // supply a hero image or GIF later
-    description:
-      "Engineer My Career helps developers plan, track, and accelerate their growth with personalized road-maps, skill assessments, and job-search tooling.",
-    link: "https://engineermycareer.com",
-    icon: "fas fa-briefcase icon",
-  },
+
 ];
 
 export default projectData;

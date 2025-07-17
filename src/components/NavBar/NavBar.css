@@ -103,7 +103,7 @@
 .nav-link {
   text-decoration: none;
   color: #264653;
-  outline: none;
+  outline: hidden;
   font-weight: 400;
   position: relative;
   transition: color 0.3s ease, transform 0.2s ease;
@@ -136,9 +136,10 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: #5181e7;
+  background: #b992ed;
   border: none;
-  /* border-radius: 2px; */
+  outline: none;
+  border-radius: 2px;
 }
 
 /* Mobile Styles */
