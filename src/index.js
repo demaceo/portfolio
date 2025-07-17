@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./components/App/App.js";
+import App from "./Components/App/App.js";
 import reportWebVitals from "./reportWebVitals";
 import RouterProvider from "./RouterProvider";
 import { Analytics } from "@vercel/analytics/react";
