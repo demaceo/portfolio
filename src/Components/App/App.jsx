@@ -9,6 +9,8 @@ import AboutMe from "../AboutMe/AboutMe";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import InteractiveResume from "../WorkXP/InteractiveResume";
+import MacintoshLanding from "../MacintoshLanding/MacintoshLanding";
+
 
 function Layout({ children }) {
   return (
@@ -25,6 +27,8 @@ export default function App() {
   return (
     <Routes>
       {/* created a route with the path * to get all non-configured paths and assign them to the attached component */}
+      <Route path="/" element={<MacintoshLanding />} />
+
       <Route
         path="*"
         element={
@@ -35,7 +39,7 @@ export default function App() {
         }
       />
       <Route
-        path="/"
+        path="/skillset"
         element={
           <Layout>
             <Hero />
@@ -52,7 +56,7 @@ export default function App() {
         }
       />
       <Route
-        path="/about"
+        path="/mindset"
         element={
           <Layout>
             <AboutMe />
