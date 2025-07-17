@@ -41,7 +41,7 @@ const AboutMe: React.FC = () => {
           action.
         </p>
         <br />
-        <h2>In a nutshell:</h2>
+        <h2>TLDR</h2>
         <p>
           Whether I’m leading a project, supporting a team, or exploring new
           ideas, I bring together curiosity, reliability, and a genuine desire
@@ -50,42 +50,60 @@ const AboutMe: React.FC = () => {
         </p>
         <ul className="about-me-list">
           <li>
-            <strong>Intuitive-Conceptual Thinker:</strong> See patterns,
-            simplify the complex, and generate creative, actionable solutions
+            <span
+              className="pill-tag"
+              data-tooltip="See patterns, simplify complexity, and generate creative solutions while building trust through deep listening and collaboration"
+            >
+              <strong>Intuitive Problem Solver</strong>
+            </span>
           </li>
           <li>
-            <strong>Transformer:</strong> Energized by change, challenge, and
-            continuous learning
+            <span
+              className="pill-tag"
+              data-tooltip="Energized by change, challenge, and continuous learning - driven by curiosity and growth"
+            >
+              <strong>Adaptive Learner</strong>
+            </span>
           </li>
           <li>
-            <strong>Empathetic Connector:</strong> Listen deeply, build trust,
-            and foster inclusive collaboration
+            <span
+              className="pill-tag"
+              data-tooltip="Listen deeply, build trust, and foster inclusive collaboration"
+            >
+              <strong>Empathetic Connector</strong>
+            </span>
           </li>
           <li>
-            <strong>Lover of Wisdom:</strong> Pursue growth, purpose, and
-            authentic action in everything I do
-          </li>
-        </ul>
-
-        <br />
-        <h2>Strengths at a Glance:</h2>
-        <ul className="about-me-list">
-          <li>
-            <strong>Adaptable Communicator:</strong> Quick to understand and
-            articulate new concepts; skilled at building rapport with people
-            from all walks of life.
+            <span
+              className="pill-tag"
+              data-tooltip="Pursue growth, purpose, and authentic action in everything I do"
+            >
+              <strong>Dependable Executor</strong>
+            </span>
           </li>
           <li>
-            <strong>Analytical & Reliable:</strong> Detail-oriented, organized,
-            and steady - someone you can count on to follow through.
+            <span
+              className="pill-tag"
+              data-tooltip="Driven by curiosity, integrity, and a desire to make a positive impact"
+            >
+              <strong>Purpose-Driven Innovator</strong>
+            </span>
           </li>
           <li>
-            <strong>Empathetic Problem Solver:</strong> Intuitive, caring, and
-            always willing to help; values making a difference through service.
+            <span
+              className="pill-tag"
+              data-tooltip="Quick to understand and articulate new concepts; skilled at building rapport with people from all walks of life"
+            >
+              <strong>Transparent Communicator</strong>
+            </span>
           </li>
           <li>
-            <strong>Continuous Learner: </strong>
-            Motivated by curiosity, growth, and the pursuit of understanding.
+            <span
+              className="pill-tag"
+              data-tooltip="Detail-oriented, organized, and steady - someone you can count on to follow through"
+            >
+              <strong>Analytical & Reliable</strong>
+            </span>
           </li>
         </ul>
       </div>

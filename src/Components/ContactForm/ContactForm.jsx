@@ -47,7 +47,7 @@ const ContactForm = ({ onClose }) => {
         </button>
 
         <form className="email-form" onSubmit={sendEmail}>
-          <h3>Email Me</h3>
+          <h3>Contact Me</h3>
 
           <label htmlFor="from_name">Name</label>
           <input

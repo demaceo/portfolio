@@ -37,13 +37,13 @@ interface DemaceoProfile {
 }
 
 export const DemaceoResume: DemaceoProfile = {
-  name: "Demaceo Vincent Howard",
+  name: "Demaceo Vincent",
   title: "Lead Front-End Engineer & Tech Consultant",
   location: "Colorado",
   email: "hdemaceo@gmail.com",
   website: "https://www.demaceo.com",
   linkedin: "https://www.linkedin.com/in/demaceo",
-  languages: ["English (Native)", "Spanish (Limited Working)"],
+  languages: ["English (Native)", "Spanish (Limited)"],
   certifications: [
     "Front-End Engineering, UI/UX",
     "GenAI for Business Leaders",
@@ -134,12 +134,12 @@ export const DemaceoResume: DemaceoProfile = {
     {
       institution: "Turing School of Software & Design",
       program: "Front-End Engineering, UI/UX",
-      years: "2020 – 2021",
+      years: "",
     },
     {
       institution: "Cornell College",
       program: "Bachelor of Science in Biology",
-      years: "2010 – 2014",
+      years: "",
     },
   ],
 };

@@ -31,13 +31,13 @@ const NavBar = memo(() => {
 
   return (
     <header className={`nav-container ${showNavbar ? "visible" : "hidden"}`}>
-      <div className="logo-container">
+      <Link to="/" className="logo-container" onClick={closeMenu}>
         <img className="logo" alt="portfolio-logo" src={logo} />
         <div className="descriptor-container">
           <div className="name">Demaceo Vincent</div>
           <div className="occupation">Developer | Designer </div>
         </div>
-      </div>
+      </Link>
 
       <div className="dropdown">
         <button
@@ -58,18 +58,18 @@ const NavBar = memo(() => {
           className={`nav-links-container${isMenuOpen ? "-open" : ""}`}
         >
           <Link
-            to="/"
+            to="/skillset"
             className={`nav-link ${
-              location.pathname === "/" ? "active-link" : ""
+              location.pathname === "/skillset" ? "active-link" : ""
             }`}
             onClick={closeMenu}
           >
             SKILLSET
           </Link>
           <Link
-            to="/about"
+            to="/mindset"
             className={`nav-link ${
-              location.pathname === "/about" ? "active-link" : ""
+              location.pathname === "/mindset" ? "active-link" : ""
             }`}
             onClick={closeMenu}
           >
