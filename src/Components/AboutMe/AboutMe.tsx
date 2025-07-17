@@ -105,22 +105,6 @@ const AboutMe: React.FC = () => {
               <strong>Analytical & Reliable</strong>
             </span>
           </li>
-          {/* <li>
-            <span
-              className="pill-tag"
-              data-tooltip="Intuitive, caring, and always willing to help; values making a difference through service"
-            >
-              <strong>Empathetic Problem Solver</strong>
-            </span>
-          </li> */}
-          {/* <li>
-            <span
-              className="pill-tag"
-              data-tooltip="Motivated by curiosity, growth, and the pursuit of understanding"
-            >
-              <strong>Continuous Learner</strong>
-            </span>
-          </li> */}
         </ul>
       </div>
     </section>
