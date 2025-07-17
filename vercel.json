@@ -2,9 +2,6 @@
   "build": {
     "env": {
       "NPM_FLAGS": "--legacy-peer-deps"
-    },
-    "scripts": {
-      "postbuild": "rm -rf build/static/js/*.map build/static/css/*.map"
     }
   }
 }
