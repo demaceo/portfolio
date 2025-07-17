@@ -25,28 +25,11 @@
   z-index: 1000;
 }
 
-
 .logo-container {
   display: flex;
   align-items: center;
   gap: 1rem;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
-.logo-container:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-  text-decoration: none;
-  color: inherit;
-}
-
-.logo-container:visited {
-  color: inherit;
-}
-
 
 .logo {
   width: 50px;
@@ -103,7 +86,7 @@
 .nav-link {
   text-decoration: none;
   color: #264653;
-  outline: hidden;
+  outline: none;
   font-weight: 400;
   position: relative;
   transition: color 0.3s ease, transform 0.2s ease;
@@ -136,10 +119,9 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: #b992ed;
+  background: #5181e7;
   border: none;
-  outline: none;
-  border-radius: 2px;
+  /* border-radius: 2px; */
 }
 
 /* Mobile Styles */
