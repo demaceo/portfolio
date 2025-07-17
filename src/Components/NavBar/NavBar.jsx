@@ -67,9 +67,9 @@ const NavBar = memo(() => {
             SKILLSET
           </Link>
           <Link
-            to="/about"
+            to="/mindset"
             className={`nav-link ${
-              location.pathname === "/about" ? "active-link" : ""
+              location.pathname === "/mindset" ? "active-link" : ""
             }`}
             onClick={closeMenu}
           >

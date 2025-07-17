@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ContactForm from "../ContactForm/ContactForm";
+import logo from "../../assets/logo/logo(light).png";
+
 import "./MacintoshLanding.css";
 
 const MacintoshLanding = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [isMobile, setIsMobile] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -42,21 +46,31 @@ const MacintoshLanding = () => {
   };
 
   const handleAppClick = (path) => {
-    navigate(path);
+    if (path === "/contact") {
+      setShowContactForm(true);
+    } else {
+      navigate(path);
+    }
+  };
+
+  const handleCloseContact = () => {
+    setShowContactForm(false);
   };
 
   const desktopApps = [
-    { name: "About Me", icon: "👤", path: "/about" },
+    { name: "About Me", icon: "👤", path: "/mindset" },
+    { name: "Toolkit", icon: "🧰", path: "/skillset" },
     { name: "Projects", icon: "💼", path: "/projects" },
     { name: "Resume", icon: "📄", path: "/resume" },
-    { name: "Toolkit", icon: "🧰", path: "/skillset" },
+    { name: "Contact", icon: "📧", path: "/contact" },
   ];
 
   const mobileApps = [
-    { name: "About", icon: "👤", path: "/about" },
+    { name: "About", icon: "👤", path: "/mindset" },
     { name: "Projects", icon: "💼", path: "/projects" },
     { name: "Resume", icon: "📄", path: "/resume" },
     { name: "Toolkit", icon: "🧰", path: "/skillset" },
+    { name: "Contact", icon: "📧", path: "/contact" },
     { name: "Photos", icon: "📷", path: "/projects" },
     { name: "Settings", icon: "⚙️", path: "/mindset" },
     { name: "Messages", icon: "💬", path: "/mindset" },
@@ -95,7 +109,10 @@ const MacintoshLanding = () => {
             >
               💼
             </div>
-            <div className="dock-app" onClick={() => handleAppClick("/mindset")}>
+            <div
+              className="dock-app"
+              onClick={() => handleAppClick("/mindset")}
+            >
               👤
             </div>
             <div className="dock-app" onClick={() => handleAppClick("/resume")}>
@@ -103,6 +120,22 @@ const MacintoshLanding = () => {
             </div>
           </div>
         </div>
+
+        {showContactForm && (
+          <div className="contact-overlay">
+            <div className="contact-window">
+              <div className="contact-header">
+                {/* <span>Contact Me</span> */}
+                <button className="close-contact" onClick={handleCloseContact}>
+                  ✕
+                </button>
+              </div>
+              <div className="contact-content">
+                <ContactForm />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
@@ -112,7 +145,7 @@ const MacintoshLanding = () => {
       <div className="mac-screen">
         <div className="menu-bar">
           <div className="menu-left">
-            <span className="apple-logo">🥭</span>
+            <img className="apple-logo" alt="portfolio-logo" src={logo} />
             <span className="menu-item">File</span>
             <span className="menu-item">Edit</span>
             <span className="menu-item">View</span>
@@ -150,8 +183,8 @@ const MacintoshLanding = () => {
             <div className="window-content">
               <h2>Hello, I'm Demaceo Vincent</h2>
               <p>
-                Welcome to my digital workspace. Click on the icons above to
-                explore my work, learn about me, or view my resume.
+                Welcome to my digital workspace. Click on the icons to explore
+                my work, learn about me, and/or how to contact me.
               </p>
               <div className="quick-links">
                 <button onClick={() => handleAppClick("/about")}>
@@ -159,6 +192,9 @@ const MacintoshLanding = () => {
                 </button>
                 <button onClick={() => handleAppClick("/projects")}>
                   View Projects
+                </button>
+                <button onClick={() => handleAppClick("/contact")}>
+                  Contact Me
                 </button>
                 <button onClick={() => handleAppClick("/resume")}>
                   My Resume
@@ -176,6 +212,22 @@ const MacintoshLanding = () => {
           </div>
         </div>
       </div>
+
+      {showContactForm && (
+        <div className="contact-overlay">
+          <div className="contact-window">
+            <div className="contact-header">
+              <span>Contact Me</span>
+              <button className="close-contact" onClick={handleCloseContact}>
+                ✕
+              </button>
+            </div>
+            <div className="contact-content">
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
